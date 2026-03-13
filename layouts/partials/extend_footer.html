@@ -1,0 +1,177 @@
+{{/* Search Overlay — hiện tại chỗ, không chuyển trang */}}
+<div id="search-overlay-backdrop" aria-hidden="true"></div>
+
+<div id="search-overlay-box" role="dialog" aria-modal="true" aria-label="Tìm kiếm">
+    <div id="search-overlay-input-wrap">
+        <svg id="search-overlay-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+        <input id="search-overlay-input" type="search" placeholder="Tìm kiếm bài viết..." autocomplete="off"
+            aria-label="Tìm kiếm" />
+        <button id="search-overlay-close" aria-label="Đóng tìm kiếm">✕</button>
+    </div>
+    <div id="search-overlay-results" aria-live="polite">
+        <div class="search-overlay-hint">
+            Gõ để tìm kiếm · <kbd class="search-overlay-kbd">Esc</kbd> để đóng
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        var fuseInstance = null;
+        var searchIndex = null;
+        var isLoading = false;
+
+        function loadIndex(cb) {
+            if (searchIndex) { cb(searchIndex); return; }
+            if (isLoading) { setTimeout(function () { loadIndex(cb); }, 100); return; }
+            isLoading = true;
+            fetch('/index.json')
+                .then(function (r) { return r.json(); })
+                .then(function (data) {
+                    searchIndex = data;
+                    isLoading = false;
+                    cb(data);
+                })
+                .catch(function () { isLoading = false; });
+        }
+
+        function getFuse(data) {
+            if (fuseInstance) return fuseInstance;
+            fuseInstance = new Fuse(data, {
+                keys: [
+                    { name: 'title', weight: 0.7 },
+                    { name: 'summary', weight: 0.3 },
+                    { name: 'content', weight: 0.2 }
+                ],
+                includeMatches: true,
+                minMatchCharLength: 2,
+                threshold: 0.4,
+            });
+            return fuseInstance;
+        }
+
+        function highlight(text, indices) {
+            if (!text) return '';
+            if (!indices || !indices.length) return escHtml(text.slice(0, 80));
+            var out = '';
+            var last = 0;
+            var slice = text.slice(0, 160);
+            indices.forEach(function (pair) {
+                if (pair[0] >= slice.length) return;
+                var end = Math.min(pair[1] + 1, slice.length);
+                out += escHtml(slice.slice(last, pair[0]));
+                out += '<mark>' + escHtml(slice.slice(pair[0], end)) + '</mark>';
+                last = end;
+            });
+            out += escHtml(slice.slice(last));
+            return out + (text.length > 160 ? '…' : '');
+        }
+
+        function escHtml(s) {
+            return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+
+        function stripHtml(s) {
+            return (s || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+        }
+
+        function getSnippet(item) {
+            /* Ưu tiên summary plain text, fallback sang content */
+            var raw = item.summary || item.content || '';
+            return stripHtml(raw).slice(0, 120);
+        }
+
+        function renderResults(results, q) {
+            var el = document.getElementById('search-overlay-results');
+            if (!q || q.length < 2) {
+                el.innerHTML = '<div class="search-overlay-hint">Gõ để tìm kiếm · <kbd class="search-overlay-kbd">Esc</kbd> để đóng</div>';
+                return;
+            }
+            if (!results.length) {
+                el.innerHTML = '<div class="search-overlay-empty">😕 Không tìm thấy kết quả cho "<strong>' + escHtml(q) + '</strong>"</div>';
+                return;
+            }
+            el.innerHTML = results.slice(0, 8).map(function (r, i) {
+                var titleMatch = r.matches && r.matches.find(function (m) { return m.key === 'title'; });
+                var titleHtml = titleMatch ? highlight(r.item.title, titleMatch.indices) : escHtml(r.item.title || '');
+                var snippet = escHtml(getSnippet(r.item));
+                return (i > 0 ? '<div class="search-result-divider"></div>' : '') +
+                    '<a class="search-result-item" href="' + r.item.permalink + '">' +
+                    '<div class="search-result-title">' + titleHtml + '</div>' +
+                    (snippet ? '<div class="search-result-meta">' + snippet + (getSnippet(r.item).length >= 120 ? '…' : '') + '</div>' : '') +
+                    '</a>';
+            }).join('');
+        }
+
+        var debounce;
+        function onInput(e) {
+            var q = e.target.value.trim();
+            var closeBtn = document.getElementById('search-overlay-close');
+            if (closeBtn) { closeBtn.classList.toggle('visible', q.length > 0); }
+            clearTimeout(debounce);
+            debounce = setTimeout(function () {
+                loadIndex(function (data) {
+                    var results = getFuse(data).search(q);
+                    renderResults(results, q);
+                });
+            }, 180);
+        }
+
+        function open() {
+            document.getElementById('search-overlay-backdrop').classList.add('active');
+            document.getElementById('search-overlay-box').classList.add('active');
+            document.body.style.overflow = 'hidden';
+            setTimeout(function () { document.getElementById('search-overlay-input').focus(); }, 80);
+            loadIndex(function () { });  /* preload */
+        }
+
+        function close() {
+            document.getElementById('search-overlay-backdrop').classList.remove('active');
+            document.getElementById('search-overlay-box').classList.remove('active');
+            document.body.style.overflow = '';
+            document.getElementById('search-overlay-input').value = '';
+            document.getElementById('search-overlay-close').classList.remove('visible');
+            document.getElementById('search-overlay-results').innerHTML =
+                '<div class="search-overlay-hint">Gõ để tìm kiếm · <kbd class="search-overlay-kbd">Esc</kbd> để đóng</div>';
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            /* Intercept các link dẫn đến /search/ trong nav */
+            document.querySelectorAll('a[href="/search/"], a[href="/search"]').forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    open();
+                });
+            });
+
+            document.getElementById('search-overlay-backdrop').addEventListener('click', close);
+            document.getElementById('search-overlay-close').addEventListener('click', function () {
+                var input = document.getElementById('search-overlay-input');
+                if (input.value) {
+                    input.value = '';
+                    this.classList.remove('visible');
+                    document.getElementById('search-overlay-results').innerHTML =
+                        '<div class="search-overlay-hint">Gõ để tìm kiếm · <kbd class="search-overlay-kbd">Esc</kbd> để đóng</div>';
+                    input.focus();
+                } else {
+                    close();
+                }
+            });
+            document.getElementById('search-overlay-input').addEventListener('input', onInput);
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') close();
+                /* Phím / để mở search nhanh */
+                if (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+                    e.preventDefault();
+                    open();
+                }
+            });
+        });
+    })();
+</script>

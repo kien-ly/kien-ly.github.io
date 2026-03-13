@@ -1,0 +1,233 @@
+{{/* Load Fuse.js cho search overlay */}}
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+<style>
+  /* ── Search Overlay ── */
+  #search-overlay-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 9998;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+
+  #search-overlay-backdrop.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  #search-overlay-box {
+    position: fixed;
+    top: 72px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-12px);
+    width: min(620px, 92vw);
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.22s ease, transform 0.22s ease;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.28);
+  }
+
+  #search-overlay-box.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  #search-overlay-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1.5px solid var(--border);
+    border-radius: 9px;
+    padding: 0 14px;
+    background: var(--theme);
+    transition: border-color 0.15s;
+  }
+
+  #search-overlay-input-wrap:focus-within {
+    border-color: var(--primary);
+  }
+
+  #search-overlay-icon {
+    flex-shrink: 0;
+    color: var(--secondary);
+    opacity: 0.6;
+  }
+
+  #search-overlay-input {
+    width: 100%;
+    padding: 13px 0;
+    border: none;
+    background: transparent;
+    color: var(--primary);
+    font-size: 16px;
+    outline: none;
+    font-family: inherit;
+  }
+
+  #search-overlay-input::placeholder {
+    color: var(--secondary);
+    opacity: 0.55;
+  }
+
+  #search-overlay-close {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--secondary);
+    opacity: 0.55;
+    padding: 4px;
+    display: none;
+    line-height: 1;
+    font-size: 18px;
+  }
+
+  #search-overlay-close.visible {
+    display: block;
+  }
+
+  #search-overlay-close:hover {
+    opacity: 1;
+  }
+
+  #search-overlay-results {
+    margin-top: 10px;
+    max-height: 420px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+
+  .search-result-item {
+    display: block;
+    padding: 11px 14px;
+    border-radius: 9px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--primary);
+    transition: background 0.12s;
+  }
+
+  .search-result-item:hover,
+  .search-result-item:focus {
+    background: var(--code-bg);
+    outline: none;
+  }
+
+  .search-result-title {
+    font-weight: 600;
+    font-size: 14.5px;
+    line-height: 1.4;
+  }
+
+  .search-result-meta {
+    font-size: 12.5px;
+    color: var(--secondary);
+    margin-top: 3px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .search-result-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 3px 0;
+    opacity: 0.5;
+  }
+
+  .search-overlay-empty {
+    text-align: center;
+    color: var(--secondary);
+    padding: 28px 20px;
+    font-size: 14px;
+  }
+
+  .search-overlay-hint {
+    text-align: center;
+    color: var(--secondary);
+    padding: 16px 20px;
+    font-size: 13px;
+    opacity: 0.7;
+  }
+
+  .search-overlay-kbd {
+    display: inline-block;
+    font-size: 11px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-family: inherit;
+    background: var(--code-bg);
+  }
+</style>
+
+<style>
+  /* ── Tag Pills — trên single page (header) ── */
+  .post-tags-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 10px 0 4px;
+  }
+
+  .post-tag-pill {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 99px;
+    border: 1.5px solid var(--border);
+    color: var(--secondary);
+    text-decoration: none;
+    line-height: 1.6;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+
+  .post-tag-pill:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--theme);
+  }
+
+  /* ── Tag Pills — trên list page (card) ── */
+  .entry-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 5px 0 2px;
+  }
+
+  .entry-tag-pill {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 99px;
+    border: 1.5px solid var(--border);
+    color: var(--secondary);
+    text-decoration: none;
+    line-height: 1.6;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+    position: relative;
+    /* nổi lên trên .entry-link overlay */
+    z-index: 1;
+  }
+
+  .entry-tag-pill:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--theme);
+  }
+</style>
