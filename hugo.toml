@@ -1,6 +1,6 @@
 baseURL = "https://kien-ly.github.io/"
 languageCode = "vi"
-title = "Tên của bạn"
+title = "Kien Ly"
 theme = "PaperMod"
 [pagination]
   pagerSize = 5
@@ -19,10 +19,10 @@ buildExpired = false
 
 [params]
   env = "production"
-  title = "Tên của bạn"
+  title = "Kien Ly"
   description = "Portfolio & Blog cá nhân"
   keywords = ["Blog", "Portfolio", "Developer"]
-  author = "Tên của bạn"
+  author = "Kien Ly"
   # author = ["Me", "You"] # multiple authors
 
   defaultTheme = "auto"        # auto | light | dark
@@ -59,8 +59,6 @@ buildExpired = false
   # Profile mode - trang chủ dạng profile
   [params.profileMode]
     enabled = true
-    title = "Xin chào, tôi là Kien 👋"
-    subtitle = "Software Developer · Writer · Tinkerer\nTôi xây dựng sản phẩm và chia sẻ những gì học được."
     imageUrl = "https://github.com/kien-ly.png"
     imageWidth = 120
     imageHeight = 120
@@ -78,9 +76,6 @@ buildExpired = false
       name = "News"
       url = "/news"
 
-  [params.homeInfoParams]
-    Title = "Xin chào 👋"
-    Content = "Chào mừng đến blog của tôi"
 
   [[params.socialIcons]]
     name = "github"
@@ -143,9 +138,9 @@ buildExpired = false
     weight = 40
 
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
+    identifier = "mycv"
+    name = "My CV"
+    url = "/mycv/"
     weight = 50
 
   [[menu.main]]
