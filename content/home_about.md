@@ -19,7 +19,7 @@ headless: true
 
 ## 🚀 About Me
 
-```python
+<!-- ```python
 class KienLy:
     def __init__(self):
         self.role = "Data Engineer"
@@ -35,8 +35,27 @@ class KienLy:
     
     def fun_fact(self):
         return "I turn raw data into actionable insights → 💡"
-```
+``` -->
+```python
+class KienLy:
+    def __init__(self):
+        self.identity = ["Data Engineer", "Data Architect", "Future Tech Entrepreneur"]
+        self.mission = "Architecting the data backbone for next-gen Telecommunications & AI."
+        self.core_values = ["Systematic Thinking", "Scalability", "Ownership"]
+        
+    def current_focus(self):
+        return {
+            "Technical": "Designing high-throughput data pipelines and robust cloud infrastructure.",
+            "Business": "Mastering the economics of data-driven."
+        }
+    
+    def business_philosophy(self):
+        return "Raw data is a liability. Actionable intelligence is an asset."
+    
+    def connect_with_me_for(self):
+        return ["System Architecture", "Strategic Partnerships", "Tech Startups discussion"]
 
+```
 <!-- ---
 
 ## 🎯 Current Focus

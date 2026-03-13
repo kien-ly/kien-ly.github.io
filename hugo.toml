@@ -63,20 +63,6 @@ buildExpired = false
     imageWidth = 120
     imageHeight = 120
     imageTitle = "Avatar"
-
-    [[params.profileMode.buttons]]
-      name = "Blog"
-      url = "/posts"
-
-    [[params.profileMode.buttons]]
-      name = "Projects"
-      url = "/projects"
-
-    [[params.profileMode.buttons]]
-      name = "News"
-      url = "/news"
-
-
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/kien-ly"
