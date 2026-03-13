@@ -92,7 +92,7 @@ buildExpired = false
 
   [[params.socialIcons]]
     name = "email"
-    url = "mailto:kienly.work@gmail.com
+    url = "mailto:kienly.work@gmail.com"
 
   [params.analytics.google]
     SiteVerificationTag = ""  # ← Thêm Google Analytics nếu muốn
