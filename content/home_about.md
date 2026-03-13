@@ -6,87 +6,23 @@ headless: true
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=435&lines=Hi+there%2C+I'm+Kien+Ly+%F0%9F%91%8B;Data+Engineer+%F0%9F%9A%80;Big+Data+%26+AI+Enthusiast+%F0%9F%A4%96;Building+Scalable+Data+Pipelines+%F0%9F%93%9A" alt="Typing SVG" />
 </div>
 
-<!-- <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Kien%20Ly&fontSize=60&fontAlignY=35&desc=Data%20Engineer%20%7C%20Big%20Data%20Specialist&descAlignY=55&descAlign=center" />
-</div> -->
-
-<!-- <div align="center" style="margin-bottom: 20px;">
-  <img src="https://komarev.com/ghpvc/?username=kien-ly&label=Profile%20views&color=0e75b6&style=flat" alt="kien-ly" />
-  <img src="https://img.shields.io/github/followers/kien-ly?label=Followers&style=social" alt="GitHub followers" />
-</div> -->
-
 ---
 
 ## 🚀 About Me
 
-<!-- ```python
-class KienLy:
-    def __init__(self):
-        self.role = "Data Engineer"
-        self.pronouns = "he/him"
-        self.languages = ["Python", "SQL", "Scala", "Java", "Go"]
-        self.specialties = ["ETL/ELT", "Data Pipelines", "Big Data", "Cloud Computing"]
-        
-    def current_focus(self):
-        return "Building scalable data infrastructure and AI-powered analytics"
-    
-    def ask_me_about(self):
-        return ["data engineering", "big data", "cloud platforms"]
-    
-    def fun_fact(self):
-        return "I turn raw data into actionable insights → 💡"
-``` -->
 ```python
 class KienLy:
     def __init__(self):
-        self.identity = ["Data Engineer", "Data Architect", "Future Tech Entrepreneur"]
-        self.mission = "Architecting the data backbone for next-gen Telecommunications & AI."
-        self.core_values = ["Systematic Thinking", "Scalability", "Ownership"]
+        self.identity = "Data Architect ⨉ Tech Entrepreneur"
+        self.domain = ["Big Data", "Cloud Computing", "AI"]
         
-    def current_focus(self):
-        return {
-            "Technical": "Designing high-throughput data pipelines and robust cloud infrastructure.",
-            "Business": "Mastering the economics of data-driven."
-        }
+    def current_mission(self):
+        return "Architecting scalable data backbones for next-gen connectivity."
     
-    def business_philosophy(self):
-        return "Raw data is a liability. Actionable intelligence is an asset."
-    
-    def connect_with_me_for(self):
-        return ["System Architecture", "Strategic Partnerships", "Tech Startups discussion"]
+    def philosophy(self):
+        return "Data is a liability. Decisions are assets!"
 
 ```
-<!-- ---
-
-## 🎯 Current Focus
-
-- 🔭 I'm currently working on **Big Data Pipelines and ETL/ELT processes**
-- 🌱 I'm currently learning **Advanced Data Engineering patterns** and **MLOps**
-- 🎱 I'm looking to collaborate on **Open Source Data Engineering projects**
-- 💯 I'm looking for help with **Distributed Systems optimization**
-- 🎉 Ask me about **Data Engineering**, **Big Data**, and **Cloud Data Platforms**
-- 📫 How to reach me: [kienly.work@gmail.com](mailto:kienly.work@gmail.com)
-- ⚡ Fun fact: I love building data pipelines that can handle millions of records per second -->
-
-<!-- 
----
-
-## 📫 Connect with Me
-
-<div align="center">
-  <a href="https://kien-ly.github.io" target="_blank">
-    <img src="https://img.shields.io/badge/Website-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Personal Website" />
-  </a>
-  <a href="https://www.linkedin.com/in/kien-ly/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/kien-ly" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-  <a href="mailto:kienly.work@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</div> -->
 
 ---
 
