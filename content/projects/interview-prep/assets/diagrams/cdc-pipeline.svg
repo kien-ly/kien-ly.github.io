@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <style>
+      .t { font-size: 13px; fill: #1e293b; }
+      .s { font-size: 11.5px; fill: #475569; }
+      .m { font-size: 11px; fill: #0f172a; font-family: 'SFMono-Regular', Menlo, Consolas, monospace; }
+      .h { font-size: 14px; font-weight: 700; fill: #0f172a; }
+      .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.3; }
+      .line { stroke: #475569; stroke-width: 1.6; fill: none; marker-end: url(#arr); }
+      .num { font-size: 12px; font-weight: 800; fill: #ffffff; }
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#f8fafc"/>
+  <text x="30" y="38" style="font-size:22px;font-weight:800;fill:#0f172a">Log-based CDC → Lakehouse</text>
+  <text x="30" y="60" class="s">Read the database's transaction log rather than querying tables. You get every insert/update/delete, in commit order, at low cost to the source.</text>
+
+  <!-- OLTP -->
+  <rect x="30" y="95" width="170" height="170" rx="12" class="box" style="stroke:#2563eb;stroke-width:2"/>
+  <text x="46" y="120" class="h">OLTP database</text>
+  <text x="46" y="140" class="s">Postgres / MySQL / Oracle</text>
+  <rect x="46" y="155" width="138" height="38" rx="6" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="56" y="178" class="t">tables (orders, …)</text>
+  <rect x="46" y="205" width="138" height="44" rx="6" fill="#dbeafe" stroke="#60a5fa"/>
+  <text x="56" y="224" class="t" style="font-weight:700">WAL / binlog / redo</text>
+  <text x="56" y="240" class="s">ordered commit log</text>
+
+  <!-- Debezium -->
+  <rect x="240" y="135" width="160" height="90" rx="10" class="box" style="stroke:#6366f1;stroke-width:2"/>
+  <text x="256" y="160" class="h">Debezium</text>
+  <text x="256" y="180" class="s">Kafka Connect source</text>
+  <text x="256" y="196" class="s">reads log via replication</text>
+  <text x="256" y="212" class="s">slot; tracks LSN offset</text>
+
+  <!-- Schema registry -->
+  <rect x="440" y="80" width="190" height="46" rx="8" class="box" style="stroke:#a855f7"/>
+  <text x="454" y="100" class="t">Schema Registry</text>
+  <text x="454" y="117" class="s">Avro/Protobuf, compat rules</text>
+
+  <!-- Kafka -->
+  <rect x="440" y="145" width="190" height="110" rx="10" class="box" style="stroke:#0891b2;stroke-width:2"/>
+  <text x="456" y="170" class="h">Kafka</text>
+  <text x="456" y="190" class="s">topic per table</text>
+  <text x="456" y="206" class="s">key = primary key</text>
+  <text x="456" y="222" class="s">→ per-key ordering</text>
+  <text x="456" y="238" class="s">compaction keeps latest</text>
+
+  <!-- Stream -->
+  <rect x="670" y="145" width="170" height="110" rx="10" class="box" style="stroke:#16a34a;stroke-width:2"/>
+  <text x="686" y="170" class="h">Stream processor</text>
+  <text x="686" y="190" class="s">Spark SS / Flink / DLT</text>
+  <text x="686" y="206" class="s">parse envelope, flatten</text>
+  <text x="686" y="222" class="s">exactly-once checkpoint</text>
+  <text x="686" y="238" class="s">foreachBatch → MERGE</text>
+
+  <!-- Bronze -->
+  <rect x="880" y="90" width="290" height="80" rx="10" fill="#fdf2e9" stroke="#cd7f32" stroke-width="2"/>
+  <text x="896" y="114" class="h" style="fill:#9a5a1c">Bronze: change log (append)</text>
+  <text x="896" y="134" class="m">pk | op | after.* | lsn | ts_ms</text>
+  <text x="896" y="152" class="s">full audit trail, replayable</text>
+
+  <!-- Silver -->
+  <rect x="880" y="190" width="140" height="92" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="894" y="212" class="h" style="fill:#475569">Silver current</text>
+  <text x="894" y="232" class="s">SCD1 mirror</text>
+  <text x="894" y="248" class="s">MERGE latest lsn</text>
+  <text x="894" y="264" class="s">per pk; apply deletes</text>
+  <rect x="1030" y="190" width="140" height="92" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="1044" y="212" class="h" style="fill:#475569">Silver history</text>
+  <text x="1044" y="232" class="s">SCD2: valid_from,</text>
+  <text x="1044" y="248" class="s">valid_to, is_current</text>
+  <text x="1044" y="264" class="s">(point-in-time joins)</text>
+
+  <rect x="880" y="300" width="290" height="44" rx="10" fill="#fdf8e1" stroke="#d4a017" stroke-width="2"/>
+  <text x="896" y="327" class="h" style="fill:#8a6a00">Gold: facts, dims, KPIs</text>
+
+  <path d="M200,226 L238,190" class="line"/>
+  <path d="M400,180 L438,195" class="line"/>
+  <path d="M535,145 L535,128" class="line" style="marker-start:url(#arr)"/>
+  <path d="M630,200 L668,200" class="line"/>
+  <path d="M840,180 L878,135" class="line"/>
+  <path d="M840,220 L878,236" class="line"/>
+  <path d="M955,282 L955,298" class="line"/>
+  <path d="M1100,282 L1100,298" class="line"/>
+
+  <!-- envelope -->
+  <rect x="30" y="380" width="375" height="310" rx="12" fill="#0f172a"/>
+  <text x="48" y="406" style="font-size:13px;font-weight:700;fill:#e2e8f0">Debezium change event (simplified)</text>
+  <text x="48" y="432" xml:space="preserve" class="m" style="fill:#93c5fd">{ "op": "u",          <tspan fill="#64748b">// c | u | d | r(snapshot)</tspan></text>
+  <text x="48" y="452" xml:space="preserve" class="m" style="fill:#e2e8f0">  "before": { "id": 42, "status": "PAID" },</text>
+  <text x="48" y="472" xml:space="preserve" class="m" style="fill:#e2e8f0">  "after":  { "id": 42, "status": "SHIPPED" },</text>
+  <text x="48" y="492" xml:space="preserve" class="m" style="fill:#e2e8f0">  "source": { "lsn": 99812, "txId": 771,</text>
+  <text x="48" y="512" xml:space="preserve" class="m" style="fill:#e2e8f0">              "table": "orders" },</text>
+  <text x="48" y="532" xml:space="preserve" class="m" style="fill:#e2e8f0">  "ts_ms": 1767225600000 }</text>
+  <text x="48" y="566" style="font-size:12px;fill:#fbbf24">Delete → op='d', after=null, then a tombstone</text>
+  <text x="48" y="584" style="font-size:12px;fill:#fbbf24">(key, null) so log compaction can drop the key.</text>
+  <text x="48" y="612" style="font-size:12px;fill:#a7f3d0">Order by source.lsn (not ts_ms) to resolve</text>
+  <text x="48" y="630" style="font-size:12px;fill:#a7f3d0">out-of-order or duplicate delivery:</text>
+  <text x="48" y="652" xml:space="preserve" class="m" style="fill:#a7f3d0">ROW_NUMBER() OVER (PARTITION BY pk</text>
+  <text x="48" y="670" xml:space="preserve" class="m" style="fill:#a7f3d0">                   ORDER BY lsn DESC) = 1</text>
+
+  <!-- bootstrap timeline -->
+  <rect x="420" y="380" width="750" height="140" rx="12" class="box"/>
+  <text x="440" y="406" class="h">Bootstrapping: initial snapshot + stream hand-off</text>
+  <line x1="450" y1="470" x2="1135" y2="470" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="450" y="445" width="300" height="50" rx="6" fill="#dbeafe" stroke="#60a5fa"/>
+  <text x="462" y="466" class="t">1. Consistent snapshot</text>
+  <text x="462" y="484" class="s">op='r' rows, read at LSN = X</text>
+  <circle cx="760" cy="470" r="7" fill="#ea580c"/>
+  <text x="742" y="440" class="s" style="fill:#c2410c;font-weight:700">LSN X</text>
+  <rect x="775" y="445" width="360" height="50" rx="6" fill="#dcfce7" stroke="#86efac"/>
+  <text x="787" y="466" class="t">2. Stream changes from LSN X onward</text>
+  <text x="787" y="484" class="s">overlap is safe: MERGE is idempotent on (pk, lsn)</text>
+  <text x="440" y="512" class="s">Incremental snapshots (Debezium signals) avoid long locks on huge tables.</text>
+
+  <!-- pitfalls -->
+  <rect x="420" y="540" width="750" height="150" rx="12" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="440" y="565" class="h" style="fill:#9a3412">What interviewers probe</text>
+  <text x="440" y="590" class="t">• Ordering: only guaranteed per partition, so key by PK</text>
+  <text x="440" y="612" class="t">• Schema change: add column = OK; rename/drop = contract</text>
+  <text x="440" y="634" class="t">• Replication slot lag can fill the source disk: alert on it</text>
+  <text x="440" y="656" class="t">• Hard deletes vs soft deletes; GDPR erasure downstream</text>
+  <text x="820" y="590" class="t">• Multi-table transactions (txId)</text>
+  <text x="820" y="612" class="t">• Exactly-once into Delta: idempotent</text>
+  <text x="820" y="628" class="t">   MERGE + checkpointed offsets</text>
+  <text x="820" y="652" class="t">• Query-based CDC (updated_at) misses</text>
+  <text x="820" y="668" class="t">   deletes and intermediate states</text>
+</svg>

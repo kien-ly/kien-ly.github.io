@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <style>
+      .t { font-size: 13px; fill: #1e293b; }
+      .s { font-size: 11.5px; fill: #475569; }
+      .h { font-size: 14px; font-weight: 800; fill: #ffffff; }
+      .k { font-size: 13px; font-weight: 700; fill: #0f172a; }
+      .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.3; }
+      .line { stroke: #475569; stroke-width: 1.6; fill: none; marker-end: url(#arr); }
+    </style>
+  </defs>
+  <rect width="1200" height="700" fill="#f8fafc"/>
+  <text x="30" y="38" style="font-size:22px;font-weight:800;fill:#0f172a">The 45-Minute Data System Design Interview</text>
+  <text x="30" y="60" class="s">Drive the conversation. Spend time where the risk is. Say the trade-off out loud before the interviewer asks.</text>
+
+  <!-- timeline -->
+  <g>
+    <rect x="30" y="80" width="170" height="44" rx="8" fill="#2563eb"/><text x="44" y="100" class="h">① Requirements</text><text x="44" y="116" style="font-size:11px;fill:#dbeafe">0–5 min</text>
+    <rect x="205" y="80" width="140" height="44" rx="8" fill="#0891b2"/><text x="219" y="100" class="h">② Estimate</text><text x="219" y="116" style="font-size:11px;fill:#cffafe">5–10 min</text>
+    <rect x="350" y="80" width="230" height="44" rx="8" fill="#16a34a"/><text x="364" y="100" class="h">③ High-level design</text><text x="364" y="116" style="font-size:11px;fill:#dcfce7">10–20 min</text>
+    <rect x="585" y="80" width="320" height="44" rx="8" fill="#9333ea"/><text x="599" y="100" class="h">④ Deep dives (2–3)</text><text x="599" y="116" style="font-size:11px;fill:#f3e8ff">20–35 min · where seniority shows</text>
+    <rect x="910" y="80" width="140" height="44" rx="8" fill="#ea580c"/><text x="924" y="100" class="h">⑤ Failures</text><text x="924" y="116" style="font-size:11px;fill:#ffedd5">35–40 min</text>
+    <rect x="1055" y="80" width="115" height="44" rx="8" fill="#475569"/><text x="1069" y="100" class="h">⑥ Wrap-up</text><text x="1069" y="116" style="font-size:11px;fill:#e2e8f0">40–45 min</text>
+  </g>
+
+  <!-- checklists -->
+  <rect x="30" y="134" width="170" height="250" rx="8" class="box"/>
+  <text x="42" y="156" class="k">Functional</text>
+  <text x="42" y="174" class="s">• What questions must</text><text x="42" y="188" class="s">  the data answer?</text>
+  <text x="42" y="204" class="s">• Who consumes it?</text>
+  <text x="42" y="226" class="k">Non-functional</text>
+  <text x="42" y="244" class="s">• Freshness SLA</text>
+  <text x="42" y="260" class="s">• Volume, peak, growth</text>
+  <text x="42" y="276" class="s">• Correctness: exact vs</text><text x="42" y="290" class="s">  approximate, dupes OK?</text>
+  <text x="42" y="306" class="s">• Retention, compliance</text>
+  <text x="42" y="322" class="s">• Late / out-of-order data</text>
+  <text x="42" y="352" class="s" style="font-style:italic">Write them on the board.</text>
+  <text x="42" y="368" class="s" style="font-style:italic">Confirm before designing.</text>
+
+  <rect x="205" y="134" width="140" height="250" rx="8" class="box"/>
+  <text x="217" y="156" class="k">Numbers</text>
+  <text x="217" y="174" class="s">• events/day → /sec</text>
+  <text x="217" y="190" class="s">   (÷ 86,400 ≈ ÷ 10⁵)</text>
+  <text x="217" y="206" class="s">• peak = 3–10× avg</text>
+  <text x="217" y="222" class="s">• bytes/event → GB/day</text>
+  <text x="217" y="238" class="s">• × retention × 3</text>
+  <text x="217" y="254" class="s">   replicas ÷ ~5–10×</text>
+  <text x="217" y="270" class="s">   compression</text>
+  <text x="217" y="286" class="s">• Kafka partitions</text>
+  <text x="217" y="302" class="s">   = peak MB/s ÷</text>
+  <text x="217" y="318" class="s">   ~10 MB/s per part.</text>
+  <text x="217" y="352" class="s" style="font-style:italic">Round hard. The</text>
+  <text x="217" y="368" class="s" style="font-style:italic">Magnitude matters.</text>
+
+  <rect x="350" y="134" width="230" height="250" rx="8" class="box"/>
+  <text x="362" y="156" class="k">Draw the skeleton (below)</text>
+  <text x="362" y="174" class="s">• Left → right data flow</text>
+  <text x="362" y="190" class="s">• Name a tech per box, with the</text>
+  <text x="362" y="206" class="s">  REASON (“Kafka: replay + fan-out”)</text>
+  <text x="362" y="222" class="s">• Mark batch vs streaming paths</text>
+  <text x="362" y="238" class="s">• Data model: event schema +</text>
+  <text x="362" y="254" class="s">  1–2 key tables with grain</text>
+  <text x="362" y="270" class="s">• Walk ONE record end to end</text>
+  <text x="362" y="300" class="k">Avoid</text>
+  <text x="362" y="318" class="s">• Tool-dumping 12 logos</text>
+  <text x="362" y="334" class="s">• Going deep before the whole</text>
+  <text x="362" y="350" class="s">  picture exists</text>
+
+  <rect x="585" y="134" width="320" height="250" rx="8" class="box"/>
+  <text x="597" y="156" class="k">Pick the riskiest parts. Usual suspects:</text>
+  <text x="597" y="178" class="s">• Partitioning &amp; skew (keys, hot partitions)</text>
+  <text x="597" y="196" class="s">• Exactly-once / dedup / idempotent writes</text>
+  <text x="597" y="214" class="s">• Late data: watermarks, reprocessing, backfill</text>
+  <text x="597" y="232" class="s">• State size &amp; windowing in streaming</text>
+  <text x="597" y="250" class="s">• Storage layout: file sizes, clustering, compaction</text>
+  <text x="597" y="268" class="s">• Data model: grain, SCD2, conformed dims</text>
+  <text x="597" y="286" class="s">• Serving: OLAP store vs lakehouse vs cache</text>
+  <text x="597" y="304" class="s">• Schema evolution &amp; data contracts</text>
+  <text x="597" y="322" class="s">• Governance: PII, GDPR deletes, ACLs</text>
+  <text x="597" y="352" class="s" style="font-style:italic">For each: options → choice → why → what it costs.</text>
+  <text x="597" y="368" class="s" style="font-style:italic">Code or config snippets earn credibility.</text>
+
+  <rect x="910" y="134" width="140" height="250" rx="8" class="box"/>
+  <text x="922" y="156" class="k">What breaks?</text>
+  <text x="922" y="174" class="s">• Node / job crash</text>
+  <text x="922" y="190" class="s">• Upstream schema</text>
+  <text x="922" y="206" class="s">  change</text>
+  <text x="922" y="222" class="s">• 10× traffic spike</text>
+  <text x="922" y="238" class="s">• Bad data shipped</text>
+  <text x="922" y="254" class="s">• Region outage</text>
+  <text x="922" y="276" class="k">Then</text>
+  <text x="922" y="294" class="s">• Detect (metrics,</text>
+  <text x="922" y="310" class="s">  alerts, SLOs)</text>
+  <text x="922" y="326" class="s">• Recover (replay,</text>
+  <text x="922" y="342" class="s">  backfill, DLQ)</text>
+
+  <rect x="1055" y="134" width="115" height="250" rx="8" class="box"/>
+  <text x="1065" y="156" class="k">Close strong</text>
+  <text x="1065" y="174" class="s">• 30-sec recap</text>
+  <text x="1065" y="190" class="s">• Cost drivers</text>
+  <text x="1065" y="206" class="s">• v2: what you’d</text>
+  <text x="1065" y="222" class="s">  add at 10× scale</text>
+  <text x="1065" y="238" class="s">• Open risks</text>
+  <text x="1065" y="270" class="s" style="font-style:italic">Senior signal:</text>
+  <text x="1065" y="286" class="s" style="font-style:italic">you name your</text>
+  <text x="1065" y="302" class="s" style="font-style:italic">own design’s</text>
+  <text x="1065" y="318" class="s" style="font-style:italic">weak spots.</text>
+
+  <!-- skeleton -->
+  <text x="30" y="420" style="font-size:16px;font-weight:800;fill:#0f172a">Reusable skeleton: almost every data system design is a variation of this</text>
+  <g>
+    <rect x="30" y="440" width="135" height="80" rx="10" class="box"/><text x="44" y="466" class="k">Sources</text><text x="44" y="486" class="s">apps, DBs, devices,</text><text x="44" y="502" class="s">3rd-party APIs</text>
+    <rect x="195" y="440" width="150" height="80" rx="10" class="box" style="stroke:#0891b2"/><text x="209" y="466" class="k">Ingest / buffer</text><text x="209" y="486" class="s">Kafka · CDC · API GW</text><text x="209" y="502" class="s">decouple + replay</text>
+    <rect x="375" y="440" width="150" height="80" rx="10" class="box" style="stroke:#cd7f32"/><text x="389" y="466" class="k">Raw store</text><text x="389" y="486" class="s">bronze, immutable</text><text x="389" y="502" class="s">object storage</text>
+    <rect x="555" y="440" width="160" height="80" rx="10" class="box" style="stroke:#16a34a"/><text x="569" y="466" class="k">Process</text><text x="569" y="486" class="s">stream (Flink/SS) and/or</text><text x="569" y="502" class="s">batch (Spark/dbt)</text>
+    <rect x="745" y="440" width="160" height="80" rx="10" class="box" style="stroke:#d4a017"/><text x="759" y="466" class="k">Curated store</text><text x="759" y="486" class="s">silver/gold, models,</text><text x="759" y="502" class="s">aggregates, features</text>
+    <rect x="935" y="440" width="235" height="80" rx="10" class="box" style="stroke:#7c3aed"/><text x="949" y="466" class="k">Serve</text><text x="949" y="486" class="s">warehouse SQL · OLAP (Pinot/Druid)</text><text x="949" y="502" class="s">KV cache (Redis) · APIs · vector DB</text>
+  </g>
+  <path d="M165,480 L193,480" class="line"/>
+  <path d="M345,480 L373,480" class="line"/>
+  <path d="M525,480 L553,480" class="line"/>
+  <path d="M715,480 L743,480" class="line"/>
+  <path d="M905,480 L933,480" class="line"/>
+  <path d="M270,520 C270,560 620,560 620,522" class="line" style="stroke:#16a34a;stroke-dasharray:5 4"/>
+  <text x="380" y="572" class="s" style="fill:#15803d">hot path: stream directly for low latency</text>
+
+  <rect x="30" y="590" width="1140" height="90" rx="10" fill="#eef2ff" stroke="#c7d2fe"/>
+  <text x="46" y="614" class="k">Cross-cutting concerns: mention each in one sentence, go deep on one if asked</text>
+  <text x="46" y="638" class="t" xml:space="preserve">⏱ Orchestration (Airflow, Dagster, Workflows)   ✅ Data quality &amp; contracts   🔐 Governance (catalog, ACLs, PII, lineage)</text>
+  <text x="46" y="662" class="t" xml:space="preserve">📈 Observability (lag, freshness, volume, SLOs)   💰 Cost (storage tiers, autoscaling, spot)   🔁 Backfill &amp; reprocessing   🧪 CI/CD &amp; testing</text>
+</svg>

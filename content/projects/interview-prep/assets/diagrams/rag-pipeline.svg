@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 740" width="1200" height="740" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <marker id="arrP" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9333ea"/>
+    </marker>
+    <style>
+      .t { font-size: 13px; fill: #1e293b; }
+      .s { font-size: 11.5px; fill: #475569; }
+      .h { font-size: 14px; font-weight: 700; fill: #0f172a; }
+      .lane { font-size: 12px; font-weight: 800; letter-spacing: .08em; }
+      .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.3; }
+      .line { stroke: #475569; stroke-width: 1.6; fill: none; marker-end: url(#arr); }
+      .fb { stroke: #9333ea; stroke-width: 1.6; fill: none; stroke-dasharray: 5 4; marker-end: url(#arrP); }
+    </style>
+  </defs>
+  <rect width="1200" height="740" fill="#f8fafc"/>
+  <text x="30" y="38" style="font-size:22px;font-weight:800;fill:#0f172a">RAG as a Data Pipeline: Ingestion, Retrieval, Evaluation</text>
+  <text x="30" y="60" class="s">Most RAG quality problems are data engineering problems: stale docs, bad chunking, missing ACLs, no versioning, no evaluation.</text>
+
+  <!-- ingestion lane -->
+  <rect x="20" y="78" width="1160" height="250" rx="14" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="38" y="102" class="lane" style="fill:#1d4ed8">INGESTION · batch or streaming, incremental</text>
+
+  <rect x="38" y="120" width="140" height="190" rx="10" class="box"/>
+  <text x="52" y="144" class="h">Sources</text>
+  <text x="52" y="168" class="t">Confluence / wiki</text>
+  <text x="52" y="190" class="t">SharePoint, PDFs</text>
+  <text x="52" y="212" class="t">Tickets, chats</text>
+  <text x="52" y="234" class="t">Code, SQL repos</text>
+  <text x="52" y="256" class="t">Gold tables</text>
+  <text x="52" y="290" class="s">ACLs live here too!</text>
+
+  <rect x="205" y="120" width="150" height="90" rx="10" class="box" style="stroke:#2563eb"/>
+  <text x="219" y="144" class="h">Connectors + CDC</text>
+  <text x="219" y="164" class="s">updated_at / webhooks</text>
+  <text x="219" y="180" class="s">content hash → skip</text>
+  <text x="219" y="196" class="s">unchanged docs</text>
+
+  <rect x="380" y="120" width="150" height="90" rx="10" class="box" style="stroke:#2563eb"/>
+  <text x="394" y="144" class="h">Parse &amp; clean</text>
+  <text x="394" y="164" class="s">OCR, layout, tables</text>
+  <text x="394" y="180" class="s">strip boilerplate</text>
+  <text x="394" y="196" class="s">PII redaction</text>
+
+  <rect x="555" y="120" width="160" height="90" rx="10" class="box" style="stroke:#2563eb"/>
+  <text x="569" y="144" class="h">Chunk + metadata</text>
+  <text x="569" y="164" class="s">structure-aware, 300–800</text>
+  <text x="569" y="180" class="s">tokens, 10–20% overlap</text>
+  <text x="569" y="196" class="s">doc_id, section, acl, ver</text>
+
+  <rect x="740" y="120" width="150" height="90" rx="10" class="box" style="stroke:#2563eb"/>
+  <text x="754" y="144" class="h">Embed</text>
+  <text x="754" y="164" class="s">batched, rate-limited</text>
+  <text x="754" y="180" class="s">model + version stored</text>
+  <text x="754" y="196" class="s">retry + DLQ</text>
+
+  <rect x="915" y="115" width="250" height="60" rx="10" class="box" style="stroke:#cd7f32;stroke-width:2"/>
+  <text x="929" y="139" class="h">Chunks + vectors (Delta)</text>
+  <text x="929" y="158" class="s">source of truth; index is rebuildable</text>
+  <rect x="915" y="185" width="250" height="60" rx="10" class="box" style="stroke:#0891b2;stroke-width:2"/>
+  <text x="929" y="209" class="h">Vector index</text>
+  <text x="929" y="228" class="s">HNSW/IVF · pgvector, Chroma, Mosaic VS</text>
+
+  <path d="M178,165 L203,165" class="line"/>
+  <path d="M355,165 L378,165" class="line"/>
+  <path d="M530,165 L553,165" class="line"/>
+  <path d="M715,165 L738,165" class="line"/>
+  <path d="M890,155 L913,145" class="line"/>
+  <path d="M890,180 L913,212" class="line"/>
+  <path d="M1040,175 L1040,183" class="line"/>
+
+  <rect x="205" y="232" width="685" height="80" rx="10" fill="#ffffff" stroke="#93c5fd" stroke-dasharray="4 3"/>
+  <text x="219" y="254" class="t" style="font-weight:700">Idempotency &amp; lifecycle</text>
+  <text x="219" y="274" class="s">chunk_id = hash(doc_id, chunk_no, content) → upsert, never duplicate · deleted doc → delete its chunk_ids (tombstones)</text>
+  <text x="219" y="292" class="s">new embedding model → build index v2 in parallel, eval, then swap alias (blue/green) · never mix vectors from two models</text>
+
+  <!-- query lane -->
+  <rect x="20" y="345" width="1160" height="190" rx="14" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <text x="38" y="369" class="lane" style="fill:#15803d">QUERY · online, latency budget ≈ 1–3 s</text>
+
+  <rect x="38" y="390" width="110" height="70" rx="10" class="box"/>
+  <text x="52" y="420" class="h">User</text><text x="52" y="440" class="s">+ identity</text>
+
+  <rect x="175" y="390" width="150" height="70" rx="10" class="box" style="stroke:#16a34a"/>
+  <text x="189" y="414" class="h">Query rewrite</text>
+  <text x="189" y="434" class="s">expand, decompose,</text>
+  <text x="189" y="450" class="s">add filters</text>
+
+  <rect x="350" y="390" width="180" height="70" rx="10" class="box" style="stroke:#16a34a"/>
+  <text x="364" y="414" class="h">Hybrid retrieve (k=50)</text>
+  <text x="364" y="434" class="s">BM25 + vector, RRF merge</text>
+  <text x="364" y="450" class="s">ACL filter by user groups</text>
+
+  <rect x="555" y="390" width="150" height="70" rx="10" class="box" style="stroke:#16a34a"/>
+  <text x="569" y="414" class="h">Rerank (k=5)</text>
+  <text x="569" y="434" class="s">cross-encoder;</text>
+  <text x="569" y="450" class="s">dedupe near-dupes</text>
+
+  <rect x="730" y="390" width="160" height="70" rx="10" class="box" style="stroke:#16a34a"/>
+  <text x="744" y="414" class="h">LLM generate</text>
+  <text x="744" y="434" class="s">grounded prompt,</text>
+  <text x="744" y="450" class="s">cite chunk ids</text>
+
+  <rect x="915" y="390" width="250" height="70" rx="10" class="box" style="stroke:#16a34a"/>
+  <text x="929" y="414" class="h">Answer + citations</text>
+  <text x="929" y="434" class="s">guardrails: refuse if no</text>
+  <text x="929" y="450" class="s">relevant context found</text>
+
+  <path d="M148,425 L173,425" class="line"/>
+  <path d="M325,425 L348,425" class="line"/>
+  <path d="M530,425 L553,425" class="line"/>
+  <path d="M705,425 L728,425" class="line"/>
+  <path d="M890,425 L913,425" class="line"/>
+  <path d="M1040,247 C1040,320 440,320 440,388" class="line" style="stroke:#0891b2"/>
+  <text x="600" y="334" class="s" style="fill:#0e7490">nearest-neighbour search</text>
+
+  <rect x="175" y="478" width="990" height="44" rx="8" fill="#ffffff" stroke="#86efac" stroke-dasharray="4 3"/>
+  <text x="189" y="505" class="s">Log every request: query, retrieved chunk_ids + scores, prompt version, model, latency, tokens/cost, answer, user feedback (👍/👎) → Delta table</text>
+
+  <!-- eval lane -->
+  <rect x="20" y="552" width="1160" height="170" rx="14" fill="#faf5ff" stroke="#e9d5ff"/>
+  <text x="38" y="576" class="lane" style="fill:#7e22ce">EVALUATION &amp; OBSERVABILITY · offline + continuous</text>
+
+  <rect x="38" y="595" width="230" height="110" rx="10" class="box" style="stroke:#9333ea"/>
+  <text x="52" y="619" class="h">Golden dataset</text>
+  <text x="52" y="641" class="s">curated Q → expected answer</text>
+  <text x="52" y="659" class="s">+ relevant chunk ids;</text>
+  <text x="52" y="677" class="s">grown from 👎 production logs</text>
+
+  <rect x="295" y="595" width="270" height="110" rx="10" class="box" style="stroke:#9333ea"/>
+  <text x="309" y="619" class="h">Retrieval metrics</text>
+  <text x="309" y="641" class="s">recall@k, MRR, nDCG</text>
+  <text x="309" y="659" class="s">(did we fetch the right chunks?)</text>
+  <text x="309" y="683" class="s">latency p95 · index freshness lag</text>
+
+  <rect x="592" y="595" width="270" height="110" rx="10" class="box" style="stroke:#9333ea"/>
+  <text x="606" y="619" class="h">Generation metrics</text>
+  <text x="606" y="641" class="s">faithfulness / groundedness,</text>
+  <text x="606" y="659" class="s">answer relevance (LLM-as-judge</text>
+  <text x="606" y="677" class="s">calibrated vs human labels)</text>
+
+  <rect x="889" y="595" width="276" height="110" rx="10" class="box" style="stroke:#9333ea"/>
+  <text x="903" y="619" class="h">Gate releases in CI</text>
+  <text x="903" y="641" class="s">any change to chunking, embedding,</text>
+  <text x="903" y="659" class="s">prompt or model must not regress</text>
+  <text x="903" y="677" class="s">the eval suite → then canary</text>
+
+  <path d="M268,650 L293,650" class="line"/>
+  <path d="M565,650 L590,650" class="line"/>
+  <path d="M862,650 L887,650" class="line"/>
+  <path d="M1027,595 C1180,560 1190,320 892,290" class="fb"/>
+  <text x="1086" y="335" class="s" style="fill:#7e22ce">tune chunking /</text>
+  <text x="1086" y="349" class="s" style="fill:#7e22ce">embeddings</text>
+</svg>

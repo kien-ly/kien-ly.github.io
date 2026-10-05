@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <style>
+      .t { font-size: 13px; fill: #1e293b; }
+      .s { font-size: 11.5px; fill: #475569; }
+      .h { font-size: 14px; font-weight: 700; fill: #0f172a; }
+      .col { font-size: 12px; font-weight: 700; fill: #64748b; letter-spacing: .08em; }
+      .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.2; }
+      .line { stroke: #475569; stroke-width: 1.6; fill: none; marker-end: url(#arr); }
+      .dash { stroke: #94a3b8; stroke-width: 1.2; stroke-dasharray: 4 4; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="700" fill="#f8fafc"/>
+  <text x="30" y="38" style="font-size:22px;font-weight:800;fill:#0f172a">Lakehouse + Medallion Architecture</text>
+  <text x="30" y="60" class="s">One copy of data on open table formats; quality improves left → right; governance and storage span every layer.</text>
+
+  <!-- column labels -->
+  <text x="40" y="96" class="col">SOURCES</text>
+  <text x="222" y="96" class="col">INGESTION</text>
+  <text x="410" y="96" class="col">BRONZE</text>
+  <text x="610" y="96" class="col">SILVER</text>
+  <text x="810" y="96" class="col">GOLD</text>
+  <text x="1012" y="96" class="col">CONSUMERS</text>
+
+  <!-- sources -->
+  <g>
+    <rect x="30" y="110" width="150" height="58" rx="8" class="box"/>
+    <text x="45" y="134" class="t">OLTP databases</text><text x="45" y="152" class="s">Postgres, Oracle, MySQL</text>
+    <rect x="30" y="190" width="150" height="58" rx="8" class="box"/>
+    <text x="45" y="214" class="t">Event streams</text><text x="45" y="232" class="s">Kafka, Kinesis, Event Hub</text>
+    <rect x="30" y="270" width="150" height="58" rx="8" class="box"/>
+    <text x="45" y="294" class="t">SaaS / APIs</text><text x="45" y="312" class="s">Salesforce, Stripe, REST</text>
+    <rect x="30" y="350" width="150" height="58" rx="8" class="box"/>
+    <text x="45" y="374" class="t">Files</text><text x="45" y="392" class="s">CSV, JSON, Parquet drops</text>
+    <rect x="30" y="430" width="150" height="58" rx="8" class="box"/>
+    <text x="45" y="454" class="t">IoT / telemetry</text><text x="45" y="472" class="s">vehicles, devices, logs</text>
+  </g>
+
+  <!-- ingestion -->
+  <g>
+    <rect x="212" y="130" width="160" height="58" rx="8" class="box" style="stroke:#6366f1"/>
+    <text x="226" y="154" class="t">CDC (Debezium)</text><text x="226" y="172" class="s">log-based, ordered per key</text>
+    <rect x="212" y="215" width="160" height="58" rx="8" class="box" style="stroke:#6366f1"/>
+    <text x="226" y="239" class="t">Structured Streaming</text><text x="226" y="257" class="s">Kafka → Delta, checkpoints</text>
+    <rect x="212" y="300" width="160" height="58" rx="8" class="box" style="stroke:#6366f1"/>
+    <text x="226" y="324" class="t">Batch connectors</text><text x="226" y="342" class="s">ADF, Fivetran, Airbyte</text>
+    <rect x="212" y="385" width="160" height="58" rx="8" class="box" style="stroke:#6366f1"/>
+    <text x="226" y="409" class="t">AutoLoader</text><text x="226" y="427" class="s">incremental file discovery</text>
+  </g>
+  <path d="M180,139 L210,155" class="line"/>
+  <path d="M180,219 L210,240" class="line"/>
+  <path d="M180,299 L210,325" class="line"/>
+  <path d="M180,379 L210,410" class="line"/>
+  <path d="M180,459 L210,425" class="line"/>
+
+  <!-- bronze -->
+  <rect x="400" y="108" width="178" height="400" rx="12" fill="#fdf2e9" stroke="#cd7f32" stroke-width="2"/>
+  <text x="416" y="136" class="h" style="fill:#9a5a1c">BRONZE · raw</text>
+  <text x="416" y="164" class="t">• Append-only, as landed</text>
+  <text x="416" y="188" class="t">• Schema-on-read</text>
+  <text x="416" y="206" class="s">   _rescued_data for drift</text>
+  <text x="416" y="230" class="t">• Ingest metadata</text>
+  <text x="416" y="248" class="s">   _source, _ingested_at,</text>
+  <text x="416" y="264" class="s">   _kafka_offset, _file</text>
+  <text x="416" y="288" class="t">• Replayable source</text>
+  <text x="416" y="306" class="s">   of truth: rebuild silver</text>
+  <text x="416" y="330" class="t">• Long retention</text>
+  <text x="416" y="354" class="t">• No business logic</text>
+  <text x="416" y="470" class="s" style="font-style:italic">"Never lose data"</text>
+  <text x="416" y="488" class="s" style="font-style:italic">audience: data engineers</text>
+
+  <!-- silver -->
+  <rect x="600" y="108" width="178" height="400" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="616" y="136" class="h" style="fill:#475569">SILVER · conformed</text>
+  <text x="616" y="164" class="t">• Dedup by business key</text>
+  <text x="616" y="188" class="t">• Types, enums, timezones</text>
+  <text x="616" y="212" class="t">• MERGE upserts</text>
+  <text x="616" y="230" class="s">   SCD1 / SCD2 history</text>
+  <text x="616" y="254" class="t">• DQ expectations</text>
+  <text x="616" y="272" class="s">   bad rows → quarantine</text>
+  <text x="616" y="296" class="t">• Enterprise entities</text>
+  <text x="616" y="314" class="s">   customer, order, vehicle</text>
+  <text x="616" y="338" class="t">• PII tagged / masked</text>
+  <text x="616" y="470" class="s" style="font-style:italic">"One version of truth"</text>
+  <text x="616" y="488" class="s" style="font-style:italic">audience: DE, DS, analysts</text>
+
+  <!-- gold -->
+  <rect x="800" y="108" width="178" height="400" rx="12" fill="#fdf8e1" stroke="#d4a017" stroke-width="2"/>
+  <text x="816" y="136" class="h" style="fill:#8a6a00">GOLD · business</text>
+  <text x="816" y="164" class="t">• Star schemas / marts</text>
+  <text x="816" y="188" class="t">• Aggregates &amp; KPIs</text>
+  <text x="816" y="212" class="t">• Feature tables</text>
+  <text x="816" y="236" class="t">• Denormalized OBT</text>
+  <text x="816" y="254" class="s">   for BI performance</text>
+  <text x="816" y="278" class="t">• Metric definitions</text>
+  <text x="816" y="296" class="s">   (semantic layer)</text>
+  <text x="816" y="320" class="t">• Domain-owned</text>
+  <text x="816" y="470" class="s" style="font-style:italic">"Answer questions fast"</text>
+  <text x="816" y="488" class="s" style="font-style:italic">audience: business, apps</text>
+
+  <path d="M372,159 L398,200" class="line"/>
+  <path d="M372,244 L398,260" class="line"/>
+  <path d="M372,329 L398,320" class="line"/>
+  <path d="M372,414 L398,380" class="line"/>
+  <path d="M578,300 L598,300" class="line"/>
+  <path d="M778,300 L798,300" class="line"/>
+  <text x="560" y="528" class="s">clean · dedupe · merge</text>
+  <text x="768" y="528" class="s">model · aggregate</text>
+
+  <!-- consumers -->
+  <g>
+    <rect x="1005" y="110" width="165" height="58" rx="8" class="box" style="stroke:#16a34a"/>
+    <text x="1019" y="134" class="t">BI dashboards</text><text x="1019" y="152" class="s">Power BI, Tableau, DBSQL</text>
+    <rect x="1005" y="190" width="165" height="58" rx="8" class="box" style="stroke:#16a34a"/>
+    <text x="1019" y="214" class="t">Ad-hoc SQL</text><text x="1019" y="232" class="s">analysts, notebooks</text>
+    <rect x="1005" y="270" width="165" height="58" rx="8" class="box" style="stroke:#16a34a"/>
+    <text x="1019" y="294" class="t">ML training</text><text x="1019" y="312" class="s">feature store, MLflow</text>
+    <rect x="1005" y="350" width="165" height="58" rx="8" class="box" style="stroke:#16a34a"/>
+    <text x="1019" y="374" class="t">Reverse ETL / APIs</text><text x="1019" y="392" class="s">CRM sync, serving DBs</text>
+    <rect x="1005" y="430" width="165" height="58" rx="8" class="box" style="stroke:#16a34a"/>
+    <text x="1019" y="454" class="t">RAG / LLM apps</text><text x="1019" y="472" class="s">vector index on gold docs</text>
+  </g>
+  <path d="M978,200 L1003,139" class="line"/>
+  <path d="M978,240 L1003,219" class="line"/>
+  <path d="M978,300 L1003,299" class="line"/>
+  <path d="M978,360 L1003,379" class="line"/>
+  <path d="M978,400 L1003,459" class="line"/>
+
+  <!-- governance band -->
+  <rect x="212" y="552" width="958" height="56" rx="10" fill="#eef2ff" stroke="#6366f1" stroke-width="1.4"/>
+  <text x="228" y="576" class="h" style="fill:#3730a3">Governance · Unity Catalog / Glue / Polaris</text>
+  <text x="228" y="596" class="s">catalog.schema.table namespace · RBAC + ABAC tags · row filters &amp; column masks · lineage · audit logs · data quality monitors</text>
+
+  <!-- storage band -->
+  <rect x="212" y="622" width="958" height="56" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="1.4"/>
+  <text x="228" y="646" class="h" style="fill:#065f46">Storage · Object store (S3 / ADLS / GCS) + open table format (Delta / Iceberg / Hudi)</text>
+  <text x="228" y="666" class="s">Parquet files + transaction log → ACID, time travel, schema evolution, MERGE, compaction, clustering · compute is separate and elastic</text>
+  <path d="M30,580 L190,580" class="dash"/>
+  <text x="30" y="572" class="s">spans all layers →</text>
+</svg>

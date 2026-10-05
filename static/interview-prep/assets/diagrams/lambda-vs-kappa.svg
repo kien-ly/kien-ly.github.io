@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <marker id="arrO" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ea580c"/>
+    </marker>
+    <style>
+      .t { font-size: 13px; fill: #1e293b; }
+      .s { font-size: 11.5px; fill: #475569; }
+      .h { font-size: 17px; font-weight: 800; fill: #0f172a; }
+      .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.3; }
+      .line { stroke: #475569; stroke-width: 1.6; fill: none; marker-end: url(#arr); }
+      .rep { stroke: #ea580c; stroke-width: 1.8; fill: none; stroke-dasharray: 6 4; marker-end: url(#arrO); }
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#f8fafc"/>
+  <text x="30" y="38" style="font-size:22px;font-weight:800;fill:#0f172a">Lambda vs Kappa Architecture</text>
+  <text x="30" y="60" class="s">Lambda runs two pipelines and merges them at query time. Kappa runs one streaming pipeline and replays the log to reprocess.</text>
+
+  <!-- LAMBDA panel -->
+  <rect x="20" y="80" width="1160" height="300" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="40" y="110" class="h">LAMBDA</text>
+  <text x="120" y="110" class="s">(Nathan Marz, ~2011): batch for correctness, speed layer for freshness</text>
+
+  <rect x="40" y="195" width="120" height="60" rx="8" class="box"/>
+  <text x="56" y="221" class="t">Event sources</text><text x="56" y="239" class="s">apps, devices</text>
+
+  <!-- batch path -->
+  <rect x="210" y="130" width="170" height="60" rx="8" class="box" style="stroke:#2563eb"/>
+  <text x="224" y="155" class="t">Master dataset</text><text x="224" y="173" class="s">immutable, append-only (S3)</text>
+  <rect x="420" y="130" width="170" height="60" rx="8" class="box" style="stroke:#2563eb"/>
+  <text x="434" y="155" class="t">Batch layer</text><text x="434" y="173" class="s">Spark / Hive, every N hours</text>
+  <rect x="630" y="130" width="160" height="60" rx="8" class="box" style="stroke:#2563eb"/>
+  <text x="644" y="155" class="t">Batch views</text><text x="644" y="173" class="s">complete, hours stale</text>
+
+  <!-- speed path -->
+  <rect x="210" y="262" width="170" height="60" rx="8" class="box" style="stroke:#16a34a"/>
+  <text x="224" y="287" class="t">Message queue</text><text x="224" y="305" class="s">Kafka, short retention</text>
+  <rect x="420" y="262" width="170" height="60" rx="8" class="box" style="stroke:#16a34a"/>
+  <text x="434" y="287" class="t">Speed layer</text><text x="434" y="305" class="s">Storm / Flink, approximate</text>
+  <rect x="630" y="262" width="160" height="60" rx="8" class="box" style="stroke:#16a34a"/>
+  <text x="644" y="287" class="t">Real-time views</text><text x="644" y="305" class="s">recent window only</text>
+
+  <rect x="830" y="195" width="140" height="60" rx="8" class="box" style="stroke:#7c3aed"/>
+  <text x="844" y="221" class="t">Serving layer</text><text x="844" y="239" class="s">merge at query time</text>
+
+  <path d="M160,215 L208,165" class="line"/>
+  <path d="M160,235 L208,290" class="line"/>
+  <path d="M380,160 L418,160" class="line"/>
+  <path d="M590,160 L628,160" class="line"/>
+  <path d="M380,292 L418,292" class="line"/>
+  <path d="M590,292 L628,292" class="line"/>
+  <path d="M790,165 L828,215" class="line"/>
+  <path d="M790,292 L828,240" class="line"/>
+  <path d="M295,262 L295,192" class="line"/>
+  <text x="300" y="232" class="s">archive</text>
+
+  <rect x="995" y="125" width="170" height="240" rx="10" fill="#fef2f2" stroke="#fca5a5"/>
+  <text x="1008" y="148" class="t" style="font-weight:700;fill:#b91c1c">Trade-offs</text>
+  <text x="1008" y="172" class="s">+ Batch layer fixes</text>
+  <text x="1008" y="188" class="s">   speed-layer errors</text>
+  <text x="1008" y="208" class="s">+ Mature batch tooling</text>
+  <text x="1008" y="232" class="s">− TWO codebases for</text>
+  <text x="1008" y="248" class="s">   the same logic (drift!)</text>
+  <text x="1008" y="268" class="s">− Merge logic at query</text>
+  <text x="1008" y="288" class="s">− 2× infra + on-call</text>
+  <text x="1008" y="316" class="s" style="font-style:italic">Still common where batch</text>
+  <text x="1008" y="332" class="s" style="font-style:italic">reconciliation is mandatory</text>
+  <text x="1008" y="348" class="s" style="font-style:italic">(finance, billing)</text>
+
+  <!-- KAPPA panel -->
+  <rect x="20" y="400" width="1160" height="300" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="40" y="430" class="h">KAPPA</text>
+  <text x="112" y="430" class="s">(Jay Kreps, 2014): everything is a stream; reprocessing = replay the log</text>
+
+  <rect x="40" y="515" width="120" height="60" rx="8" class="box"/>
+  <text x="56" y="541" class="t">Event sources</text><text x="56" y="559" class="s">apps, CDC</text>
+
+  <rect x="210" y="505" width="190" height="80" rx="8" class="box" style="stroke:#0891b2;stroke-width:2"/>
+  <text x="224" y="532" class="t" style="font-weight:700">Durable log</text>
+  <text x="224" y="551" class="s">Kafka, long retention /</text>
+  <text x="224" y="567" class="s">tiered storage (or Delta)</text>
+
+  <rect x="460" y="460" width="190" height="60" rx="8" class="box" style="stroke:#16a34a"/>
+  <text x="474" y="485" class="t">Stream job v1 (live)</text><text x="474" y="503" class="s">Flink / Spark SS, stateful</text>
+  <rect x="710" y="460" width="160" height="60" rx="8" class="box" style="stroke:#16a34a"/>
+  <text x="724" y="485" class="t">Output table v1</text><text x="724" y="503" class="s">serving now</text>
+
+  <rect x="460" y="590" width="190" height="60" rx="8" class="box" style="stroke:#ea580c"/>
+  <text x="474" y="615" class="t">Stream job v2 (new logic)</text><text x="474" y="633" class="s">replays from offset 0</text>
+  <rect x="710" y="590" width="160" height="60" rx="8" class="box" style="stroke:#ea580c"/>
+  <text x="724" y="615" class="t">Output table v2</text><text x="724" y="633" class="s">catching up</text>
+
+  <rect x="910" y="525" width="70" height="40" rx="8" class="box" style="stroke:#7c3aed"/>
+  <text x="922" y="550" class="t">Apps</text>
+
+  <path d="M160,545 L208,545" class="line"/>
+  <path d="M400,530 L458,492" class="line"/>
+  <path d="M400,565 L458,617" class="rep"/>
+  <path d="M650,490 L708,490" class="line"/>
+  <path d="M650,620 L708,620" class="rep"/>
+  <path d="M870,495 L908,535" class="line"/>
+  <path d="M870,615 L908,555" class="rep"/>
+  <text x="880" y="672" class="s" style="fill:#c2410c">swap when</text>
+  <text x="880" y="686" class="s" style="fill:#c2410c">caught up</text>
+
+  <rect x="995" y="445" width="170" height="240" rx="10" fill="#f0fdf4" stroke="#86efac"/>
+  <text x="1008" y="468" class="t" style="font-weight:700;fill:#15803d">Trade-offs</text>
+  <text x="1008" y="492" class="s">+ ONE codebase</text>
+  <text x="1008" y="512" class="s">+ Lower latency end to end</text>
+  <text x="1008" y="532" class="s">+ Reprocess = redeploy</text>
+  <text x="1008" y="556" class="s">− Needs long log retention</text>
+  <text x="1008" y="576" class="s">− Replay of years is slow</text>
+  <text x="1008" y="592" class="s">   and costly</text>
+  <text x="1008" y="612" class="s">− Stateful ops are harder</text>
+  <text x="1008" y="640" class="s" style="font-style:italic">Lakehouse variant: Delta</text>
+  <text x="1008" y="656" class="s" style="font-style:italic">tables ARE the log; the same</text>
+  <text x="1008" y="672" class="s" style="font-style:italic">code runs as batch or stream</text>
+</svg>

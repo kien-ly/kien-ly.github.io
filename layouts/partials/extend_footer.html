@@ -175,3 +175,22 @@
         });
     })();
 </script>
+
+{{/* Mermaid diagram support */}}
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var mermaidCodeBlocks = document.querySelectorAll("pre code.language-mermaid, pre code[data-lang='mermaid']");
+        if (mermaidCodeBlocks.length > 0) {
+            mermaid.initialize({ startOnLoad: false, theme: 'default' });
+            mermaidCodeBlocks.forEach(function (code) {
+                var pre = code.closest("pre");
+                var div = document.createElement("div");
+                div.className = "mermaid";
+                div.textContent = code.textContent;
+                pre.parentNode.replaceChild(div, pre);
+            });
+            mermaid.run();
+        }
+    });
+</script>
