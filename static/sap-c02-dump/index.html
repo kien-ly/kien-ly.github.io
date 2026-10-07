@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>SAP-C02 · Góc luyện tập</title>
+  <link rel="stylesheet" href="quiz.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="masthead"><div class="brand"><span class="brand-mark" aria-hidden="true">S</span><span>GÓC LUYỆN TẬP <span class="brand-sub">AWS SOLUTIONS ARCHITECT PROFESSIONAL</span></span></div><button id="lock" class="quiet" hidden>Khóa trang</button></header>
+    <section id="gate" class="gate">
+      <div class="eyebrow">KHÔNG GIAN CÁ NHÂN</div>
+      <h1>Sẵn sàng cho<br><span>SAP-C02.</span></h1>
+      <p class="intro">Một câu hỏi mỗi lần. Chọn đáp án, xem kết quả và tiếp tục luyện tập theo nhịp của bạn.</p>
+      <form id="unlock-form" class="unlock-form">
+        <label for="password">Mật khẩu truy cập</label>
+        <div class="password-row"><input id="password" type="password" autocomplete="current-password" required placeholder="Nhập mật khẩu của bạn"><button id="unlock" class="primary" type="submit">Mở bộ câu hỏi <span aria-hidden="true">→</span></button></div>
+        <p id="gate-message" class="message" role="status" aria-live="polite"></p>
+      </form>
+      <p class="footnote">Phiên luyện tập chỉ lưu trong tab hiện tại. Tải lại trang sẽ cần nhập mật khẩu.</p>
+      <noscript>Hãy bật JavaScript để mở bộ câu hỏi.</noscript>
+    </section>
+    <section id="workspace" hidden>
+      <div class="heading-row"><div><div class="eyebrow">LUYỆN TẬP TỪNG CÂU</div><h1>SAP-C02</h1><p class="subtitle">Solutions Architect · Professional</p></div><div class="scoreboard" aria-live="polite"><div><strong id="completed">0</strong><span>đã trả lời</span></div><div><strong id="score">—</strong><span>đúng / đã chấm</span></div></div></div>
+      <div class="toolbar"><label for="jump">Đến câu <select id="jump" aria-label="Đi đến câu hỏi"></select></label><label for="filter">Hiển thị <select id="filter"><option value="all">Tất cả câu hỏi</option><option value="unanswered">Chưa trả lời</option><option value="incorrect">Đã trả lời sai</option><option value="marked">Đã đánh dấu</option></select></label><button id="shuffle" class="quiet">Trộn thứ tự</button></div>
+      <div class="progress-track" aria-hidden="true"><div id="progress"></div></div>
+      <article id="question-card" class="card">
+        <div class="card-heading"><span id="position" class="eyebrow"></span><button id="mark" class="quiet" aria-pressed="false">☆ Đánh dấu</button></div>
+        <p id="source-warning" class="source-warning" hidden>Nguồn có đáp án thiếu hoặc lựa chọn chưa đầy đủ. Câu này không tính điểm; đáp án chỉ dùng để tham khảo.</p>
+        <h2 id="prompt" lang="en"></h2>
+        <p id="selection-hint" class="selection-hint"></p>
+        <fieldset id="options" aria-describedby="selection-hint"><legend class="sr-only">Chọn đáp án</legend></fieldset>
+        <div id="feedback" class="feedback" role="status" aria-live="polite" hidden></div>
+        <div class="card-bottom"><button id="reveal" class="quiet">Xem đáp án nguồn</button><button id="retry" class="quiet" hidden>Thử lại câu này</button></div>
+      </article>
+      <div id="empty" class="card empty" hidden>Chưa có câu hỏi trong nhóm này. Chọn “Tất cả câu hỏi” để tiếp tục.</div>
+      <nav class="question-nav" aria-label="Điều hướng câu hỏi"><button id="previous" class="quiet">← Câu trước</button><span id="total" class="muted"></span><button id="next" class="primary">Câu tiếp theo →</button></nav>
+      <p class="footnote">Đáp án được giữ theo tài liệu gốc và chưa được kiểm chứng. Với câu nhiều đáp án, kết quả hiện sau khi chọn đủ số lượng.</p>
+    </section>
+    <footer>SAP-C02 <span>Học từng chút, tiến từng bước.</span></footer>
+  </main>
+</body>
+</html>
