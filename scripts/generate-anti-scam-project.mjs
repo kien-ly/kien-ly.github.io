@@ -51,7 +51,7 @@ Khóa học được thiết kế theo lộ trình chuẩn hóa gồm 4 Section 
 - **Bài Test:** [Trắc nghiệm Đánh giá Năng lực Section 2 (20 câu)](/projects/anti-scam/section-2/quiz/)
 
 ### 💸 [Section 3: Lừa Đảo Tài Chính, Tiền Ảo & Tuyển Dụng Teen](/projects/anti-scam/section-3/)
-- **Bài 3.1:** [Bẫy Tuyển dụng "Việc nhẹ Lương cao" & Cộng tác viên Giật đơn hàng](/projects/anti-scam/section-3/01-tuyen-dung-viec-nhe-luong-cao/)
+- **Bài 3.1:** [Bẫy Tuyển dụng 'Việc nhẹ Lương cao' & Cộng tác viên Giật đơn hàng](/projects/anti-scam/section-3/01-tuyen-dung-viec-nhe-luong-cao/)
 - **Bài 3.2:** [Hiểm họa Cho thuê, Mua bán Tài khoản Ngân hàng & Rủi ro Pháp lý](/projects/anti-scam/section-3/02-cho-thue-tai-khoan-ngan-hang/)
 - **Bài 3.3:** [Bẫy App Tín dụng Đen & Đa cấp Tiền ảo Học đường](/projects/anti-scam/section-3/03-tin-dung-den-tien-ao/)
 - **Bài Test:** [Trắc nghiệm Đánh giá Năng lực Section 3 (20 câu)](/projects/anti-scam/section-3/quiz/)
@@ -355,11 +355,11 @@ Nếu bạn nhận được cuộc gọi video khẩn cấp từ bạn bè xin t
     lessons: [
       {
         slug: '01-tuyen-dung-viec-nhe-luong-cao',
-        title: 'Bài 3.1: Bẫy Tuyển Dụng "Việc Nhẹ Lương Cao" & Cộng Tác Viên Giật Đơn',
+        title: "Bài 3.1: Bẫy Tuyển Dụng 'Việc Nhẹ Lương Cao' & Cộng Tác Viên Giật Đơn",
         description: 'Giải mã chiêu trò lừa nạp tiền giật đơn hàng Shopee/Tiki và bẫy tuyển mẫu ảnh nhí học sinh.',
         weight: 1,
         content: `
-# Bài 3.1: Bẫy Tuyển Dụng "Việc Nhẹ Lương Cao" & Cộng Tác Viên Giật Đơn
+# Bài 3.1: Bẫy Tuyển Dụng 'Việc Nhẹ Lương Cao' & Cộng Tác Viên Giật Đơn
 
 > **Mục tiêu:** Nhận diện các bẫy tuyển dụng việc làm thêm trá hình nhắm vào học sinh, sinh viên thiếu kinh nghiệm.
 
@@ -602,8 +602,8 @@ Sau khi hoàn thành tất cả các bài học lý thuyết trên, học viên 
   // Lessons
   secConfig.lessons.forEach(lesson => {
     const lessonFrontmatter = `---
-title: "${lesson.title}"
-description: "${lesson.description}"
+title: ${JSON.stringify(lesson.title)}
+description: ${JSON.stringify(lesson.description)}
 url: "/projects/anti-scam/${secConfig.folder}/${lesson.slug}/"
 weight: ${lesson.weight}
 showToc: true
@@ -617,8 +617,8 @@ TocOpen: true
   // Quiz page for this section
   const sectionQuestions = courseData.sections.find(s => s.id === secConfig.secId)?.questions || [];
   let quizMd = `---
-title: "Bài Kiểm Tra Trắc Nghiệm: ${secConfig.secTitle} (20 Câu)"
-description: "Bài test trắc nghiệm 20 câu hỏi tình huống thực tế cho ${secConfig.secTitle}. Điểm đạt yêu cầu: 16/20 (80%)."
+title: ${JSON.stringify(`Bài Kiểm Tra Trắc Nghiệm: ${secConfig.secTitle} (20 Câu)`)}
+description: ${JSON.stringify(`Bài test trắc nghiệm 20 câu hỏi tình huống thực tế cho ${secConfig.secTitle}. Điểm đạt yêu cầu: 16/20 (80%).`)}
 url: "/projects/anti-scam/${secConfig.folder}/quiz/"
 weight: 99
 showToc: true

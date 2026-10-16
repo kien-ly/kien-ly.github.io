@@ -1,5 +1,5 @@
 ---
-title: "Bài 3.1: Bẫy Tuyển Dụng "Việc Nhẹ Lương Cao" & Cộng Tác Viên Giật Đơn"
+title: "Bài 3.1: Bẫy Tuyển Dụng 'Việc Nhẹ Lương Cao' & Cộng Tác Viên Giật Đơn"
 description: "Giải mã chiêu trò lừa nạp tiền giật đơn hàng Shopee/Tiki và bẫy tuyển mẫu ảnh nhí học sinh."
 url: "/projects/anti-scam/section-3/01-tuyen-dung-viec-nhe-luong-cao/"
 weight: 1
@@ -7,7 +7,7 @@ showToc: true
 TocOpen: true
 ---
 
-# Bài 3.1: Bẫy Tuyển Dụng "Việc Nhẹ Lương Cao" & Cộng Tác Viên Giật Đơn
+# Bài 3.1: Bẫy Tuyển Dụng 'Việc Nhẹ Lương Cao' & Cộng Tác Viên Giật Đơn
 
 > **Mục tiêu:** Nhận diện các bẫy tuyển dụng việc làm thêm trá hình nhắm vào học sinh, sinh viên thiếu kinh nghiệm.
 

@@ -35,7 +35,7 @@ Khóa học được thiết kế theo lộ trình chuẩn hóa gồm 4 Section 
 - **Bài Test:** [Trắc nghiệm Đánh giá Năng lực Section 2 (20 câu)](/projects/anti-scam/section-2/quiz/)
 
 ### 💸 [Section 3: Lừa Đảo Tài Chính, Tiền Ảo & Tuyển Dụng Teen](/projects/anti-scam/section-3/)
-- **Bài 3.1:** [Bẫy Tuyển dụng "Việc nhẹ Lương cao" & Cộng tác viên Giật đơn hàng](/projects/anti-scam/section-3/01-tuyen-dung-viec-nhe-luong-cao/)
+- **Bài 3.1:** [Bẫy Tuyển dụng 'Việc nhẹ Lương cao' & Cộng tác viên Giật đơn hàng](/projects/anti-scam/section-3/01-tuyen-dung-viec-nhe-luong-cao/)
 - **Bài 3.2:** [Hiểm họa Cho thuê, Mua bán Tài khoản Ngân hàng & Rủi ro Pháp lý](/projects/anti-scam/section-3/02-cho-thue-tai-khoan-ngan-hang/)
 - **Bài 3.3:** [Bẫy App Tín dụng Đen & Đa cấp Tiền ảo Học đường](/projects/anti-scam/section-3/03-tin-dung-den-tien-ao/)
 - **Bài Test:** [Trắc nghiệm Đánh giá Năng lực Section 3 (20 câu)](/projects/anti-scam/section-3/quiz/)
