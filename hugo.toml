@@ -130,12 +130,6 @@ buildExpired = false
     weight = 50
 
   [[menu.main]]
-    identifier = "antiscam"
-    name = "Anti-Scam"
-    url = "/anti-scam/"
-    weight = 55
-
-  [[menu.main]]
     identifier = "search"
     name = "Search"
     url = "/search/"
