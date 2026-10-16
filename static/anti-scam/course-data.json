@@ -1,0 +1,1884 @@
+{
+  "courseTitle": "Kỹ năng Phòng chống Lừa đảo Trực tuyến cho Thanh thiếu niên",
+  "targetAudience": "Học sinh, sinh viên, thanh thiếu niên (Gen Z)",
+  "passingScore": 80,
+  "totalSections": 4,
+  "sections": [
+    {
+      "id": 1,
+      "title": "Nhận thức số & Bản đồ chiêu trò lừa đảo trực tuyến",
+      "shortTitle": "Nhận thức số & Dấu hiệu đỏ",
+      "icon": "🛡️",
+      "contentMarkdown": "NHẬN THỨC SỐ & BẢN ĐỒ CHIÊU TRÒ LỪA ĐẢO TRỰC TUYẾN\n\n### 1.1. Mục tiêu bài học\n* Hiểu tâm lý học của kẻ lừa đảo: Nỗi sợ hãi (Fear), Lòng tham/cám dỗ quà tặng (Greed), Tính tò mò (Curiosity), Sự khẩn cấp giả tạo (Urgency).\n* Nhận diện các \"Red Flags\" (Dấu hiệu cảnh báo đỏ) phổ biến trong tin nhắn, email và liên kết web.\n* Phân biệt tin nhắn chính thống và tin lừa đảo giả mạo (Phishing, Smishing).\n\n### 1.2. Nội dung chi tiết\n1. **Bài 1: Giải mã tâm lý kẻ lừa đảo trực tuyến**\n   * Đánh vào sự thiếu kinh nghiệm của Gen Z và học sinh, sinh viên.\n   * Kỹ thuật thao túng tâm lý xã hội (Social Engineering).\n2. **Bài 2: Các dấu hiệu cảnh báo kinh điển (Red Flags)**\n   * Yêu cầu hành động gấp gáp: *\"Khóa tài khoản trong 24h nếu không bấm vào link\"*, *\"Trúng thưởng chỉ còn 5 phút\"*.\n   * Lỗi ngữ pháp, xưng hô kỳ lạ, địa chỉ gửi/tên miền mập mờ (VD: `vietcombank-login.xyz`, `facebook-security-check.cfd`).\n   * Yêu cầu thông tin nhạy cảm: Mật khẩu, mã OTP, số CCCD/CMND.\n3. **Bài 3: Nhận diện chiêu trò Giả mạo (Phishing / Brand Spoofing)**\n   * Giả mạo trường học, giáo viên, ban quản trị trường yêu cầu đóng học phí qua STK cá nhân.\n   * Giả danh cơ quan công an, tòa án, shipper dọa kiện tụng hoặc thu hồi gói hàng cấm.\n4. **Tài liệu tham khảo & Đọc thêm:**\n   * Cẩm nang Nhận diện và Phòng chống Lừa đảo trực tuyến (Cục An toàn thông tin - Bộ TT&TT).\n   * Dự án Chống Lừa Đảo ([chongluadao.vn](https://chongluadao.vn)).",
+      "questions": [
+        {
+          "id": 1,
+          "prompt": "Kẻ lừa đảo thường dựa vào yếu tố nào để thao túng nạn nhân?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Sự am hiểu công nghệ của nạn nhân"
+            },
+            {
+              "key": "B",
+              "text": "Thao túng cảm xúc (sợ hãi, tham lam, tò mò, tạo cảm giác khẩn cấp) **"
+            },
+            {
+              "key": "C",
+              "text": "Khả năng lập trình siêu việt"
+            },
+            {
+              "key": "D",
+              "text": "Các lỗ hổng phần cứng máy tính"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 2,
+          "prompt": "Bạn nhận được SMS: \"Nha truong thong bao: Hoc sinh chua nop hoc phi ky 2, bam http://tranghocphi-edu.xyz de nop ngay neu khong se bi buoc thoi hoc\". Đây là dấu hiệu gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Thông báo chính thức của nhà trường"
+            },
+            {
+              "key": "B",
+              "text": "Lừa đảo Phishing kết hợp tạo sự hoảng loạn **"
+            },
+            {
+              "key": "C",
+              "text": "Lỗi kỹ thuật của tổng đài"
+            },
+            {
+              "key": "D",
+              "text": "Cần chuyển khoản ngay để tránh bị đuổi học"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 3,
+          "prompt": "Tên miền nào dưới đây có độ tin cậy cao nhất của một cơ quan nhà nước Việt Nam?",
+          "options": [
+            {
+              "key": "A",
+              "text": "`congan-thanhpho.gov.vn` **"
+            },
+            {
+              "key": "B",
+              "text": "`conganvn-ho-tro.com`"
+            },
+            {
+              "key": "C",
+              "text": "`chinhphu.net`"
+            },
+            {
+              "key": "D",
+              "text": "`kiemtrataikhoan-gov.top`"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 4,
+          "prompt": "Kỹ thuật \"Social Engineering\" (Thao túng tâm lý) là gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Cài virus vào máy nạn nhân qua cổng USB"
+            },
+            {
+              "key": "B",
+              "text": "Lừa nạn nhân tự nguyện giao nộp thông tin bí mật thông qua tương tác tâm lý **"
+            },
+            {
+              "key": "C",
+              "text": "Bẻ khóa mật khẩu bằng máy chủ cấu hình khủng"
+            },
+            {
+              "key": "D",
+              "text": "Tấn công từ chối dịch vụ (DDoS)"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 5,
+          "prompt": "Dấu hiệu nào KHÔNG PHẢI là dấu hiệu lừa đảo?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Yêu cầu gửi mã OTP để \"xác minh không phải robot\""
+            },
+            {
+              "key": "B",
+              "text": "Thông báo trúng iPhone 16 khi đang lướt web dù không tham gia quay thưởng"
+            },
+            {
+              "key": "C",
+              "text": "Thông báo từ website ngân hàng chính thức với tên miền chuẩn HTTPS và đúng domain đã công bố **"
+            },
+            {
+              "key": "D",
+              "text": "Thúc ép \"bạn chỉ có 3 phút để chuyển tiền giữ chỗ\""
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 6,
+          "prompt": "Mã xác thực OTP (One Time Password) dùng để làm gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Dùng để chia sẻ cho nhân viên ngân hàng/CSKH khi họ gọi điện hỗ trợ"
+            },
+            {
+              "key": "B",
+              "text": "Là mật khẩu dùng một lần để xác nhận giao dịch quan trọng và TUYỆT ĐỐI không chia sẻ cho bất kỳ ai **"
+            },
+            {
+              "key": "C",
+              "text": "Là mật khẩu công khai để bạn bè chuyển tiền hộ"
+            },
+            {
+              "key": "D",
+              "text": "Mã coupon giảm giá shopee"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 7,
+          "prompt": "Kẻ gian thường dùng link rút gọn (bit.ly, tinyurl,...) nhằm mục đích gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Tăng tốc độ tải trang"
+            },
+            {
+              "key": "B",
+              "text": "Ẩn giấu tên miền lừa đảo độc hại đằng sau **"
+            },
+            {
+              "key": "C",
+              "text": "Tiết kiệm dung lượng mạng 4G"
+            },
+            {
+              "key": "D",
+              "text": "Giúp link hiển thị đẹp hơn trên Instagram"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 8,
+          "prompt": "Bạn nhận được cuộc gọi: \"Tôi là Đại úy công an, tài khoản của bạn liên quan đến vụ án ma túy/rửa tiền, yêu cầu chuyển tiền vào tài khoản tạm giữ để thanh tra\". Bạn nên làm gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Làm theo lời họ ngay vì sợ bị bắt"
+            },
+            {
+              "key": "B",
+              "text": "Tắt máy ngay lập tức vì công an không làm việc qua điện thoại và không bao giờ yêu cầu chuyển tiền **"
+            },
+            {
+              "key": "C",
+              "text": "Xin số tài khoản để vay tiền bạn bè nộp"
+            },
+            {
+              "key": "D",
+              "text": "Cung cấp mã OTP ngân hàng để họ kiểm tra"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 9,
+          "prompt": "Ký hiệu ổ khóa trên thanh địa chỉ trình duyệt web (HTTPS) có nghĩa là gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Trang web này hoàn toàn an toàn và 100% không phải lừa đảo"
+            },
+            {
+              "key": "B",
+              "text": "Dữ liệu truyền giữa máy bạn và web được mã hóa, nhưng trang web đó VẪN CÓ THỂ là web lừa đảo **"
+            },
+            {
+              "key": "C",
+              "text": "Trang web đã được chứng nhận bởi Bộ Công An"
+            },
+            {
+              "key": "D",
+              "text": "Máy tính của bạn không thể bị nhiễm virus"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 10,
+          "prompt": "Khi nhận một đường link lạ từ người lạ gửi qua Messenger, hành động an toàn nhất là:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Nhấp vào xem ngay vì tính tò mò"
+            },
+            {
+              "key": "B",
+              "text": "Không nhấp vào, kiểm tra URL qua trang web kiểm tra an toàn hoặc hỏi người có chuyên môn **"
+            },
+            {
+              "key": "C",
+              "text": "Chuyển tiếp ngay link đó cho tất cả bạn bè trong lớp"
+            },
+            {
+              "key": "D",
+              "text": "Nhấp vào và tải file đính kèm về mở"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 11,
+          "prompt": "Dấu hiệu ngữ pháp nào thường xuất hiện trong email/tin nhắn lừa đảo quốc tế gửi về Việt Nam?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Sử dụng từ ngữ địa phương chuẩn mực"
+            },
+            {
+              "key": "B",
+              "text": "Lỗi dịch máy ngô nghê, xưng hô cộc lốc hoặc dùng sai từ ngữ phổ thông **"
+            },
+            {
+              "key": "C",
+              "text": "Thơ lục bát"
+            },
+            {
+              "key": "D",
+              "text": "Viết bằng tiếng Anh chuẩn Oxford"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 12,
+          "prompt": "Chiêu trò \"Smishing\" là hình thức lừa đảo qua phương tiện nào?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Tin nhắn SMS **"
+            },
+            {
+              "key": "B",
+              "text": "Email"
+            },
+            {
+              "key": "C",
+              "text": "Cuộc gọi thoại trực tiếp"
+            },
+            {
+              "key": "D",
+              "text": "Thư tay qua bưu điện"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 13,
+          "prompt": "Nếu một người quen nhắn tin hỏi vay tiền khẩn cấp qua Facebook/Zalo, bạn nên làm gì trước tiên?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Chuyển tiền ngay vì tình bạn bè thân thiết"
+            },
+            {
+              "key": "B",
+              "text": "Gọi điện thoại trực tiếp bằng SIM hoặc gặp mặt để xác thực giọng nói và danh tính người đó **"
+            },
+            {
+              "key": "C",
+              "text": "Nhắn lại hỏi số tài khoản và chuyển luôn"
+            },
+            {
+              "key": "D",
+              "text": "Block luôn người bạn đó"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 14,
+          "prompt": "Kẻ lừa đảo thường tạo bẫy \"Fear of Missing Out\" (FOMO) bằng cách nào?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Đăng tải danh sách học sinh giỏi"
+            },
+            {
+              "key": "B",
+              "text": "Tạo ưu đãi hời hiếm có nhưng giới hạn thời gian cực ngắn để nạn nhân không kịp suy nghĩ suy xét **"
+            },
+            {
+              "key": "C",
+              "text": "Gửi bài tập về nhà"
+            },
+            {
+              "key": "D",
+              "text": "Nhắc nhở đi ngủ sớm"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 15,
+          "prompt": "Hành vi nào sau đây có nguy cơ để lộ thông tin nhận diện cá nhân (PII)?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Đăng ảnh thẻ học sinh, CCCD, vé máy bay/vé concert rõ mã vạch lên Facebook/TikTok **"
+            },
+            {
+              "key": "B",
+              "text": "Đổi mật khẩu định kỳ"
+            },
+            {
+              "key": "C",
+              "text": "Dùng tên biệt danh trên mạng xã hội"
+            },
+            {
+              "key": "D",
+              "text": "Bật tính năng xác thực 2 yếu tố"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 16,
+          "prompt": "Tên miền nào sau đây là tên miền giả mạo (Typosquatting) của Google?",
+          "options": [
+            {
+              "key": "A",
+              "text": "`google.com`"
+            },
+            {
+              "key": "B",
+              "text": "`g00gle.com` **"
+            },
+            {
+              "key": "C",
+              "text": "`mail.google.com`"
+            },
+            {
+              "key": "D",
+              "text": "`accounts.google.com`"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 17,
+          "prompt": "Tại sao thanh thiếu niên lại là đối tượng mục tiêu béo bở của tội phạm mạng?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Vì các bạn có nhiều tiền tiết kiệm hàng tỷ đồng"
+            },
+            {
+              "key": "B",
+              "text": "Vì tần suất online cao nhưng còn thiếu kinh nghiệm cảnh giác thực tế và tò mò khám phá **"
+            },
+            {
+              "key": "C",
+              "text": "Vì tất cả thanh thiếu niên đều không biết dùng điện thoại"
+            },
+            {
+              "key": "D",
+              "text": "Vì pháp luật không bảo vệ người dưới 18 tuổi"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 18,
+          "prompt": "Dự án an ninh mạng cộng đồng nổi tiếng tại Việt Nam giúp cảnh báo và tra cứu website lừa đảo là:",
+          "options": [
+            {
+              "key": "A",
+              "text": "chongluadao.vn **"
+            },
+            {
+              "key": "B",
+              "text": "xemfilm.online"
+            },
+            {
+              "key": "C",
+              "text": "napthegiare.com"
+            },
+            {
+              "key": "D",
+              "text": "kiemtiendo.biz"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 19,
+          "prompt": "Một tin nhắn thông báo: \"Bạn đã trúng thưởng xe máy SH trong sự kiện tri ân của TikTok, chuyển 2 triệu phí ship để nhận giải\". Bạn kết luận gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "May mắn thật, phải vay tiền nộp phí ngay"
+            },
+            {
+              "key": "B",
+              "text": "Lừa đảo trúng thưởng điển hình, giải thưởng hợp pháp không bắt người nhận trả phí trước kiểu này **"
+            },
+            {
+              "key": "C",
+              "text": "TikTok thực sự tặng quà cho mọi tài khoản"
+            },
+            {
+              "key": "D",
+              "text": "Phải rủ bạn bè nhận cùng"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 20,
+          "prompt": "Nguyên tắc \"Zero Trust\" cơ bản trên không gian mạng có nghĩa là gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Không tin tưởng bất kỳ thứ gì trên mạng, luôn kiểm chứng trước khi click hay chia sẻ thông tin **"
+            },
+            {
+              "key": "B",
+              "text": "Tin tưởng hoàn toàn vào tin nhắn của bạn bè trên mạng"
+            },
+            {
+              "key": "C",
+              "text": "Không bao giờ dùng mạng internet nữa"
+            },
+            {
+              "key": "D",
+              "text": "Chỉ tin vào những trang có nhiều người theo dõi"
+            }
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Bẫy Mạng Xã Hội, Game Online & Công nghệ Deepfake AI",
+      "shortTitle": "Bẫy MXH, Game & Deepfake",
+      "icon": "🎮",
+      "contentMarkdown": "BẪY MẠNG XÃ HỘI, GAME ONLINE & CÔNG NGHỆ DEEPFAKE AI\n\n### 2.1. Mục tiêu bài học\n* Nhận diện các bẫy lừa đảo thường gặp trong cộng đồng game thủ trẻ tuổi: Mua bán account, nạp thẻ giá rẻ, hack skin/mod game.\n* Hiểu cách thức hoạt động của Deepfake (hình ảnh, video, giả giọng nói người thân) và cách vạch trần kẻ mạo danh.\n* Phòng chống bẫy tống tiền tình dục (Sextortion), lừa đảo hẹn hò ảo (Romance Scam / Pig Butchering).\n\n### 2.2. Nội dung chi tiết\n1. **Bài 1: Bẫy Game Online & Thế giới ảo**\n   * Lừa đảo mua bán tài khoản (Valorant, Liên Quân, Free Fire, Roblox, Genshin Impact...).\n   * Phần mềm độc hại đội lốt \"Tool Hack Game / Bản mod nhận Robux miễn phí\".\n   * Các trang nạp quân huy/kim cương chiết khấu 70-90% thực chất là bẫy đánh cắp tài khoản mạng xã hội.\n2. **Bài 2: Trí tuệ nhân tạo (AI) & Kỷ nguyên Deepfake**\n   * Giả lập video call khuôn mặt người thân giật lag, tiếng nói đứt quãng xin tiền gấp vì tai nạn, cấp cứu.\n   * Cách lật tẩy video call Deepfake: Yêu cầu giơ tay vẫy trước mặt, quay góc nghiêng 90 độ, hỏi chi tiết kỷ niệm riêng tư chỉ 2 người biết.\n3. **Bài 3: Cạm bẫy Tình cảm & Tống tiền hình ảnh nhạy cảm (Sextortion)**\n   * Kẻ xấu giả vờ kết bạn, thả thính, dụ dỗ gửi ảnh/video nhạy cảm (nudes) rồi tống tiền, đe dọa gửi cho phụ huynh, bạn học.\n   * Bẫy \"Pig butchering\" (Mổ heo): Nuôi dưỡng niềm tin tình cảm sau đó rủ rê đầu tư sàn tiền ảo.\n4. **Tài liệu tham khảo & Đọc thêm:**\n   * Hướng dẫn An toàn Trực tuyến cho Giới trẻ của UNICEF & DQ Institute.\n   * Báo cáo về Sextortion nhắm vào trẻ vị thành niên của NCMEC (National Center for Missing & Exploited Children).",
+      "questions": [
+        {
+          "id": 1,
+          "prompt": "Bạn thấy quảng cáo: \"Tải app hack 999.999 Quân Huy miễn phí, không bị khóa acc\". Tải về và cài đặt file `.apk` / `.exe` này sẽ dẫn đến kết quả gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Nhận được full tướng và skin"
+            },
+            {
+              "key": "B",
+              "text": "Máy bị nhiễm mã độc trojan/keylogger, mất tài khoản game và Facebook **"
+            },
+            {
+              "key": "C",
+              "text": "Được nhà phát hành game khen ngợi"
+            },
+            {
+              "key": "D",
+              "text": "Không có chuyện gì xảy ra"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 2,
+          "prompt": "Tại sao các web nạp thẻ game lậu lại yêu cầu nhập tài khoản Facebook/Google và mật khẩu?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Để đồng bộ dữ liệu vào game"
+            },
+            {
+              "key": "B",
+              "text": "Đây là trang web câu cá (Phishing) để cướp trắng tài khoản của bạn **"
+            },
+            {
+              "key": "C",
+              "text": "Để xác minh bạn đủ 18 tuổi"
+            },
+            {
+              "key": "D",
+              "text": "Để tặng quà sinh nhật"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 3,
+          "prompt": "Khi gọi video call xác minh, dấu hiệu nào nghi ngờ là video Deepfake?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Khuôn mặt có viền mờ nhòe, nháy mắt bất thường, cử động miệng không khớp tiếng, khi có vật đưa qua mặt thì hình ảnh bị biến dạng **"
+            },
+            {
+              "key": "B",
+              "text": "Hình ảnh sắc nét 4K mượt mà"
+            },
+            {
+              "key": "C",
+              "text": "Người nói trả lời trôi chảy các câu hỏi bí mật"
+            },
+            {
+              "key": "D",
+              "text": "Gọi được liên tục 2 tiếng không mất kết nối"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 4,
+          "prompt": "Cách đơn giản nhất để kiểm tra khi nghi ngờ một cuộc gọi video khẩn cấp từ bạn bè xin tiền là Deepfake:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hỏi mượn lại tiền họ"
+            },
+            {
+              "key": "B",
+              "text": "Yêu cầu họ giơ bàn tay vẫy trước mặt hoặc quay nghiêng đầu 90 độ, và hỏi câu hỏi riêng tư chỉ 2 người biết **"
+            },
+            {
+              "key": "C",
+              "text": "Lập tức chuyển tiền vì thấy đúng mặt bạn mình"
+            },
+            {
+              "key": "D",
+              "text": "Nhắn tin chửi bới"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 5,
+          "prompt": "Hình thức tống tiền \"Sextortion\" nhắm vào thiếu niên diễn ra như thế nào?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Kẻ lừa đảo dụ dỗ nạn nhân gửi ảnh/video nhạy cảm rồi đe dọa phát tán lên mạng nếu không nộp tiền hoặc gửi thêm clip **"
+            },
+            {
+              "key": "B",
+              "text": "Kẻ trộm cắp máy tính xách tay ở trường học"
+            },
+            {
+              "key": "C",
+              "text": "Ép nạn nhân mua tài khoản Netflix"
+            },
+            {
+              "key": "D",
+              "text": "Hack máy chủ trường học"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 6,
+          "prompt": "Nếu lỡ gửi ảnh nhạy cảm cho người lạ trên mạng và bị đe dọa tống tiền, bạn nên làm gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Chuyển tiền ngay cho họ (kẻ xấu thường sẽ tiếp tục đòi thêm tiền mãi)"
+            },
+            {
+              "key": "B",
+              "text": "Giữ bình tĩnh, không chuyển tiền, chụp lại toàn bộ bằng chứng, chặn liên lạc và chia sẻ ngay với phụ huynh/thầy cô/công an để được hỗ trợ **"
+            },
+            {
+              "key": "C",
+              "text": "Xóa sạch mọi tài khoản mạng xã hội và giấu kín trong tuyệt vọng"
+            },
+            {
+              "key": "D",
+              "text": "Làm theo mọi yêu cầu chụp thêm ảnh quái gở của kẻ tống tiền"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 7,
+          "prompt": "\"Trung gian uy tín\" tự xưng trong các nhóm mua bán acc game trên Facebook thường là ai?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Trọng tài được cấp phép chính thức của game"
+            },
+            {
+              "key": "B",
+              "text": "Đồng bọn hoặc tài khoản clone giả mạo của chính kẻ bán nhằm lừa người mua chuyển tiền **"
+            },
+            {
+              "key": "C",
+              "text": "Nhân viên chăm sóc khách hàng của game"
+            },
+            {
+              "key": "D",
+              "text": "Người tốt giúp đỡ cộng đồng miễn phí"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 8,
+          "prompt": "Khi tham gia các nền tảng như Roblox, Discord, hành vi nào là NGUY HIỂM?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Chia sẻ link `ROBLOSECURITY` cookie tài khoản khi người khác hứa cho đồ xịn **"
+            },
+            {
+              "key": "B",
+              "text": "Tắt nhận tin nhắn từ người lạ trong server"
+            },
+            {
+              "key": "C",
+              "text": "Đặt mật khẩu phức tạp có ký tự đặc biệt"
+            },
+            {
+              "key": "D",
+              "text": "Bật bảo mật 2 lớp qua email cha mẹ"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 9,
+          "prompt": "Chiêu trò \"Pig Butchering\" (Vỗ béo rồi làm thịt) bắt đầu bằng hành động nào?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Tấn công DDoS sập mạng nhà bạn"
+            },
+            {
+              "key": "B",
+              "text": "Kết bạn làm quen, thể hiện quan tâm lãng mạn tạo niềm tin sâu sắc trong thời gian dài rồi mới lôi kéo đầu tư/nạp tiền **"
+            },
+            {
+              "key": "C",
+              "text": "Đe dọa đánh nhau"
+            },
+            {
+              "key": "D",
+              "text": "Gửi virus phá hỏng điện thoại"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 10,
+          "prompt": "Trang web cung cấp Robux miễn phí nhưng yêu cầu \"Làm 5 bài khảo sát và tải 3 ứng dụng\" thực chất là:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Chương trình từ thiện của Roblox"
+            },
+            {
+              "key": "B",
+              "text": "Lừa đảo lượt tải (CPA scam) và thu thập thông tin cá nhân của bạn **"
+            },
+            {
+              "key": "C",
+              "text": "Cách kiếm tiền chân chính của game thủ"
+            },
+            {
+              "key": "D",
+              "text": "Bản cập nhật mới của game"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 11,
+          "prompt": "Giọng nói giả mạo bằng AI (Voice Cloning) có thể được tạo ra từ đâu?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Chỉ cần vài giây đoạn ghi âm giọng nói công khai từ TikTok/Facebook của nạn nhân **"
+            },
+            {
+              "key": "B",
+              "text": "Bắt buộc phải có thiết bị phòng thu đắt tiền hàng tỷ đồng"
+            },
+            {
+              "key": "C",
+              "text": "Phải gặp trực tiếp nạn nhân lấy mẫu giọng 30 ngày"
+            },
+            {
+              "key": "D",
+              "text": "Kẻ gian phải có dây thanh quản giống hệt nạn nhân"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 12,
+          "prompt": "Một tài khoản \"Hot girl/Hot boy\" lạ trên Instagram chủ động nhắn tin làm quen, khen ngợi bạn hết lời và nhanh chóng ngỏ lời yêu đương. Bạn nên:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Tự hào vì mình quá đào hoa và chia sẻ mọi bí mật"
+            },
+            {
+              "key": "B",
+              "text": "Cảnh giác, tìm kiếm hình ảnh đại diện qua Google Images xem có phải ảnh ăn cắp từ người mẫu mạng hay không **"
+            },
+            {
+              "key": "C",
+              "text": "Gửi ngay ảnh thẻ học sinh cho họ xem"
+            },
+            {
+              "key": "D",
+              "text": "Mượn tiền mẹ mua quà tặng người đó"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 13,
+          "prompt": "File đính kèm nào gửi qua Discord từ người lạ có nguy cơ cao chứa mã độc đánh cắp tài khoản (Token Grabber)?",
+          "options": [
+            {
+              "key": "A",
+              "text": "File ảnh `.png` bình thường"
+            },
+            {
+              "key": "B",
+              "text": "File nén `.zip` chứa file `.exe` hoặc file script `.bat`, `.scr` giấu đuôi **"
+            },
+            {
+              "key": "C",
+              "text": "File văn bản `.txt`"
+            },
+            {
+              "key": "D",
+              "text": "Link dẫn về trang chủ Wikipedia"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 14,
+          "prompt": "Khi bị mất quyền truy cập tài khoản Discord/Steam vì quét mã QR lạ, nguyên nhân là do:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Bạn đã quét mã \"Đăng nhập nhanh\" cấp quyền truy cập thẳng vào tài khoản cho kẻ gian mà không đọc kỹ cảnh báo **"
+            },
+            {
+              "key": "B",
+              "text": "Hỏng camera điện thoại"
+            },
+            {
+              "key": "C",
+              "text": "Mạng wifi bị chập"
+            },
+            {
+              "key": "D",
+              "text": "Do bàn phím bị kẹt phím"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 15,
+          "prompt": "Chiêu trò lừa đảo \"Tặng skin CS:GO / Valorant bằng cách vote cho đội tuyển của tôi\" hoạt động ra sao?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Gửi quà thật 100%"
+            },
+            {
+              "key": "B",
+              "text": "Dẫn link đến một trang web đăng nhập giả mạo Steam/Riot để trộm tài khoản **"
+            },
+            {
+              "key": "C",
+              "text": "Giúp bạn trở thành game thủ chuyên nghiệp"
+            },
+            {
+              "key": "D",
+              "text": "Không có nguy cơ nào"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 16,
+          "prompt": "Nền tảng mạng xã hội nào hiện nay có nguy cơ bị lộ thông tin vị trí thực tế nhiều nhất nếu không tắt quyền riêng tư?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Bản đồ vị trí Snapchat (Snap Map) và tính năng Check-in Facebook/Instagram **"
+            },
+            {
+              "key": "B",
+              "text": "Ứng dụng Calculator"
+            },
+            {
+              "key": "C",
+              "text": "Máy nghe nhạc offline"
+            },
+            {
+              "key": "D",
+              "text": "Trình duyệt file của máy"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 17,
+          "prompt": "Nếu bạn nhận được tin nhắn từ bạn thân trên Instagram: \"Tôi đang tham gia cuộc thi ảnh, vote cho tôi bằng cách gửi lại mã 6 số vừa gửi về máy bạn nhé\", mã 6 số đó thực chất là gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Mã bình chọn hoa hậu"
+            },
+            {
+              "key": "B",
+              "text": "Mã đặt lại mật khẩu hoặc mã OTP đăng nhập tài khoản Instagram của CHÍNH BẠN **"
+            },
+            {
+              "key": "C",
+              "text": "Điểm thưởng mini game"
+            },
+            {
+              "key": "D",
+              "text": "Mã giảm giá trà sữa"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 18,
+          "prompt": "Tổ chức quốc tế Take It Down (takeitdown.ncmec.org) hỗ trợ thanh thiếu niên điều gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hỗ trợ gỡ bỏ và ngăn chặn phát tán hình ảnh nhạy cảm của người dưới 18 tuổi trên internet **"
+            },
+            {
+              "key": "B",
+              "text": "Tặng thẻ nạp game miễn phí"
+            },
+            {
+              "key": "C",
+              "text": "Cung cấp bài tập toán"
+            },
+            {
+              "key": "D",
+              "text": "Dạy chơi cờ vua"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 19,
+          "prompt": "Khi người mua acc game của bạn đề nghị gửi link thanh toán qua dịch vụ trung gian quốc tế lạ hoắc và bắt bạn nạp 500k để kích hoạt ví, bạn nên:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Nạp ngay vì muốn bán được acc giá cao"
+            },
+            {
+              "key": "B",
+              "text": "Nhận diện ngay đây là chiêu thức lừa tiền kích hoạt ví ảo và dừng giao dịch **"
+            },
+            {
+              "key": "C",
+              "text": "Đi mượn tiền để nạp thử"
+            },
+            {
+              "key": "D",
+              "text": "Gửi luôn mật khẩu acc cho họ"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 20,
+          "prompt": "Tại sao không nên dùng chung mật khẩu game cho tài khoản email cá nhân?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Vì game sẽ chạy chậm hơn"
+            },
+            {
+              "key": "B",
+              "text": "Vì nếu lộ mật khẩu ở web game lừa đảo, kẻ gian sẽ chiếm quyền luôn cả email gốc và toàn bộ tài khoản khác **"
+            },
+            {
+              "key": "C",
+              "text": "Vì vi phạm luật an ninh mạng"
+            },
+            {
+              "key": "D",
+              "text": "Vì các chữ cái sẽ bị biến mất"
+            }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Bẫy Tài chính, Tiền ảo & Tuyển dụng \"Việc nhẹ lương cao\" cho Teen",
+      "shortTitle": "Bẫy Tài chính & Việc làm Teen",
+      "icon": "💸",
+      "contentMarkdown": "BẪY TÀI CHÍNH, TIỀN ẢO & TUYỂN DỤNG \"VIỆC NHẸ LƯƠNG CAO\" CHO TEEN\n\n### 3.1. Mục tiêu bài học\n* Vạch trần chiêu bài tuyển dụng online: Dịch phụ đề, gõ văn bản tại nhà, bẫy giật đơn hàng Shopee/Lazada, làm mẫu ảnh nhí/học sinh.\n* Cảnh báo bẫy tài chính học đường: Vay tiền qua app tín dụng đen, lôi kéo chơi \"sàn nhị phân BO / coin rác\", nhận mở tài khoản ngân hàng hộ (cho thuê/mượn tài khoản).\n* Nhận thức rõ ràng về hậu quả pháp lý hình sự khi vô tình trở thành mắt xích rửa tiền cho tội phạm.\n\n### 3.2. Nội dung chi tiết\n1. **Bài 1: Tuyển dụng \"Việc nhẹ lương cao\" trên mạng xã hội**\n   * Đánh vào tâm lý muốn kiếm tiền phụ giúp gia đình hoặc tự lập tài chính của học sinh, sinh viên.\n   * Kịch bản \"Giật đơn hàng hưởng hoa hồng\": Mồi nhử nạp 100k nhận 130k -> Nạp 1 triệu nhận 1.3 triệu -> Đơn cuối nạp 20 triệu rồi giam tiền với lý do sai cú pháp.\n   * Bẫy \"Cộng tác viên lồng tiếng/dịch thuật/đọc sách thu âm\": Bắt nạp tiền cọc dữ liệu hợp đồng.\n2. **Bài 2: Hiểm họa Cho thuê, Cho mượn tài khoản ngân hàng & Mở thẻ hộ**\n   * Kẻ gian trả 500k - 2 triệu đồng để học sinh sinh viên mở tài khoản và bán lại.\n   * Hệ quả pháp lý: Tài khoản bị dùng để nhận tiền lừa đảo, rửa tiền xuyên biên giới. Người mở tài khoản trở thành đồng phạm hình sự.\n3. **Bài 3: Tín dụng đen & Các hình thức đa cấp tiền số học đường**\n   * Vay tiền qua app chụp ảnh CMND/CCCD và danh bạ điện thoại: Lãi suất cắt cổ 1000%/năm, bị khủng bố gọi điện cho cả trường học và gia đình.\n   * Lôi kéo tham gia hội nhóm đầu tư Forex, Crypto cam kết lãi 30%/tháng.\n4. **Tài liệu tham khảo & Đọc thêm:**\n   * Bộ luật Hình sự Việt Nam: Tội mua bán, cho thuê tài khoản ngân hàng (Điều 291).\n   * Chuỗi cảnh báo của Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao (A05).",
+      "questions": [
+        {
+          "id": 1,
+          "prompt": "Công việc \"Gõ văn bản tại nhà, ngày làm 2 tiếng lương 500k, yêu cầu cọc 200k tiền phí giữ bài\" là gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Cơ hội việc làm hấp dẫn cho học sinh"
+            },
+            {
+              "key": "B",
+              "text": "Chiêu trò lừa đảo chiếm đoạt tiền cọc **"
+            },
+            {
+              "key": "C",
+              "text": "Doanh nghiệp nhà nước tuyển dụng"
+            },
+            {
+              "key": "D",
+              "text": "Học bổng tài năng"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 2,
+          "prompt": "Kịch bản lừa đảo \"Cộng tác viên Shopee/Tiki chốt đơn nhận hoa hồng\" thường kết thúc như thế nào?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Nạn nhân nhận lương hàng tháng đều đặn"
+            },
+            {
+              "key": "B",
+              "text": "Sau khi dẫn dụ nạp số tiền lớn vào đơn hàng ảo, hệ thống báo lỗi cú pháp và bắt nạp thêm để cứu tiền rồi cắt liên lạc **"
+            },
+            {
+              "key": "C",
+              "text": "Nạn nhân được trở thành giám đốc chi nhánh"
+            },
+            {
+              "key": "D",
+              "text": "Nạn nhân nhận được hàng thật miễn phí"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 3,
+          "prompt": "Một người bạn cùng lớp trả bạn 1 triệu đồng để bạn cầm CCCD ra ngân hàng mở 3 tài khoản và đưa thông tin thẻ cho họ. Bạn nên làm gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Làm ngay vì kiếm 1 triệu quá dễ"
+            },
+            {
+              "key": "B",
+              "text": "Từ chối dứt khoát và báo cáo nhà trường/phụ huynh vì hành vi này vi phạm pháp luật nghiêm trọng **"
+            },
+            {
+              "key": "C",
+              "text": "Mở thêm 10 tài khoản cho cả gia đình để kiếm nhiều tiền hơn"
+            },
+            {
+              "key": "D",
+              "text": "Nhờ bạn bè trong lớp cùng mở"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 4,
+          "prompt": "Hậu quả pháp lý của việc cho thuê, bán tài khoản ngân hàng là gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Không bị sao cả vì tiền không phải của mình"
+            },
+            {
+              "key": "B",
+              "text": "Bị xử phạt hành chính lên tới hàng chục triệu đồng, có thể bị truy cứu trách nhiệm hình sự về tội rửa tiền hoặc đồng phạm lừa đảo **"
+            },
+            {
+              "key": "C",
+              "text": "Được ngân hàng tặng điểm tích lũy"
+            },
+            {
+              "key": "D",
+              "text": "Chỉ bị khóa tài khoản 2 ngày"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 5,
+          "prompt": "App vay tiền online bất hợp pháp (tín dụng đen) thường yêu cầu quyền truy cập gì trên điện thoại để uy hiếp con nợ?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Quyền truy cập bluetooth"
+            },
+            {
+              "key": "B",
+              "text": "Quyền truy cập toàn bộ Danh bạ điện thoại, Hình ảnh và Vị trí **"
+            },
+            {
+              "key": "C",
+              "text": "Quyền bật đèn pin flash"
+            },
+            {
+              "key": "D",
+              "text": "Quyền truy cập ứng dụng máy tính cầm tay"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 6,
+          "prompt": "Khi không trả được nợ app đen, các đối tượng đòi nợ thường làm gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Ghép ảnh thờ, ảnh nhạy cảm bôi nhọ gửi cho thầy cô, bạn bè, người thân trong danh bạ để khủng bố tinh thần **"
+            },
+            {
+              "key": "B",
+              "text": "Gửi thư chúc mừng sinh nhật"
+            },
+            {
+              "key": "C",
+              "text": "Bỏ qua và xóa nợ"
+            },
+            {
+              "key": "D",
+              "text": "Mời đi uống cà phê tâm sự"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 7,
+          "prompt": "Bản chất của các hội nhóm \"Kéo vốn đầu tư tài chính, cam kết bao lỗ, sinh lời 20-30%/tháng\" là:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Tổ chức từ thiện quốc tế"
+            },
+            {
+              "key": "B",
+              "text": "Mô hình lừa đảo Ponzi (lấy tiền người sau trả cho người trước rồi ôm tiền bỏ trốn) **"
+            },
+            {
+              "key": "C",
+              "text": "Quỹ đầu tư mạo hiểm hợp pháp"
+            },
+            {
+              "key": "D",
+              "text": "Cơ quan thuế nhà nước"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 8,
+          "prompt": "Dấu hiệu nào cho thấy một thông báo tuyển dụng việc làm thêm là ĐÁNG TIN CẬY?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Không yêu cầu kinh nghiệm, lương cao bất thường, làm tại nhà, bắt đóng tiền cọc"
+            },
+            {
+              "key": "B",
+              "text": "Có hợp đồng lao động rõ ràng, công ty có mã số thuế và trụ sở thực tế, không yêu cầu đóng bất kỳ khoản tiền cọc nào **"
+            },
+            {
+              "key": "C",
+              "text": "Trao đổi qua Telegram với nick ẩn danh"
+            },
+            {
+              "key": "D",
+              "text": "Chuyển tiền qua STK cá nhân"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 9,
+          "prompt": "Kẻ lừa đảo tuyển \"Mẫu ảnh học sinh chụp Lookbook\" thường giở trò gì trong buổi phỏng vấn online?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Đo size quần áo chuyên nghiệp"
+            },
+            {
+              "key": "B",
+              "text": "Dụ dỗ học sinh cởi đồ để \"kiểm tra số đo cơ thể\" qua camera rồi bí mật quay lại để tống tiền **"
+            },
+            {
+              "key": "C",
+              "text": "Tặng quà miễn phí giá trị lớn"
+            },
+            {
+              "key": "D",
+              "text": "Cho ký hợp đồng người mẫu ngay"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 10,
+          "prompt": "Lý do vì sao các giao dịch lừa đảo hiện nay thường yêu cầu chuyển qua Telegram mà không dùng Zalo hay Facebook?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Telegram chạy mượt hơn"
+            },
+            {
+              "key": "B",
+              "text": "Telegram có tính năng xóa tin nhắn 2 chiều, mã hóa bí mật, nick ẩn danh và rất khó cho cơ quan điều tra truy vết **"
+            },
+            {
+              "key": "C",
+              "text": "Telegram do chính phủ thành lập"
+            },
+            {
+              "key": "D",
+              "text": "Telegram không tốn pin"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 11,
+          "prompt": "Khi kẻ lừa đảo bảo: \"Bạn nạp sai cú pháp mã đơn hàng, phải nạp thêm gấp đôi số tiền để kích hoạt đóng băng ví\", đây là biểu hiện của:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Lỗi máy chủ ngân hàng thật"
+            },
+            {
+              "key": "B",
+              "text": "Chiêu thức giữ chân và vơ vét thêm tiền của nạn nhân trước khi chặn liên lạc **"
+            },
+            {
+              "key": "C",
+              "text": "Hệ thống tự động bảo vệ tiền của bạn"
+            },
+            {
+              "key": "D",
+              "text": "Ưu đãi nhân đôi tài khoản"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 12,
+          "prompt": "Một người tự xưng là \"Chuyên gia tài chính 2k\" chụp ảnh khoe xe sang, nhà xịn, xấp tiền đô trên TikTok thực chất là:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Người giàu tự thân chân chính"
+            },
+            {
+              "key": "B",
+              "text": "Hình ảnh dàn dựng nhằm tạo vỏ bọc hào nhoáng lùa gà vào các sàn cờ bạc/tiền ảo trá hình **"
+            },
+            {
+              "key": "C",
+              "text": "Tỷ phú hảo tâm muốn chia sẻ tài sản"
+            },
+            {
+              "key": "D",
+              "text": "Doanh nhân được tạp chí Forbes vinh danh"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 13,
+          "prompt": "Tại sao không được chụp ảnh 2 mặt của Căn cước công dân (CCCD) đăng công khai lên mạng xã hội?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Vì kẻ xấu có thể dùng thông tin và số định danh để đăng ký vay app lậu, mở tài khoản ngân hàng ảo, mạo danh lừa đảo **"
+            },
+            {
+              "key": "B",
+              "text": "Vì ảnh chụp CCCD thường không đẹp bằng ảnh sống ảo"
+            },
+            {
+              "key": "C",
+              "text": "Vì làm mờ ống kính điện thoại"
+            },
+            {
+              "key": "D",
+              "text": "Không có nguy cơ nào"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 14,
+          "prompt": "Hành vi \"đánh giá sản phẩm trên sàn thương mại điện tử nhận tiền\" (đặt hàng ảo) có vi phạm không?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hoàn toàn hợp pháp và được khuyến khích"
+            },
+            {
+              "key": "B",
+              "text": "Vi phạm chính sách của các sàn, gian lận thương mại và 99% là bình phong của các đường dây lừa đảo **"
+            },
+            {
+              "key": "C",
+              "text": "Là một môn thể thao điện tử"
+            },
+            {
+              "key": "D",
+              "text": "Được bảo hộ bởi luật lao động"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 15,
+          "prompt": "Khi một app tài chính yêu cầu nạp tiền để \"rút tiền lợi nhuận ra\", nguyên tắc vàng là:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Nạp thêm tiền ngay để rút được vốn"
+            },
+            {
+              "key": "B",
+              "text": "Tuyệt đối không nạp thêm bất kỳ một đồng nào, vì bạn sẽ mất thêm toàn bộ số tiền vừa nạp **"
+            },
+            {
+              "key": "C",
+              "text": "Cầm cố đồ đạc để nạp cho đủ"
+            },
+            {
+              "key": "D",
+              "text": "Chờ 30 phút rồi nạp"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 16,
+          "prompt": "Thuật ngữ \"Lùa gà\" trong giới tài chính mạng dùng để chỉ:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hoạt động chăn nuôi nông nghiệp thông minh"
+            },
+            {
+              "key": "B",
+              "text": "Hành vi dụ dỗ những người thiếu kiến thức, nhẹ dạ cả tin vào bẫy đầu tư thua lỗ để kẻ tạo cuộc chơi trục lợi **"
+            },
+            {
+              "key": "C",
+              "text": "Trò chơi điện tử nông trại"
+            },
+            {
+              "key": "D",
+              "text": "Hoạt động mua bán gia cầm trực tuyến"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 17,
+          "prompt": "Nếu bạn nhận được khoản tiền lạ vài triệu đồng chuyển nhầm vào tài khoản cá nhân, bạn nên làm gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rút ra tiêu xài ngay lập tức"
+            },
+            {
+              "key": "B",
+              "text": "Giữ nguyên số tiền, không chuyển cho bất kỳ ai tự nhận là chủ tiền qua tin nhắn riêng, liên hệ ngay với ngân hàng hoặc công an để xử lý tra soát chính thức **"
+            },
+            {
+              "key": "C",
+              "text": "Chuyển tiếp vào tài khoản bạn bè giữ hộ"
+            },
+            {
+              "key": "D",
+              "text": "Đăng bài lên Facebook khoe trúng lộc"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 18,
+          "prompt": "Bẫy chuyển tiền nhầm rồi bắt đền lãi suất cao (giả vờ chuyển nhầm biến nạn nhân thành con nợ vay nặng lãi) xử lý ra sao?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Chuyển trả ngay vào số tài khoản mới mà người lạ nhắn tin yêu cầu"
+            },
+            {
+              "key": "B",
+              "text": "Chỉ làm việc trực tiếp tại quầy giao dịch ngân hàng với sự chứng kiến của nhân viên ngân hàng và cơ quan công an **"
+            },
+            {
+              "key": "C",
+              "text": "Tự ý thương lượng lãi suất qua Zalo"
+            },
+            {
+              "key": "D",
+              "text": "Chặn số điện thoại người đó là xong"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 19,
+          "prompt": "Thẻ tín dụng / Thẻ ghi nợ quốc tế (Visa, Mastercard) có dãy 3 số bảo mật ở mặt sau tên là gì và có được cho người khác xem không?",
+          "options": [
+            {
+              "key": "A",
+              "text": "CVV/CVC, phải dán che lại và tuyệt đối không cho bất kỳ ai chụp lại **"
+            },
+            {
+              "key": "B",
+              "text": "Mã số định danh học sinh, cho xem thoải mái"
+            },
+            {
+              "key": "C",
+              "text": "Mã vạch giảm giá tại rạp chiếu phim"
+            },
+            {
+              "key": "D",
+              "text": "Ngày tháng năm sinh của chủ thẻ"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 20,
+          "prompt": "Ai là người chịu trách nhiệm đầu tiên trước pháp luật nếu tài khoản ngân hàng của bạn bị sử dụng trong một vụ án rửa tiền?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Giám đốc chi nhánh ngân hàng"
+            },
+            {
+              "key": "B",
+              "text": "Chính bạn - người đứng tên đăng ký mở tài khoản đó **"
+            },
+            {
+              "key": "C",
+              "text": "Người tạo ra chiếc điện thoại"
+            },
+            {
+              "key": "D",
+              "text": "Giáo viên chủ nhiệm"
+            }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Kỹ thuật Phòng thủ số & Kịch bản Ứng phó Khủng hoảng",
+      "shortTitle": "Phòng thủ & Ứng phó khẩn cấp",
+      "icon": "🚨",
+      "contentMarkdown": "KỸ THUẬT PHÒNG THỦ SỐ & KỊCH BẢN ỨNG PHÓ KHỦNG HOẢNG\n\n### 4.1. Mục tiêu bài học\n* Thiết lập pháo đài bảo mật cá nhân: Mật khẩu mạnh, Xác thực 2 bước (2FA bằng Authenticator app), Quản lý quyền riêng tư thiết bị.\n* Nắm vững quy trình phản ứng nhanh 5 bước (Incident Response) khi nhận ra mình đã bị lừa hoặc bị lộ thông tin nhạy cảm.\n* Danh bạ các đường dây nóng (Hotline) hỗ trợ khẩn cấp tại Việt Nam.\n\n### 4.2. Nội dung chi tiết\n1. **Bài 1: Pháo đài bảo mật cá nhân (Digital Hygiene)**\n   * Nguyên tắc đặt mật khẩu: Passphrase dài $\\ge$ 12 ký tự, không dùng ngày sinh, tên người yêu, số điện thoại.\n   * Tại sao 2FA qua SMS không còn an toàn tuyệt đối (bẫy SIM Swap)? Chuyển sang Google Authenticator / Microsoft Authenticator / Khóa bảo mật FIDO.\n   * Vệ sinh dữ liệu số: Định kỳ kiểm tra danh sách thiết bị đăng nhập, gỡ bỏ app rác, tắt quyền truy cập vị trí/danh bạ không cần thiết.\n2. **Bài 2: Quy trình 5 bước Phản ứng nhanh khi dính bẫy lừa đảo**\n   * **Bước 1: Cắt đứt kết nối:** Ngắt mạng internet (Wifi/4G), cô lập thiết bị nếu nghi dính mã độc.\n   * **Bước 2: Khóa khẩn cấp:** Gọi hotline ngân hàng khóa thẻ, khóa tài khoản giao dịch điện tử ngay lập tức.\n   * **Bước 3: Thu thập bằng chứng:** Chụp màn hình tin nhắn, số tài khoản nhận tiền, lịch sử chuyển khoản, link web (không bấm xóa tin nhắn).\n   * **Bước 4: Đổi thông tin bảo mật:** Đổi mật khẩu email gốc và các tài khoản quan trọng từ một thiết bị sạch khác.\n   * **Bước 5: Trình báo & Tìm kiếm trợ giúp:** Báo cáo phụ huynh, thầy cô, trình báo cơ quan công an địa phương và Cục An toàn thông tin.\n3. **Bài 3: Danh bạ khẩn cấp & Công cụ cứu nạn số tại Việt Nam**\n   * Đường dây nóng Cảnh báo an toàn thông tin Việt Nam: Tổng đài `156` (miễn phí phản ánh cuộc gọi/tin nhắn rác, lừa đảo).\n   * Tổng đài Quốc gia Bảo vệ Trẻ em: `111` (tư vấn tâm lý, can thiệp khi bị tống tiền, bạo lực mạng).\n   * Cổng cảnh báo an toàn thông tin: `canhbao.ncsc.gov.vn`.\n   * Dự án Chống Lừa Đảo: Báo cáo website lừa đảo qua tiện ích trình duyệt hoặc trang web `chongluadao.vn`.",
+      "questions": [
+        {
+          "id": 1,
+          "prompt": "Mật khẩu nào sau đây là mạnh và an toàn nhất?",
+          "options": [
+            {
+              "key": "A",
+              "text": "`12345678`"
+            },
+            {
+              "key": "B",
+              "text": "`NguyenVanA2008`"
+            },
+            {
+              "key": "C",
+              "text": "`c0nMe0_Tre0_C4y_K3_19#` **"
+            },
+            {
+              "key": "D",
+              "text": "`iloveyou`"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 2,
+          "prompt": "Phương thức xác thực 2 yếu tố (2FA) nào an toàn và ít rủi ro bị can thiệp nhất hiện nay?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Nhận mã qua tin nhắn SMS"
+            },
+            {
+              "key": "B",
+              "text": "Ứng dụng tạo mã xác thực (Google Authenticator, Microsoft Authenticator) hoặc Khóa bảo mật vật lý **"
+            },
+            {
+              "key": "C",
+              "text": "Nhận mã qua cuộc gọi thoại thông thường"
+            },
+            {
+              "key": "D",
+              "text": "Không cần cài đặt gì"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 3,
+          "prompt": "Hiện tượng \"SIM Swap\" (Chiếm đoạt SIM) gây nguy hiểm như thế nào?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Làm điện thoại nhanh hết pin"
+            },
+            {
+              "key": "B",
+              "text": "Kẻ gian làm giả SIM để cướp số điện thoại của bạn, từ đó nhận mã OTP đặt lại toàn bộ mật khẩu ngân hàng và mạng xã hội **"
+            },
+            {
+              "key": "C",
+              "text": "Làm tăng cước điện thoại hàng tháng"
+            },
+            {
+              "key": "D",
+              "text": "Mất danh bạ offline"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 4,
+          "prompt": "Khi bạn lỡ bấm vào một đường link lạ và máy tự động tải một file về, bạn nên làm gì ngay?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Mở file đó ra xem ngay bên trong có gì"
+            },
+            {
+              "key": "B",
+              "text": "Tuyệt đối không bấm mở file, xóa ngay khỏi thư mục Download, tắt kết nối mạng và dùng phần mềm diệt virus quét máy **"
+            },
+            {
+              "key": "C",
+              "text": "Gửi file đó cho bạn bè nhờ mở hộ"
+            },
+            {
+              "key": "D",
+              "text": "Tắt màn hình đi ngủ"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 5,
+          "prompt": "Bước đầu tiên cần làm ngay khi phát hiện vừa chuyển tiền cho kẻ lừa đảo qua ứng dụng ngân hàng là gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Khóc lóc và xóa app ngân hàng"
+            },
+            {
+              "key": "B",
+              "text": "Gọi ngay đến số hotline khẩn cấp của ngân hàng yêu cầu hỗ trợ khóa tài khoản/khóa giao dịch và xin hỗ trợ tra soát giao dịch **"
+            },
+            {
+              "key": "C",
+              "text": "Nhắn tin năn nỉ kẻ lừa đảo trả lại tiền"
+            },
+            {
+              "key": "D",
+              "text": "Đăng bài chửi bới lên Facebook cá nhân"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 6,
+          "prompt": "Tại sao việc chụp màn hình lại toàn bộ tin nhắn trao đổi với kẻ lừa đảo là rất quan trọng?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Để làm kỷ niệm thời học sinh"
+            },
+            {
+              "key": "B",
+              "text": "Để lưu giữ bằng chứng pháp lý đầy đủ cung cấp cho cơ quan công an khi nộp đơn tố giác tội phạm **"
+            },
+            {
+              "key": "C",
+              "text": "Để bán cho báo chí kiếm tiền"
+            },
+            {
+              "key": "D",
+              "text": "Không cần thiết vì kẻ lừa đảo sẽ tự nhận tội"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 7,
+          "prompt": "Đường dây nóng miễn phí tiếp nhận thông tin phản ánh về tin nhắn rác, cuộc gọi rác và cuộc gọi có dấu hiệu lừa đảo tại Việt Nam là số mấy?",
+          "options": [
+            {
+              "key": "A",
+              "text": "`156` **"
+            },
+            {
+              "key": "B",
+              "text": "`1900`"
+            },
+            {
+              "key": "C",
+              "text": "`1080`"
+            },
+            {
+              "key": "D",
+              "text": "`911`"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 8,
+          "prompt": "Tổng đài Quốc gia Bảo vệ Trẻ em tại Việt Nam hỗ trợ tư vấn tâm lý và can thiệp bảo vệ thanh thiếu niên bị xâm hại trên mạng là:",
+          "options": [
+            {
+              "key": "A",
+              "text": "`111` **"
+            },
+            {
+              "key": "B",
+              "text": "`113`"
+            },
+            {
+              "key": "C",
+              "text": "`114`"
+            },
+            {
+              "key": "D",
+              "text": "`115`"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 9,
+          "prompt": "Sau khi tài khoản mạng xã hội bị hack và vừa lấy lại được, việc quan trọng cần làm đầu tiên là gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Đổi mật khẩu mới và chọn tính năng \"Đăng xuất khỏi tất cả các thiết bị khác\" **"
+            },
+            {
+              "key": "B",
+              "text": "Đăng ảnh selfie ăn mừng"
+            },
+            {
+              "key": "C",
+              "text": "Xóa hết bạn bè cũ"
+            },
+            {
+              "key": "D",
+              "text": "Tắt tính năng bảo mật 2 lớp"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 10,
+          "prompt": "Khi nhận thấy một website có dấu hiệu giả mạo ngân hàng hoặc cơ quan nhà nước, bạn nên báo cáo tại đâu?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Trang web `canhbao.ncsc.gov.vn` hoặc `chongluadao.vn` **"
+            },
+            {
+              "key": "B",
+              "text": "Bình luận khen ngợi trên trang web đó"
+            },
+            {
+              "key": "C",
+              "text": "Không cần báo cáo cho ai"
+            },
+            {
+              "key": "D",
+              "text": "Gửi cho toàn bộ học sinh trong trường cùng vào xem"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 11,
+          "prompt": "Tính năng \"Quản lý quyền ứng dụng\" (App Permissions) trên smartphone giúp ích gì cho bạn?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Giúp điện thoại chơi game mượt hơn"
+            },
+            {
+              "key": "B",
+              "text": "Kiểm soát và chặn các ứng dụng độc hại lén lút đọc danh bạ, vị trí, camera và micro của bạn **"
+            },
+            {
+              "key": "C",
+              "text": "Tự động mua hàng giảm giá"
+            },
+            {
+              "key": "D",
+              "text": "Tăng độ sáng màn hình"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 12,
+          "prompt": "Một người tự xưng là \"Hacker mũ trắng / Luật sư hỗ trợ lấy lại tiền lừa đảo online\" cam kết lấy lại 100% tiền đã mất với phí 20% đặt cọc trước. Đây là:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Cứu tinh giúp bạn lấy lại tiền"
+            },
+            {
+              "key": "B",
+              "text": "Chiêu trò lừa đảo lần hai (Secondary Scam), tiếp tục đánh vào tâm lý tiếc tiền của nạn nhân để chiếm đoạt thêm tiền cọc **"
+            },
+            {
+              "key": "C",
+              "text": "Dịch vụ hợp pháp được nhà nước công nhận"
+            },
+            {
+              "key": "D",
+              "text": "Nhân viên ngân hàng hỗ trợ ngoài giờ"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 13,
+          "prompt": "Tại sao bạn không bao giờ nên dùng Wifi công cộng mở (không có mật khẩu) tại quán cà phê để đăng nhập tài khoản ngân hàng?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Vì mạng Wifi công cộng sẽ làm chậm tốc độ chuyển tiền"
+            },
+            {
+              "key": "B",
+              "text": "Vì kẻ gian có thể thực hiện tấn công Man-in-the-Middle (nghe lén dữ liệu trên cùng mạng) để đánh cắp thông tin đăng nhập **"
+            },
+            {
+              "key": "C",
+              "text": "Vì quán cà phê sẽ thu thêm phí phụ thu"
+            },
+            {
+              "key": "D",
+              "text": "Vì điện thoại sẽ bị hao pin gấp đôi"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 14,
+          "prompt": "Khi lỡ tiết lộ mã OTP cho người khác, bạn phải làm gì ngay trong 30 giây tiếp theo?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Đổi ngay mã PIN/mật khẩu ứng dụng ngân hàng hoặc gọi tổng đài khẩn cấp khóa chức năng giao dịch điện tử **"
+            },
+            {
+              "key": "B",
+              "text": "Ngồi đợi xem tiền có bị trừ không"
+            },
+            {
+              "key": "C",
+              "text": "Nhắn tin chúc kẻ lừa đảo may mắn"
+            },
+            {
+              "key": "D",
+              "text": "Xóa app ngân hàng"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 15,
+          "prompt": "Kẻ lừa đảo thường yêu cầu nạn nhân giấu kín chuyện với gia đình bằng cách dọa dẫm: \"Nói cho bố mẹ biết bạn sẽ bị công an bắt đi tù\". Mục đích của chúng là gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Muốn bảo vệ bạn khỏi sự la mắng của cha mẹ"
+            },
+            {
+              "key": "B",
+              "text": "Cô lập nạn nhân để nạn nhân hoảng loạn, không có ai có kinh nghiệm hỗ trợ cảnh báo và ngăn chặn chuyển tiền **"
+            },
+            {
+              "key": "C",
+              "text": "Thể hiện sự tôn trọng quyền riêng tư của bạn"
+            },
+            {
+              "key": "D",
+              "text": "Giúp bạn rèn luyện tính độc lập"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 16,
+          "prompt": "Nơi tiếp nhận đơn trình báo tố giác tội phạm lừa đảo công nghệ cao chính thống nhất tại địa phương là:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Cơ quan Công an xã/phường/quận/huyện nơi bạn cư trú hoặc Đội An ninh mạng & Phòng chống tội phạm công nghệ cao **"
+            },
+            {
+              "key": "B",
+              "text": "Hội nhóm Zalo \"Hỗ trợ đòi nợ\""
+            },
+            {
+              "key": "C",
+              "text": "Quán net gần nhà"
+            },
+            {
+              "key": "D",
+              "text": "Trụ sở bưu điện"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 17,
+          "prompt": "Cơ chế hoạt động của tiện ích Chống Lừa Đảo (tiện ích mở rộng trên Chrome/Cốc Cốc) là gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Tự động tắt máy tính khi có nguy hiểm"
+            },
+            {
+              "key": "B",
+              "text": "Cảnh báo và ngăn chặn người dùng truy cập vào các đường link lừa đảo, độc hại đã được cộng đồng và chuyên gia an ninh mạng gắn cờ **"
+            },
+            {
+              "key": "C",
+              "text": "Chặn các trang web làm bài tập về nhà"
+            },
+            {
+              "key": "D",
+              "text": "Đọc trộm tin nhắn của người dùng"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 18,
+          "prompt": "Nếu một người bạn thân trong lớp của bạn có dấu hiệu buồn bã, sợ hãi, xin vay tiền khắp nơi và không dám kể lý do, bạn nên làm gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Cho bạn vay thật nhiều tiền không hỏi han gì"
+            },
+            {
+              "key": "B",
+              "text": "Bỏ mặc vì không phải việc của mình"
+            },
+            {
+              "key": "C",
+              "text": "Lắng nghe, chia sẻ chân thành và khuyên bạn nên tâm sự ngay với giáo viên chủ nhiệm hoặc chuyên gia tâm lý/cha mẹ để giải quyết bẫy tống tiền hoặc nợ nần **"
+            },
+            {
+              "key": "D",
+              "text": "Đăng bài châm chọc bạn trên confessions trường"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 19,
+          "prompt": "Khi thay điện thoại mới và muốn bán lại điện thoại cũ, thao tác quan trọng nhất để bảo vệ dữ liệu cá nhân là gì?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Xóa vài bức ảnh xấu"
+            },
+            {
+              "key": "B",
+              "text": "Đăng xuất các tài khoản và thực hiện \"Khôi phục cài đặt gốc\" (Factory Reset) toàn bộ thiết bị **"
+            },
+            {
+              "key": "C",
+              "text": "Dán lại kính cường lực mới"
+            },
+            {
+              "key": "D",
+              "text": "Đổi vỏ ốp lưng điện thoại"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 20,
+          "prompt": "Tư duy cốt lõi nhất để một thiếu niên trở thành \"Công dân số thông thái\" trong thời đại số là:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Chậm lại 1 nhịp - Kiểm tra đa nguồn độc lập - Luôn trao đổi với người có uy tín trước khi quyết định các giao dịch tiền tệ/thông tin nhạy cảm **"
+            },
+            {
+              "key": "B",
+              "text": "Ai nói gì trên mạng cũng tin ngay"
+            },
+            {
+              "key": "C",
+              "text": "Cố gắng thử click vào tất cả các link khuyến mãi xem có may mắn không"
+            },
+            {
+              "key": "D",
+              "text": "Giấu kín mọi rắc rối xảy ra trên mạng với người lớn"
+            }
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}
