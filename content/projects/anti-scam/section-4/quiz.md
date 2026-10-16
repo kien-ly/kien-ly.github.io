@@ -2,7 +2,7 @@
 title: "Bài Kiểm Tra Trắc Nghiệm: Section 4: Kỹ Thuật Phòng Thủ Số & Kịch Bản Ứng Phó Khủng Hoảng (20 Câu)"
 description: "Bài test trắc nghiệm 20 câu hỏi tình huống thực tế cho Section 4: Kỹ Thuật Phòng Thủ Số & Kịch Bản Ứng Phó Khủng Hoảng. Điểm đạt yêu cầu: 16/20 (80%)."
 url: "/projects/anti-scam/section-4/quiz/"
-weight: 99
+weight: 410
 showToc: true
 ---
 

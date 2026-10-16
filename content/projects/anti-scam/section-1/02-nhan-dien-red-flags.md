@@ -2,7 +2,7 @@
 title: "Bài 1.2: Nhận Diện Các Dấu Hiệu Cảnh Báo Đỏ (Red Flags)"
 description: "Bộ quy tắc thực chiến giúp phát hiện tin nhắn, email và đường link lừa đảo chỉ trong vài giây."
 url: "/projects/anti-scam/section-1/02-nhan-dien-red-flags/"
-weight: 2
+weight: 102
 showToc: true
 TocOpen: true
 ---

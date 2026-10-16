@@ -1,0 +1,43 @@
+{{- $pages := slice }}
+{{- if (hasPrefix .RelPermalink "/projects/anti-scam/") }}
+  {{/* Sắp xếp bài học trong dự án anti-scam theo đúng lộ trình weight tăng dần */}}
+  {{- $antiScamPages := where site.RegularPages "Section" "projects" }}
+  {{- $filtered := slice }}
+  {{- range $antiScamPages }}
+    {{- if (hasPrefix .RelPermalink "/projects/anti-scam/") }}
+      {{- $filtered = $filtered | append . }}
+    {{- end }}
+  {{- end }}
+  {{- $pages = sort $filtered "Weight" "asc" }}
+{{- else if (hasPrefix .RelPermalink "/interview-prep/") }}
+  {{- $ipPages := where site.RegularPages "Section" "projects" }}
+  {{- $filtered := slice }}
+  {{- range $ipPages }}
+    {{- if (hasPrefix .RelPermalink "/interview-prep/") }}
+      {{- $filtered = $filtered | append . }}
+    {{- end }}
+  {{- end }}
+  {{- $pages = sort $filtered "Weight" "asc" }}
+{{- else }}
+  {{/* Mặc định của PaperMod */}}
+  {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- end }}
+
+{{- if and (gt (len $pages) 1) (in $pages . ) }}
+<nav class="paginav">
+  {{- with $pages.Prev . }}
+  <a class="prev" href="{{ .Permalink }}">
+    <span class="title">« {{ i18n "prev_page" | default "Trang trước" }}</span>
+    <br>
+    <span>{{- .Name -}}</span>
+  </a>
+  {{- end }}
+  {{- with $pages.Next . }}
+  <a class="next" href="{{ .Permalink }}">
+    <span class="title">{{ i18n "next_page" | default "Trang tiếp theo" }} »</span>
+    <br>
+    <span>{{- .Name -}}</span>
+  </a>
+  {{- end }}
+</nav>
+{{- end }}

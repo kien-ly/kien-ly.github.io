@@ -623,11 +623,12 @@ Sau khi hoàn thành tất cả các bài học lý thuyết trên, học viên 
 
   // Lessons
   secConfig.lessons.forEach(lesson => {
+    const globalWeight = (secConfig.secId * 100) + lesson.weight;
     const lessonFrontmatter = `---
 title: ${JSON.stringify(lesson.title)}
 description: ${JSON.stringify(lesson.description)}
 url: "/projects/anti-scam/${secConfig.folder}/${lesson.slug}/"
-weight: ${lesson.weight}
+weight: ${globalWeight}
 showToc: true
 TocOpen: true
 ---
@@ -638,11 +639,12 @@ TocOpen: true
 
   // Quiz page for this section
   const sectionQuestions = courseData.sections.find(s => s.id === secConfig.secId)?.questions || [];
+  const quizWeight = (secConfig.secId * 100) + 10;
   let quizMd = `---
 title: ${JSON.stringify(`Bài Kiểm Tra Trắc Nghiệm: ${secConfig.secTitle} (20 Câu)`)}
 description: ${JSON.stringify(`Bài test trắc nghiệm 20 câu hỏi tình huống thực tế cho ${secConfig.secTitle}. Điểm đạt yêu cầu: 16/20 (80%).`)}
 url: "/projects/anti-scam/${secConfig.folder}/quiz/"
-weight: 99
+weight: ${quizWeight}
 showToc: true
 ---
 

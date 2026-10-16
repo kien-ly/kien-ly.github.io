@@ -2,7 +2,7 @@
 title: "Bài Kiểm Tra Trắc Nghiệm: Section 1: Nhận Thức Số & Dấu Hiệu Đỏ (20 Câu)"
 description: "Bài test trắc nghiệm 20 câu hỏi tình huống thực tế cho Section 1: Nhận Thức Số & Dấu Hiệu Đỏ. Điểm đạt yêu cầu: 16/20 (80%)."
 url: "/projects/anti-scam/section-1/quiz/"
-weight: 99
+weight: 110
 showToc: true
 ---
 

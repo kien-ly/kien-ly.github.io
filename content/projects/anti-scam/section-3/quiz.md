@@ -2,7 +2,7 @@
 title: "Bài Kiểm Tra Trắc Nghiệm: Section 3: Lừa Đảo Tài Chính, Tiền Ảo & Tuyển Dụng Teen (20 Câu)"
 description: "Bài test trắc nghiệm 20 câu hỏi tình huống thực tế cho Section 3: Lừa Đảo Tài Chính, Tiền Ảo & Tuyển Dụng Teen. Điểm đạt yêu cầu: 16/20 (80%)."
 url: "/projects/anti-scam/section-3/quiz/"
-weight: 99
+weight: 310
 showToc: true
 ---
 

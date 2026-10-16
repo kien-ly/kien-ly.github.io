@@ -2,7 +2,7 @@
 title: "Bài 3.2: Hiểm Họa Cho Thuê, Mua Bán Tài Khoản Ngân Hàng & Rủi Ro Pháp Lý"
 description: "Hiểu rõ trách nhiệm hình sự khi vô tình trở thành mắt xích rửa tiền cho tội phạm mạng."
 url: "/projects/anti-scam/section-3/02-cho-thue-tai-khoan-ngan-hang/"
-weight: 2
+weight: 302
 showToc: true
 TocOpen: true
 ---

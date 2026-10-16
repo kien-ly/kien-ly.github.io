@@ -2,7 +2,7 @@
 title: "Bài 1.3: Nhận Diện Chiêu Trò Giả Mạo (Phishing & Smishing)"
 description: "Bóc trần kỹ thuật tấn công câu cá qua liên kết web và trạm phát sóng BTS giả mạo tin nhắn ngân hàng."
 url: "/projects/anti-scam/section-1/03-phishing-smishing/"
-weight: 3
+weight: 103
 showToc: true
 TocOpen: true
 ---

@@ -2,7 +2,7 @@
 title: "Bài 4.2: Quy Trình 5 Bước Phản Ứng Nhanh Khi Dính Bẫy Lừa Đảo"
 description: "Hành động chuẩn xác từng giây khi lỡ chuyển tiền hoặc bấm vào đường link cài mã độc."
 url: "/projects/anti-scam/section-4/02-quy-trinh-phan-ung-nhanh/"
-weight: 2
+weight: 402
 showToc: true
 TocOpen: true
 ---

@@ -2,7 +2,7 @@
 title: "Bài 1.1: Giải Mã Tâm Lý Học Tội Phạm Mạng (Social Engineering)"
 description: "Khám phá cách kẻ lừa đảo khai thác điểm yếu tâm lý của con người thay vì bẻ khóa máy tính."
 url: "/projects/anti-scam/section-1/01-tam-ly-social-engineering/"
-weight: 1
+weight: 101
 showToc: true
 TocOpen: true
 ---

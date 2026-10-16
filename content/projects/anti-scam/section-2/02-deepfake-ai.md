@@ -2,7 +2,7 @@
 title: "Bài 2.2: Kỷ Nguyên Deepfake AI & Kỹ Thuật Lật Tẩy Cuộc Gọi Video Giả"
 description: "Giải mã công nghệ AI hoán đổi khuôn mặt và giả giọng nói, cùng các mẹo bẻ gãy cuộc gọi lừa đảo."
 url: "/projects/anti-scam/section-2/02-deepfake-ai/"
-weight: 2
+weight: 202
 showToc: true
 TocOpen: true
 ---

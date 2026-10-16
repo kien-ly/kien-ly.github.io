@@ -2,7 +2,7 @@
 title: "Bài 4.1: Thiết Lập Pháo Đài Bảo Mật Cá Nhân & 2FA An Toàn"
 description: "Cách đặt mật khẩu chuẩn passphrase và chuyển đổi từ 2FA qua SMS sang Authenticator App."
 url: "/projects/anti-scam/section-4/01-phao-dai-bao-mat-ca-nhan/"
-weight: 1
+weight: 401
 showToc: true
 TocOpen: true
 ---

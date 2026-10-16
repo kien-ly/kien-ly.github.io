@@ -2,7 +2,7 @@
 title: "Bài 3.3: Bẫy App Tín Dụng Đen & Đa Cấp Tiền Ảo Học Đường"
 description: "Vạch trần phương thức đòi nợ khủng bố danh bạ của app tín dụng đen và các hội nhóm sàn lùa gà."
 url: "/projects/anti-scam/section-3/03-tin-dung-den-tien-ao/"
-weight: 3
+weight: 303
 showToc: true
 TocOpen: true
 ---

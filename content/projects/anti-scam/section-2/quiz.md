@@ -2,7 +2,7 @@
 title: "Bài Kiểm Tra Trắc Nghiệm: Section 2: Bẫy Mạng Xã Hội, Game Online & AI Deepfake (20 Câu)"
 description: "Bài test trắc nghiệm 20 câu hỏi tình huống thực tế cho Section 2: Bẫy Mạng Xã Hội, Game Online & AI Deepfake. Điểm đạt yêu cầu: 16/20 (80%)."
 url: "/projects/anti-scam/section-2/quiz/"
-weight: 99
+weight: 210
 showToc: true
 ---
 

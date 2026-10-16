@@ -2,7 +2,7 @@
 title: "Bài 4.3: Danh Bạ Khẩn Cấp & Công Cụ Cứu Nạn Số Quốc Gia"
 description: "Tổng hợp đường dây nóng, cổng cảnh báo an ninh mạng chính thống tại Việt Nam."
 url: "/projects/anti-scam/section-4/03-danh-ba-khan-cap-cuu-nan-so/"
-weight: 3
+weight: 403
 showToc: true
 TocOpen: true
 ---
