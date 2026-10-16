@@ -1,14 +1,14 @@
 {
-  "courseTitle": "Kỹ năng Phòng chống Lừa đảo Trực tuyến cho Thanh thiếu niên",
+  "courseTitle": "Khóa Học Kỹ Năng Phòng Chống Lừa Đảo Trực Tuyến Dành Cho Thanh Thiếu Niên",
   "targetAudience": "Học sinh, sinh viên, thanh thiếu niên (Gen Z)",
   "passingScore": 80,
   "totalSections": 4,
   "sections": [
     {
       "id": 1,
-      "title": "Nhận thức số & Bản đồ chiêu trò lừa đảo trực tuyến",
-      "shortTitle": "Nhận thức số & Dấu hiệu đỏ",
-      "icon": "🛡️",
+      "title": "Nhận Thức Số & Bản Đồ Chiêu Trò Lừa Đảo Trực Tuyến",
+      "shortTitle": "Nhận Thức Số & Dấu Hiệu Đỏ",
+      "icon": "",
       "contentMarkdown": "NHẬN THỨC SỐ & BẢN ĐỒ CHIÊU TRÒ LỪA ĐẢO TRỰC TUYẾN\n\n### 1.1. Mục tiêu bài học\n* Hiểu tâm lý học của kẻ lừa đảo: Nỗi sợ hãi (Fear), Lòng tham/cám dỗ quà tặng (Greed), Tính tò mò (Curiosity), Sự khẩn cấp giả tạo (Urgency).\n* Nhận diện các \"Red Flags\" (Dấu hiệu cảnh báo đỏ) phổ biến trong tin nhắn, email và liên kết web.\n* Phân biệt tin nhắn chính thống và tin lừa đảo giả mạo (Phishing, Smishing).\n\n### 1.2. Nội dung chi tiết\n1. **Bài 1: Giải mã tâm lý kẻ lừa đảo trực tuyến**\n   * Đánh vào sự thiếu kinh nghiệm của Gen Z và học sinh, sinh viên.\n   * Kỹ thuật thao túng tâm lý xã hội (Social Engineering).\n2. **Bài 2: Các dấu hiệu cảnh báo kinh điển (Red Flags)**\n   * Yêu cầu hành động gấp gáp: *\"Khóa tài khoản trong 24h nếu không bấm vào link\"*, *\"Trúng thưởng chỉ còn 5 phút\"*.\n   * Lỗi ngữ pháp, xưng hô kỳ lạ, địa chỉ gửi/tên miền mập mờ (VD: `vietcombank-login.xyz`, `facebook-security-check.cfd`).\n   * Yêu cầu thông tin nhạy cảm: Mật khẩu, mã OTP, số CCCD/CMND.\n3. **Bài 3: Nhận diện chiêu trò Giả mạo (Phishing / Brand Spoofing)**\n   * Giả mạo trường học, giáo viên, ban quản trị trường yêu cầu đóng học phí qua STK cá nhân.\n   * Giả danh cơ quan công an, tòa án, shipper dọa kiện tụng hoặc thu hồi gói hàng cấm.\n4. **Tài liệu tham khảo & Đọc thêm:**\n   * Cẩm nang Nhận diện và Phòng chống Lừa đảo trực tuyến (Cục An toàn thông tin - Bộ TT&TT).\n   * Dự án Chống Lừa Đảo ([chongluadao.vn](https://chongluadao.vn)).",
       "questions": [
         {
@@ -475,9 +475,9 @@
     },
     {
       "id": 2,
-      "title": "Bẫy Mạng Xã Hội, Game Online & Công nghệ Deepfake AI",
+      "title": "Bẫy Mạng Xã Hội, Game Online & Công Nghệ AI Deepfake",
       "shortTitle": "Bẫy MXH, Game & Deepfake",
-      "icon": "🎮",
+      "icon": "",
       "contentMarkdown": "BẪY MẠNG XÃ HỘI, GAME ONLINE & CÔNG NGHỆ DEEPFAKE AI\n\n### 2.1. Mục tiêu bài học\n* Nhận diện các bẫy lừa đảo thường gặp trong cộng đồng game thủ trẻ tuổi: Mua bán account, nạp thẻ giá rẻ, hack skin/mod game.\n* Hiểu cách thức hoạt động của Deepfake (hình ảnh, video, giả giọng nói người thân) và cách vạch trần kẻ mạo danh.\n* Phòng chống bẫy tống tiền tình dục (Sextortion), lừa đảo hẹn hò ảo (Romance Scam / Pig Butchering).\n\n### 2.2. Nội dung chi tiết\n1. **Bài 1: Bẫy Game Online & Thế giới ảo**\n   * Lừa đảo mua bán tài khoản (Valorant, Liên Quân, Free Fire, Roblox, Genshin Impact...).\n   * Phần mềm độc hại đội lốt \"Tool Hack Game / Bản mod nhận Robux miễn phí\".\n   * Các trang nạp quân huy/kim cương chiết khấu 70-90% thực chất là bẫy đánh cắp tài khoản mạng xã hội.\n2. **Bài 2: Trí tuệ nhân tạo (AI) & Kỷ nguyên Deepfake**\n   * Giả lập video call khuôn mặt người thân giật lag, tiếng nói đứt quãng xin tiền gấp vì tai nạn, cấp cứu.\n   * Cách lật tẩy video call Deepfake: Yêu cầu giơ tay vẫy trước mặt, quay góc nghiêng 90 độ, hỏi chi tiết kỷ niệm riêng tư chỉ 2 người biết.\n3. **Bài 3: Cạm bẫy Tình cảm & Tống tiền hình ảnh nhạy cảm (Sextortion)**\n   * Kẻ xấu giả vờ kết bạn, thả thính, dụ dỗ gửi ảnh/video nhạy cảm (nudes) rồi tống tiền, đe dọa gửi cho phụ huynh, bạn học.\n   * Bẫy \"Pig butchering\" (Mổ heo): Nuôi dưỡng niềm tin tình cảm sau đó rủ rê đầu tư sàn tiền ảo.\n4. **Tài liệu tham khảo & Đọc thêm:**\n   * Hướng dẫn An toàn Trực tuyến cho Giới trẻ của UNICEF & DQ Institute.\n   * Báo cáo về Sextortion nhắm vào trẻ vị thành niên của NCMEC (National Center for Missing & Exploited Children).",
       "questions": [
         {
@@ -944,9 +944,9 @@
     },
     {
       "id": 3,
-      "title": "Bẫy Tài chính, Tiền ảo & Tuyển dụng \"Việc nhẹ lương cao\" cho Teen",
-      "shortTitle": "Bẫy Tài chính & Việc làm Teen",
-      "icon": "💸",
+      "title": "Bẫy Tài Chính, Tiền Ảo & Tuyển Dụng Việc Nhẹ Lương Cao Cho Teen",
+      "shortTitle": "Bẫy Tài Chính & Tuyển Dụng Teen",
+      "icon": "",
       "contentMarkdown": "BẪY TÀI CHÍNH, TIỀN ẢO & TUYỂN DỤNG \"VIỆC NHẸ LƯƠNG CAO\" CHO TEEN\n\n### 3.1. Mục tiêu bài học\n* Vạch trần chiêu bài tuyển dụng online: Dịch phụ đề, gõ văn bản tại nhà, bẫy giật đơn hàng Shopee/Lazada, làm mẫu ảnh nhí/học sinh.\n* Cảnh báo bẫy tài chính học đường: Vay tiền qua app tín dụng đen, lôi kéo chơi \"sàn nhị phân BO / coin rác\", nhận mở tài khoản ngân hàng hộ (cho thuê/mượn tài khoản).\n* Nhận thức rõ ràng về hậu quả pháp lý hình sự khi vô tình trở thành mắt xích rửa tiền cho tội phạm.\n\n### 3.2. Nội dung chi tiết\n1. **Bài 1: Tuyển dụng \"Việc nhẹ lương cao\" trên mạng xã hội**\n   * Đánh vào tâm lý muốn kiếm tiền phụ giúp gia đình hoặc tự lập tài chính của học sinh, sinh viên.\n   * Kịch bản \"Giật đơn hàng hưởng hoa hồng\": Mồi nhử nạp 100k nhận 130k -> Nạp 1 triệu nhận 1.3 triệu -> Đơn cuối nạp 20 triệu rồi giam tiền với lý do sai cú pháp.\n   * Bẫy \"Cộng tác viên lồng tiếng/dịch thuật/đọc sách thu âm\": Bắt nạp tiền cọc dữ liệu hợp đồng.\n2. **Bài 2: Hiểm họa Cho thuê, Cho mượn tài khoản ngân hàng & Mở thẻ hộ**\n   * Kẻ gian trả 500k - 2 triệu đồng để học sinh sinh viên mở tài khoản và bán lại.\n   * Hệ quả pháp lý: Tài khoản bị dùng để nhận tiền lừa đảo, rửa tiền xuyên biên giới. Người mở tài khoản trở thành đồng phạm hình sự.\n3. **Bài 3: Tín dụng đen & Các hình thức đa cấp tiền số học đường**\n   * Vay tiền qua app chụp ảnh CMND/CCCD và danh bạ điện thoại: Lãi suất cắt cổ 1000%/năm, bị khủng bố gọi điện cho cả trường học và gia đình.\n   * Lôi kéo tham gia hội nhóm đầu tư Forex, Crypto cam kết lãi 30%/tháng.\n4. **Tài liệu tham khảo & Đọc thêm:**\n   * Bộ luật Hình sự Việt Nam: Tội mua bán, cho thuê tài khoản ngân hàng (Điều 291).\n   * Chuỗi cảnh báo của Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao (A05).",
       "questions": [
         {
@@ -1413,9 +1413,9 @@
     },
     {
       "id": 4,
-      "title": "Kỹ thuật Phòng thủ số & Kịch bản Ứng phó Khủng hoảng",
-      "shortTitle": "Phòng thủ & Ứng phó khẩn cấp",
-      "icon": "🚨",
+      "title": "Kỹ Thuật Phòng Thủ Số & Kịch Bản Ứng Phó Khủng Hoảng",
+      "shortTitle": "Phòng Thủ & Ứng Phó Khẩn Cấp",
+      "icon": "",
       "contentMarkdown": "KỸ THUẬT PHÒNG THỦ SỐ & KỊCH BẢN ỨNG PHÓ KHỦNG HOẢNG\n\n### 4.1. Mục tiêu bài học\n* Thiết lập pháo đài bảo mật cá nhân: Mật khẩu mạnh, Xác thực 2 bước (2FA bằng Authenticator app), Quản lý quyền riêng tư thiết bị.\n* Nắm vững quy trình phản ứng nhanh 5 bước (Incident Response) khi nhận ra mình đã bị lừa hoặc bị lộ thông tin nhạy cảm.\n* Danh bạ các đường dây nóng (Hotline) hỗ trợ khẩn cấp tại Việt Nam.\n\n### 4.2. Nội dung chi tiết\n1. **Bài 1: Pháo đài bảo mật cá nhân (Digital Hygiene)**\n   * Nguyên tắc đặt mật khẩu: Passphrase dài $\\ge$ 12 ký tự, không dùng ngày sinh, tên người yêu, số điện thoại.\n   * Tại sao 2FA qua SMS không còn an toàn tuyệt đối (bẫy SIM Swap)? Chuyển sang Google Authenticator / Microsoft Authenticator / Khóa bảo mật FIDO.\n   * Vệ sinh dữ liệu số: Định kỳ kiểm tra danh sách thiết bị đăng nhập, gỡ bỏ app rác, tắt quyền truy cập vị trí/danh bạ không cần thiết.\n2. **Bài 2: Quy trình 5 bước Phản ứng nhanh khi dính bẫy lừa đảo**\n   * **Bước 1: Cắt đứt kết nối:** Ngắt mạng internet (Wifi/4G), cô lập thiết bị nếu nghi dính mã độc.\n   * **Bước 2: Khóa khẩn cấp:** Gọi hotline ngân hàng khóa thẻ, khóa tài khoản giao dịch điện tử ngay lập tức.\n   * **Bước 3: Thu thập bằng chứng:** Chụp màn hình tin nhắn, số tài khoản nhận tiền, lịch sử chuyển khoản, link web (không bấm xóa tin nhắn).\n   * **Bước 4: Đổi thông tin bảo mật:** Đổi mật khẩu email gốc và các tài khoản quan trọng từ một thiết bị sạch khác.\n   * **Bước 5: Trình báo & Tìm kiếm trợ giúp:** Báo cáo phụ huynh, thầy cô, trình báo cơ quan công an địa phương và Cục An toàn thông tin.\n3. **Bài 3: Danh bạ khẩn cấp & Công cụ cứu nạn số tại Việt Nam**\n   * Đường dây nóng Cảnh báo an toàn thông tin Việt Nam: Tổng đài `156` (miễn phí phản ánh cuộc gọi/tin nhắn rác, lừa đảo).\n   * Tổng đài Quốc gia Bảo vệ Trẻ em: `111` (tư vấn tâm lý, can thiệp khi bị tống tiền, bạo lực mạng).\n   * Cổng cảnh báo an toàn thông tin: `canhbao.ncsc.gov.vn`.\n   * Dự án Chống Lừa Đảo: Báo cáo website lừa đảo qua tiện ích trình duyệt hoặc trang web `chongluadao.vn`.",
       "questions": [
         {

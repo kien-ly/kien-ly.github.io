@@ -17,11 +17,11 @@ TocOpen: true
 
 | Dấu hiệu | Biểu hiện cụ thể | Mức độ rủi ro |
 |---|---|---|
-| **Thời gian gấp gáp** | *"Khẩn cấp", "Chỉ còn 5 phút", "Hủy trong 24h"* | 🚨 Cực cao |
-| **Tên miền mập mờ** | Chứa đuôi lạ (`.xyz`, `.top`, `.cfd`), sai chính tả | 🚨 Cực cao |
-| **Đòi hỏi thông tin nhạy cảm** | Yêu cầu nhập mật khẩu, mã OTP, số thẻ ngân hàng, CCCD | ⛔ Tuyệt đối tránh |
-| **Lời hứa phi thực tế** | *"Việc nhẹ lương 500k/ngày", "Nạp 1 được 10"* | 🚨 Lừa đảo chắc chắn |
-| **Lỗi chính tả & dịch thuật** | Văn phong ngô nghê, câu cú lủng củng | ⚠️ Đáng ngờ |
+| **Thời gian gấp gáp** | *"Khẩn cấp", "Chỉ còn 5 phút", "Hủy trong 24h"* | Rất cao |
+| **Tên miền mập mờ** | Chứa đuôi lạ (`.xyz`, `.top`, `.cfd`), sai chính tả | Cực kỳ nguy hiểm |
+| **Đòi hỏi thông tin nhạy cảm** | Yêu cầu nhập mật khẩu, mã OTP, số thẻ ngân hàng, CCCD | Tuyệt đối tránh |
+| **Lời hứa phi thực tế** | *"Việc nhẹ lương 500k/ngày", "Nạp 1 được 10"* | Lừa đảo chắc chắn |
+| **Lỗi chính tả & dịch thuật** | Văn phong ngô nghê, câu cú lủng củng | Đáng ngờ |
 
 ---
 

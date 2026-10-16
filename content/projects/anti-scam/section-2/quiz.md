@@ -11,7 +11,7 @@ showToc: true
 > **Quy định làm bài:**
 > - Số lượng câu hỏi: **20 câu hỏi tình huống**.
 > - Điểm đạt yêu cầu: **Tối thiểu 16/20 câu đúng (80%)** để đủ điều kiện mở khóa Section tiếp theo.
-> - [**👉 Mở Ứng Dụng Làm Bài Test Tự Động Chấm Điểm & Lưu Tiến Độ Vào Trình Duyệt**](/anti-scam/)
+> - [**Mở Ứng Dụng Làm Bài Test Tự Động Chấm Điểm & Lưu Tiến Độ Vào Trình Duyệt**](/anti-scam/)
 
 ---
 
@@ -25,7 +25,7 @@ showToc: true
 - **D.** Không có chuyện gì xảy ra
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -40,7 +40,7 @@ showToc: true
 - **D.** Để tặng quà sinh nhật
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -55,7 +55,7 @@ showToc: true
 - **D.** Gọi được liên tục 2 tiếng không mất kết nối
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -70,7 +70,7 @@ showToc: true
 - **D.** Nhắn tin chửi bới
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -85,7 +85,7 @@ showToc: true
 - **D.** Hack máy chủ trường học
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -100,7 +100,7 @@ showToc: true
 - **D.** Làm theo mọi yêu cầu chụp thêm ảnh quái gở của kẻ tống tiền
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -115,7 +115,7 @@ showToc: true
 - **D.** Người tốt giúp đỡ cộng đồng miễn phí
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -130,7 +130,7 @@ showToc: true
 - **D.** Bật bảo mật 2 lớp qua email cha mẹ
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -145,7 +145,7 @@ showToc: true
 - **D.** Gửi virus phá hỏng điện thoại
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -160,7 +160,7 @@ showToc: true
 - **D.** Bản cập nhật mới của game
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -175,7 +175,7 @@ showToc: true
 - **D.** Kẻ gian phải có dây thanh quản giống hệt nạn nhân
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -190,7 +190,7 @@ showToc: true
 - **D.** Mượn tiền mẹ mua quà tặng người đó
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -205,7 +205,7 @@ showToc: true
 - **D.** Link dẫn về trang chủ Wikipedia
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -220,7 +220,7 @@ showToc: true
 - **D.** Do bàn phím bị kẹt phím
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -235,7 +235,7 @@ showToc: true
 - **D.** Không có nguy cơ nào
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -250,7 +250,7 @@ showToc: true
 - **D.** Trình duyệt file của máy
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -265,7 +265,7 @@ showToc: true
 - **D.** Mã giảm giá trà sữa
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -280,7 +280,7 @@ showToc: true
 - **D.** Dạy chơi cờ vua
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -295,7 +295,7 @@ showToc: true
 - **D.** Gửi luôn mật khẩu acc cho họ
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -310,7 +310,7 @@ showToc: true
 - **D.** Vì các chữ cái sẽ bị biến mất
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>

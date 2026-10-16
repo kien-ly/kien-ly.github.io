@@ -11,7 +11,7 @@ showToc: true
 > **Quy định làm bài:**
 > - Số lượng câu hỏi: **20 câu hỏi tình huống**.
 > - Điểm đạt yêu cầu: **Tối thiểu 16/20 câu đúng (80%)** để đủ điều kiện mở khóa Section tiếp theo.
-> - [**👉 Mở Ứng Dụng Làm Bài Test Tự Động Chấm Điểm & Lưu Tiến Độ Vào Trình Duyệt**](/anti-scam/)
+> - [**Mở Ứng Dụng Làm Bài Test Tự Động Chấm Điểm & Lưu Tiến Độ Vào Trình Duyệt**](/anti-scam/)
 
 ---
 
@@ -25,7 +25,7 @@ showToc: true
 - **D.** Học bổng tài năng
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -40,7 +40,7 @@ showToc: true
 - **D.** Nạn nhân nhận được hàng thật miễn phí
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -55,7 +55,7 @@ showToc: true
 - **D.** Nhờ bạn bè trong lớp cùng mở
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -70,7 +70,7 @@ showToc: true
 - **D.** Chỉ bị khóa tài khoản 2 ngày
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -85,7 +85,7 @@ showToc: true
 - **D.** Quyền truy cập ứng dụng máy tính cầm tay
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -100,7 +100,7 @@ showToc: true
 - **D.** Mời đi uống cà phê tâm sự
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -115,7 +115,7 @@ showToc: true
 - **D.** Cơ quan thuế nhà nước
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -130,7 +130,7 @@ showToc: true
 - **D.** Chuyển tiền qua STK cá nhân
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -145,7 +145,7 @@ showToc: true
 - **D.** Cho ký hợp đồng người mẫu ngay
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -160,7 +160,7 @@ showToc: true
 - **D.** Telegram không tốn pin
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -175,7 +175,7 @@ showToc: true
 - **D.** Ưu đãi nhân đôi tài khoản
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -190,7 +190,7 @@ showToc: true
 - **D.** Doanh nhân được tạp chí Forbes vinh danh
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -205,7 +205,7 @@ showToc: true
 - **D.** Không có nguy cơ nào
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -220,7 +220,7 @@ showToc: true
 - **D.** Được bảo hộ bởi luật lao động
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -235,7 +235,7 @@ showToc: true
 - **D.** Chờ 30 phút rồi nạp
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -250,7 +250,7 @@ showToc: true
 - **D.** Hoạt động mua bán gia cầm trực tuyến
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -265,7 +265,7 @@ showToc: true
 - **D.** Đăng bài lên Facebook khoe trúng lộc
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -280,7 +280,7 @@ showToc: true
 - **D.** Chặn số điện thoại người đó là xong
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -295,7 +295,7 @@ showToc: true
 - **D.** Ngày tháng năm sinh của chủ thẻ
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -310,7 +310,7 @@ showToc: true
 - **D.** Giáo viên chủ nhiệm
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>

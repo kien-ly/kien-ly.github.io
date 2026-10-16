@@ -113,25 +113,24 @@
       
       let badgeHtml = '';
       if (isPassed) {
-        badgeHtml = '<span class="sec-status-badge badge-passed">✓ Đã Pass</span>';
+        badgeHtml = '<span class="sec-status-badge badge-passed">Đã đạt</span>';
       } else if (isUnlocked) {
         badgeHtml = '<span class="sec-status-badge badge-current">Đang học</span>';
       } else {
-        badgeHtml = '<span class="sec-status-badge badge-locked">🔒 Khóa</span>';
+        badgeHtml = '<span class="sec-status-badge badge-locked">Chưa mở</span>';
       }
 
       li.innerHTML = `
         <div class="section-item-header">
           <div class="sec-title-wrap">
-            <span class="sec-icon">${sec.icon}</span>
-            <span class="sec-num">Section ${sec.id}</span>
+            <span class="sec-num">Phần ${sec.id}</span>
           </div>
           ${badgeHtml}
         </div>
         <div class="sec-name">${sec.shortTitle || sec.title}</div>
         <div class="sec-meta">
           <span>${sec.questions.length} câu trắc nghiệm</span>
-          <span>Điểm yêu cầu: $\\ge$ 80%</span>
+          <span>Điểm yêu cầu: ≥ 80%</span>
         </div>
       `;
 
@@ -179,7 +178,7 @@
     container.innerHTML = `
       <div class="lesson-banner">
         <div class="tagline">Section 0${currentSec.id} • Khóa học Phòng chống Lừa đảo</div>
-        <h2>${currentSec.icon} ${currentSec.title}</h2>
+        <h2>${currentSec.title}</h2>
         <p style="color: var(--text-muted); font-size: 14px;">Nghiên cứu tài liệu bên dưới và hoàn thành bài kiểm tra cuối section để mở khóa phần tiếp theo.</p>
       </div>
 
@@ -366,19 +365,18 @@
 
     area.innerHTML = `
       <div id="quiz-result-modal" class="quiz-result-modal ${passed ? 'pass' : 'fail'}">
-        <div class="res-icon">${passed ? '🎉' : '⚠️'}</div>
-        <div class="res-title">${passed ? 'XIN CHÚC MỪNG! BẠN ĐÃ PASS' : 'CHƯA ĐẠT ĐIỂM PASS (YÊU CẦU $\\ge$ 80%)'}</div>
-        <div class="res-score">Kết quả: <strong>${score}/${total}</strong> câu đúng (${percentage}%)</div>
+        <div class="res-title">${passed ? 'KẾT QUẢ: ĐẠT YÊU CẦU' : 'KẾT QUẢ: CHƯA ĐẠT (YÊU CẦU ≥ 80%)'}</div>
+        <div class="res-score">Điểm số: <strong>${score}/${total}</strong> câu chính xác (${percentage}%)</div>
         <p class="res-msg">
           ${passed 
             ? (hasNext 
-                ? `Tuyệt vời! Bạn đã mở khóa thành công <strong>Section ${nextSecId}</strong>. Hãy tiếp tục hành trình nâng cao phản xạ an toàn số.`
-                : `Chúc mừng bạn đã hoàn thành xuất sắc toàn bộ khóa học! Bạn đã làm chủ các kỹ năng phòng vệ trước các bẫy lừa đảo trực tuyến.`)
-            : `Rất tiếc bạn cần tối thiểu 16/20 câu đúng để vượt qua section này. Hãy ôn lại bài học và thử lại nhé!`}
+                ? `Bạn đã hoàn thành bài kiểm tra phần này và mở khóa <strong>Section ${nextSecId}</strong>. Hãy tiếp tục học phần tiếp theo.`
+                : `Bạn đã hoàn thành toàn bộ khóa học phòng chống lừa đảo trực tuyến dành cho thanh thiếu niên.`)
+            : `Điểm số hiện tại chưa đạt ngưỡng tối thiểu 16/20 (80%). Bạn hãy xem lại bài học và làm lại bài kiểm tra nhé.`}
         </p>
         <div class="res-buttons">
           <button id="btn-retry" class="btn-primary" style="background: var(--card-hover); border: 1px solid var(--border-color); color: var(--text-main);">
-            🔄 Làm lại bài test
+            Làm lại bài kiểm tra
           </button>
           ${passed && hasNext ? `
             <button id="btn-next-sec" class="btn-accent">

@@ -7,16 +7,38 @@ const __dirname = path.dirname(__filename);
 const root = path.resolve(__dirname, '..');
 
 // 1. Read course-data.json
-const courseData = JSON.parse(fs.readFileSync(path.resolve(root, 'static/anti-scam/course-data.json'), 'utf8'));
+const courseDataPath = path.resolve(root, 'static/anti-scam/course-data.json');
+const courseData = JSON.parse(fs.readFileSync(courseDataPath, 'utf8'));
+
+// Giữ nguyên giọng văn chuẩn thân thiện với học sinh, sinh viên, bỏ các icon emoji
+courseData.courseTitle = "Khóa Học Kỹ Năng Phòng Chống Lừa Đảo Trực Tuyến Dành Cho Thanh Thiếu Niên";
+courseData.sections[0].title = "Nhận Thức Số & Bản Đồ Chiêu Trò Lừa Đảo Trực Tuyến";
+courseData.sections[0].shortTitle = "Nhận Thức Số & Dấu Hiệu Đỏ";
+courseData.sections[0].icon = "";
+
+courseData.sections[1].title = "Bẫy Mạng Xã Hội, Game Online & Công Nghệ AI Deepfake";
+courseData.sections[1].shortTitle = "Bẫy MXH, Game & Deepfake";
+courseData.sections[1].icon = "";
+
+courseData.sections[2].title = "Bẫy Tài Chính, Tiền Ảo & Tuyển Dụng Việc Nhẹ Lương Cao Cho Teen";
+courseData.sections[2].shortTitle = "Bẫy Tài Chính & Tuyển Dụng Teen";
+courseData.sections[2].icon = "";
+
+courseData.sections[3].title = "Kỹ Thuật Phòng Thủ Số & Kịch Bản Ứng Phó Khủng Hoảng";
+courseData.sections[3].shortTitle = "Phòng Thủ & Ứng Phó Khẩn Cấp";
+courseData.sections[3].icon = "";
+
+fs.writeFileSync(courseDataPath, JSON.stringify(courseData, null, 2), 'utf8');
+console.log('Updated course-data.json: kept teen-friendly voice, removed emojis.');
 
 // 2. Base directory for Hugo project anti-scam
 const baseDir = path.resolve(root, 'content/projects/anti-scam');
 fs.mkdirSync(baseDir, { recursive: true });
 
-// 3. Create _index.md for the Project
+// 3. Create _index.md for the Project (Teen-friendly, zero emoji)
 const projectIndex = `---
 title: "Khóa Học Phòng Chống Lừa Đảo Trực Tuyến Dành Cho Thanh Thiếu Niên"
-description: "Dự án giáo dục an ninh mạng và kỹ năng sinh tồn số: Nhận diện bẫy lừa đảo mạng xã hội, game online, AI deepfake, tuyển dụng và tài chính trực tuyến."
+description: "Trang bị kiến thức và kỹ năng nhận diện, phòng chống các bẫy lừa đảo mạng xã hội, game online, AI deepfake, tuyển dụng và tài chính trực tuyến."
 url: "/projects/anti-scam/"
 date: 2026-10-16
 tags: ["cybersecurity", "anti-scam", "teen-safety", "education", "deepfake", "game-safety"]
@@ -27,50 +49,50 @@ TocOpen: true
 
 # Khóa Học Phòng Chống Lừa Đảo Trực Tuyến Dành Cho Thanh Thiếu Niên
 
-> **Dự án an ninh mạng cộng đồng:** Xây dựng hệ thống bài giảng chuyên sâu và bài test trắc nghiệm tương tác giúp học sinh, sinh viên và thanh thiếu niên (Gen Z) nâng cao nhận thức, nhận diện các bẫy lừa đảo tinh vi và làm chủ các kỹ thuật phòng thủ số an toàn.
+> **Mục tiêu:** Trang bị kiến thức, kỹ năng nhận diện và phản ứng nhanh trước các bẫy lừa đảo phổ biến trên không gian mạng hiện nay (mạng xã hội, tài chính, game, AI deepfake, tuyển dụng học sinh - sinh viên).
 
-- 🎮 **Ứng dụng Trắc nghiệm Tương tác:** [Vào Giao diện Luyện tập & Thi Trắc nghiệm Section Mở Khóa](/anti-scam/)
-- 📖 **Chi tiết Giáo trình:** [Xem tài liệu tổng hợp chi tiết](file:///D:/pj/me/kien-ly.github.io/.idea/pj/anti-scam/detail-content.md)
+- **Ứng dụng Trắc nghiệm Tương tác:** [Vào Giao diện Luyện tập & Thi Trắc nghiệm Section Mở Khóa](/anti-scam/)
+- **Tài liệu Chi tiết:** [Xem giáo trình tổng hợp chi tiết](file:///D:/pj/me/kien-ly.github.io/.idea/pj/anti-scam/detail-content.md)
 
 ---
 
-## 📌 Lộ trình các Section & Bài học
+## Lộ trình các Section & Bài học
 
-Khóa học được thiết kế theo lộ trình chuẩn hóa gồm 4 Section chính, mỗi Section có đầy đủ các bài học chuyên đề và 1 bài test trắc nghiệm 20 câu:
+Khóa học gồm 4 Section chính (Lộ trình từ Cơ bản đến Nâng cao). Học viên phải hoàn thành bài trắc nghiệm (Pass rate: $\\ge 80\\%$ tương đương tối thiểu 16/20 câu đúng) của mỗi Section để mở khóa Section tiếp theo:
 
-### 🛡️ [Section 1: Nhận Thức Số & Dấu Hiệu Đỏ (Red Flags)](/projects/anti-scam/section-1/)
+### [Section 1: Nhận Thức Số & Dấu Hiệu Đỏ](/projects/anti-scam/section-1/)
 - **Bài 1.1:** [Giải mã Tâm lý học Tội phạm Mạng (Social Engineering)](/projects/anti-scam/section-1/01-tam-ly-social-engineering/)
 - **Bài 1.2:** [Nhận diện các Dấu hiệu Cảnh báo Đỏ (Red Flags)](/projects/anti-scam/section-1/02-nhan-dien-red-flags/)
 - **Bài 1.3:** [Nhận diện Chiêu trò Giả mạo (Phishing & Smishing)](/projects/anti-scam/section-1/03-phishing-smishing/)
-- **Bài Test:** [Trắc nghiệm Đánh giá Năng lực Section 1 (20 câu)](/projects/anti-scam/section-1/quiz/)
+- **Bài kiểm tra:** [Trắc nghiệm Đánh giá Năng lực Section 1 (20 câu)](/projects/anti-scam/section-1/quiz/)
 
-### 🎮 [Section 2: Bẫy Mạng Xã Hội, Game Online & Công Nghệ AI Deepfake](/projects/anti-scam/section-2/)
+### [Section 2: Bẫy Mạng Xã Hội, Game Online & Công Nghệ AI Deepfake](/projects/anti-scam/section-2/)
 - **Bài 2.1:** [Cạm bẫy trong Game Online & Thế giới Ảo](/projects/anti-scam/section-2/01-bay-game-online/)
 - **Bài 2.2:** [Kỷ nguyên Deepfake AI & Kỹ thuật Lật tẩy Cuộc gọi Video Giả](/projects/anti-scam/section-2/02-deepfake-ai/)
 - **Bài 2.3:** [Cạm bẫy Tình cảm & Phòng chống Tống tiền Nhạy cảm (Sextortion)](/projects/anti-scam/section-2/03-sextortion-romance-scam/)
-- **Bài Test:** [Trắc nghiệm Đánh giá Năng lực Section 2 (20 câu)](/projects/anti-scam/section-2/quiz/)
+- **Bài kiểm tra:** [Trắc nghiệm Đánh giá Năng lực Section 2 (20 câu)](/projects/anti-scam/section-2/quiz/)
 
-### 💸 [Section 3: Lừa Đảo Tài Chính, Tiền Ảo & Tuyển Dụng Teen](/projects/anti-scam/section-3/)
+### [Section 3: Lừa Đảo Tài Chính, Tiền Ảo & Tuyển Dụng Teen](/projects/anti-scam/section-3/)
 - **Bài 3.1:** [Bẫy Tuyển dụng 'Việc nhẹ Lương cao' & Cộng tác viên Giật đơn hàng](/projects/anti-scam/section-3/01-tuyen-dung-viec-nhe-luong-cao/)
 - **Bài 3.2:** [Hiểm họa Cho thuê, Mua bán Tài khoản Ngân hàng & Rủi ro Pháp lý](/projects/anti-scam/section-3/02-cho-thue-tai-khoan-ngan-hang/)
 - **Bài 3.3:** [Bẫy App Tín dụng Đen & Đa cấp Tiền ảo Học đường](/projects/anti-scam/section-3/03-tin-dung-den-tien-ao/)
-- **Bài Test:** [Trắc nghiệm Đánh giá Năng lực Section 3 (20 câu)](/projects/anti-scam/section-3/quiz/)
+- **Bài kiểm tra:** [Trắc nghiệm Đánh giá Năng lực Section 3 (20 câu)](/projects/anti-scam/section-3/quiz/)
 
-### 🚨 [Section 4: Kỹ Thuật Phòng Thủ Số & Kịch Bản Ứng Phó Khủng Hoảng](/projects/anti-scam/section-4/)
+### [Section 4: Kỹ Thuật Phòng Thủ Số & Kịch Bản Ứng Phó Khủng Hoảng](/projects/anti-scam/section-4/)
 - **Bài 4.1:** [Thiết lập Pháo đài Bảo mật Cá nhân & 2FA An toàn](/projects/anti-scam/section-4/01-phao-dai-bao-mat-ca-nhan/)
 - **Bài 4.2:** [Quy trình 5 Bước Phản ứng Nhanh khi Dính Bẫy Lừa đảo](/projects/anti-scam/section-4/02-quy-trinh-phan-ung-nhanh/)
 - **Bài 4.3:** [Danh bạ Khẩn cấp & Công cụ Cứu nạn Số Quốc gia](/projects/anti-scam/section-4/03-danh-ba-khan-cap-cuu-nan-so/)
-- **Bài Test:** [Trắc nghiệm Đánh giá Năng lực Section 4 (20 câu)](/projects/anti-scam/section-4/quiz/)
+- **Bài kiểm tra:** [Trắc nghiệm Đánh giá Năng lực Section 4 (20 câu)](/projects/anti-scam/section-4/quiz/)
 
 ---
 
-## 🎯 Quy tắc Vượt qua Khóa học
+## Quy tắc Vượt qua Khóa học
 Học viên hoàn thành bài kiểm tra cuối mỗi Section đạt từ **80% trở lên (16/20 câu)** để mở khóa Section kế tiếp. Bạn có thể sử dụng [Ứng dụng Tương tác](/anti-scam/) để hệ thống tự động ghi nhận và cấp chứng chỉ hoàn thành.
 `;
 
 fs.writeFileSync(path.join(baseDir, '_index.md'), projectIndex, 'utf8');
 
-// 4. Detailed Lesson contents for each section
+// 4. Teen-friendly lessons, clear and engaging, no emoji clutter
 const lessonContents = [
   // SECTION 1
   {
@@ -146,11 +168,11 @@ flowchart TD
 
 | Dấu hiệu | Biểu hiện cụ thể | Mức độ rủi ro |
 |---|---|---|
-| **Thời gian gấp gáp** | *"Khẩn cấp", "Chỉ còn 5 phút", "Hủy trong 24h"* | 🚨 Cực cao |
-| **Tên miền mập mờ** | Chứa đuôi lạ (\`.xyz\`, \`.top\`, \`.cfd\`), sai chính tả | 🚨 Cực cao |
-| **Đòi hỏi thông tin nhạy cảm** | Yêu cầu nhập mật khẩu, mã OTP, số thẻ ngân hàng, CCCD | ⛔ Tuyệt đối tránh |
-| **Lời hứa phi thực tế** | *"Việc nhẹ lương 500k/ngày", "Nạp 1 được 10"* | 🚨 Lừa đảo chắc chắn |
-| **Lỗi chính tả & dịch thuật** | Văn phong ngô nghê, câu cú lủng củng | ⚠️ Đáng ngờ |
+| **Thời gian gấp gáp** | *"Khẩn cấp", "Chỉ còn 5 phút", "Hủy trong 24h"* | Rất cao |
+| **Tên miền mập mờ** | Chứa đuôi lạ (\`.xyz\`, \`.top\`, \`.cfd\`), sai chính tả | Cực kỳ nguy hiểm |
+| **Đòi hỏi thông tin nhạy cảm** | Yêu cầu nhập mật khẩu, mã OTP, số thẻ ngân hàng, CCCD | Tuyệt đối tránh |
+| **Lời hứa phi thực tế** | *"Việc nhẹ lương 500k/ngày", "Nạp 1 được 10"* | Lừa đảo chắc chắn |
+| **Lỗi chính tả & dịch thuật** | Văn phong ngô nghê, câu cú lủng củng | Đáng ngờ |
 
 ---
 
@@ -322,7 +344,7 @@ Nếu bạn nhận được cuộc gọi video khẩn cấp từ bạn bè xin t
 
 ## 1. Kịch bản Tống tiền Tình dục (Sextortion) diễn ra thế nào?
 
-1. **Giai đoạn tiếp cận:** Kẻ xấu dùng tài khoản ảo đăng ảnh hot boy/hot girl xinh đẹp, chủ động nhắn tin làm quen trên Instagram, Snapchat, Facebook, Tinder.
+1. **Giai đoạn tiếp cận:** Kẻ xấu dùng tài khoản ảo đăng ảnh đẹp, chủ động nhắn tin làm quen trên Instagram, Snapchat, Facebook, Tinder.
 2. **Giai đoạn tạo niềm tin lãng mạn:** Kẻ xấu nhắn tin trò chuyện ngọt ngào mỗi ngày, chia sẻ các câu chuyện bí mật để khơi gợi sự tin tưởng sâu sắc của bạn.
 3. **Giai đoạn dẫn dụ:** Kẻ xấu đề nghị gọi video call riêng tư hoặc gửi ảnh "khoe body", ảnh nhạy cảm của kẻ xấu trước (thực chất là video/ảnh ăn cắp trên mạng) rồi dụ bạn gửi lại ảnh khỏa thân (nudes) của bạn.
 4. **Giai đoạn tống tiền (Sextortion):** Ngay sau khi bạn gửi, kẻ xấu gửi lại ảnh chụp màn hình danh bạ bạn bè, tài khoản Facebook của cha mẹ, thầy cô của bạn và đe dọa: *"Chuyển 5 triệu ngay trong 30 phút, nếu không toàn bộ ảnh này sẽ được gửi cho trường học và bố mẹ bạn"*.
@@ -340,7 +362,7 @@ Nếu bạn nhận được cuộc gọi video khẩn cấp từ bạn bè xin t
 - **4. Sử dụng công cụ Take It Down:**
   - Truy cập trang web chính thức của tổ chức bảo vệ trẻ em quốc tế: [takeitdown.ncmec.org](https://takeitdown.ncmec.org).
   - Nền tảng này tạo mã băm (hash) kỹ thuật số cho bức ảnh nhạy cảm và tự động ngăn chặn nó không bao giờ được tải lên Facebook, Instagram, TikTok...
-- **5. Lên tiếng tìm sự hỗ trợ:** Đừng giấu một mình trong tuyệt vọng. Gọi ngay Tổng đài Quốc gia Bảo vệ Trẻ em **111** để được tư vấn tâm lý và hỗ trợ pháp lý khẩn cấp.
+- **5. Lên tiếng tìm sự hỗ trợ:** Đừng giấu một mình trong lo lắng. Gọi ngay Tổng đài Quốc gia Bảo vệ Trẻ em **111** để được tư vấn tâm lý và hỗ trợ pháp lý kịp thời.
 `
       }
     ]
@@ -401,7 +423,7 @@ flowchart TD
         content: `
 # Bài 3.2: Hiểm Họa Cho Thuê, Mua Bán Tài Khoản Ngân Hàng & Rủi Ro Pháp Lý
 
-> **Mục tiêu:** Cảnh báo nghiêm khắc về trách nhiệm pháp lý khi đứng tên mở tài khoản ngân hàng hoặc bán thẻ cho người khác.
+> **Mục tiêu:** Cảnh báo rõ về trách nhiệm pháp lý khi đứng tên mở tài khoản ngân hàng hoặc bán thẻ cho người khác.
 
 ---
 
@@ -414,7 +436,7 @@ flowchart TD
 ## 2. Số phận của các tài khoản ngân hàng đó đi về đâu?
 Kẻ xấu gom hàng trăm tài khoản ngân hàng của học sinh, sinh viên để làm:
 1. **Tài khoản nhận tiền lừa đảo:** Nhận tiền từ các vụ lừa đảo giật đơn, bắt cóc online, tống tiền.
-2. **Kênh rửa tiền xuyên biên giới:** Chuyển tiền từ các đường dây đánh bạc online qua Campuchia, Philippines.
+2. **Kênh rửa tiền xuyên biên giới:** Chuyển tiền từ các đường dây đánh bạc online ra nước ngoài.
 
 \`\`\`mermaid
 flowchart LR
@@ -448,16 +470,16 @@ flowchart LR
   - Toàn bộ danh bạ điện thoại (Contacts).
   - Album ảnh và video (Photos).
   - Vị trí GPS thời gian thực.
-- **Phương thức siết nợ dã man:**
+- **Phương thức siết nợ áp lực:**
   - Vay 2 triệu thực nhận 1.2 triệu (trừ phí dịch vụ), sau 7 ngày tiền lãi và phạt lên thành 5 triệu đồng (lãi suất tương đương 1.000% - 2.000%/năm).
-  - Khi nạn nhân không kịp trả, hệ thống bot tự động gửi tin nhắn, gọi điện hàng trăm cuộc mỗi ngày cho thầy cô, cha mẹ, bạn bè trong danh bạ. Chúng ghép ảnh chân dung nạn nhân vào ảnh cáo phó, ảnh đồi trụy để bôi nhọ trên mạng xã hội.
+  - Khi nạn nhân không kịp trả, hệ thống bot tự động gửi tin nhắn, gọi điện liên tục cho thầy cô, cha mẹ, bạn bè trong danh bạ. Chúng ghép ảnh chân dung nạn nhân vào các hình ảnh phản cảm để bôi nhọ trên mạng xã hội.
 
 ---
 
 ## 2. Bẫy Tiền ảo & Sàn quyền chọn nhị phân (BO)
 - Các hội nhóm Telegram "Đầu tư tài chính thế hệ mới", "Kéo vốn sinh lời 30%/tháng".
 - Các "chuyên gia" tự xưng liên tục đăng tải hình ảnh chụp cùng xế hộp, cọc tiền đô la, đi du lịch nghỉ dưỡng sang chảnh.
-- Thực chất đây là mô hình Ponzi: Tiền gửi vào sàn ảo hoàn toàn không được đầu tư mà nằm trong túi của chủ sàn. Đến khi gom đủ số tiền lớn, sàn sẽ đột ngột "bảo trì hệ thống" rồi biến mất vĩnh viễn.
+- Thực chất đây là mô hình Ponzi: Tiền gửi vào sàn ảo hoàn toàn không được đầu tư mà nằm trong túi của chủ sàn. Đến khi gom đủ số tiền lớn, sàn sẽ đột ngột "bảo trì hệ thống" rồi biến mất.
 `
       }
     ]
@@ -551,9 +573,9 @@ flowchart LR
 
 | Đầu số / Nền tảng | Chức năng hỗ trợ | Chi phí |
 |---|---|---|
-| 📞 **Tổng đài 156** | Tiếp nhận phản ánh cuộc gọi rác, tin nhắn rác, cuộc gọi lừa đảo | Miễn phí |
-| 📞 **Tổng đài 111** | Tổng đài Quốc gia Bảo vệ Trẻ em (can thiệp xâm hại, bạo lực mạng, tống tiền nudes) | Miễn phí 24/7 |
-| 📞 **Tổng đài 113** | Cơ quan Công an tiếp nhận tố giác tội phạm an ninh trật tự | Miễn cước |
+| **Tổng đài 156** | Tiếp nhận phản ánh cuộc gọi rác, tin nhắn rác, cuộc gọi lừa đảo | Miễn phí |
+| **Tổng đài 111** | Tổng đài Quốc gia Bảo vệ Trẻ em (can thiệp xâm hại, bạo lực mạng, tống tiền nudes) | Miễn phí 24/7 |
+| **Tổng đài 113** | Cơ quan Công an tiếp nhận tố giác tội phạm an ninh trật tự | Miễn cước |
 
 ---
 
@@ -575,8 +597,8 @@ lessonContents.forEach(secConfig => {
 
   // Section index
   const secIndexContent = `---
-title: "${secConfig.secTitle}"
-description: "${secConfig.secDescription}"
+title: ${JSON.stringify(secConfig.secTitle)}
+description: ${JSON.stringify(secConfig.secDescription)}
 url: "/projects/anti-scam/${secConfig.folder}/"
 showToc: true
 weight: ${secConfig.secId}
@@ -586,15 +608,15 @@ weight: ${secConfig.secId}
 
 > ${secConfig.secDescription}
 
-## Danh sách bài học chuyên đề:
+## Danh sách bài học:
 ${secConfig.lessons.map(l => `- [**${l.title}**](/projects/anti-scam/${secConfig.folder}/${l.slug}/): ${l.description}`).join('\n')}
 
 ---
 
-## 📝 Bài kiểm tra đánh giá Section ${secConfig.secId}:
-Sau khi hoàn thành tất cả các bài học lý thuyết trên, học viên bắt buộc phải làm bài kiểm tra trắc nghiệm 20 câu để đánh giá năng lực:
-- [**👉 Làm Bài Kiểm Tra Trắc Nghiệm Section ${secConfig.secId} (20 câu hỏi - Pass rate $\\ge 80\\%$)**](/projects/anti-scam/${secConfig.folder}/quiz/)
-- [**🎮 Làm trên Ứng dụng Tương tác Trực quan có Lưu Tiến độ**](/anti-scam/)
+## Bài kiểm tra đánh giá Section ${secConfig.secId}:
+Sau khi hoàn thành tất cả các bài học lý thuyết trên, học viên làm bài kiểm tra trắc nghiệm 20 câu:
+- [**Làm Bài Kiểm Tra Trắc Nghiệm Section ${secConfig.secId} (20 câu hỏi - Pass rate $\\ge 80\\%$)**](/projects/anti-scam/${secConfig.folder}/quiz/)
+- [**Làm trên Ứng dụng Tương tác Trực quan có Lưu Tiến độ**](/anti-scam/)
 `;
 
   fs.writeFileSync(path.join(secDir, '_index.md'), secIndexContent, 'utf8');
@@ -629,7 +651,7 @@ showToc: true
 > **Quy định làm bài:**
 > - Số lượng câu hỏi: **20 câu hỏi tình huống**.
 > - Điểm đạt yêu cầu: **Tối thiểu 16/20 câu đúng (80%)** để đủ điều kiện mở khóa Section tiếp theo.
-> - [**👉 Mở Ứng Dụng Làm Bài Test Tự Động Chấm Điểm & Lưu Tiến Độ Vào Trình Duyệt**](/anti-scam/)
+> - [**Mở Ứng Dụng Làm Bài Test Tự Động Chấm Điểm & Lưu Tiến Độ Vào Trình Duyệt**](/anti-scam/)
 
 ---
 
@@ -642,7 +664,7 @@ showToc: true
     q.options.forEach(opt => {
       quizMd += `- **${opt.key}.** ${opt.text}\n`;
     });
-    quizMd += `\n<details>\n<summary><b>👉 Xem đáp án & Giải thích</b></summary>\n\n> **Đáp án đúng: ${q.answer}**\n</details>\n\n---\n\n`;
+    quizMd += `\n<details>\n<summary><b>Xem đáp án & Giải thích</b></summary>\n\n> **Đáp án đúng: ${q.answer}**\n</details>\n\n---\n\n`;
   });
 
   quizMd += `
@@ -653,4 +675,4 @@ Nếu bạn làm trên ứng dụng [Hệ Thống Trắc Nghiệm Tương Tác](
   fs.writeFileSync(path.join(secDir, 'quiz.md'), quizMd, 'utf8');
 });
 
-console.log('Successfully generated full Anti-Scam project structure with all lesson pages and quizzes!');
+console.log('Successfully regenerated entire Anti-Scam project: teen-friendly voice, minimal emoji.');

@@ -9,7 +9,7 @@ TocOpen: true
 
 # Bài 3.2: Hiểm Họa Cho Thuê, Mua Bán Tài Khoản Ngân Hàng & Rủi Ro Pháp Lý
 
-> **Mục tiêu:** Cảnh báo nghiêm khắc về trách nhiệm pháp lý khi đứng tên mở tài khoản ngân hàng hoặc bán thẻ cho người khác.
+> **Mục tiêu:** Cảnh báo rõ về trách nhiệm pháp lý khi đứng tên mở tài khoản ngân hàng hoặc bán thẻ cho người khác.
 
 ---
 
@@ -22,7 +22,7 @@ TocOpen: true
 ## 2. Số phận của các tài khoản ngân hàng đó đi về đâu?
 Kẻ xấu gom hàng trăm tài khoản ngân hàng của học sinh, sinh viên để làm:
 1. **Tài khoản nhận tiền lừa đảo:** Nhận tiền từ các vụ lừa đảo giật đơn, bắt cóc online, tống tiền.
-2. **Kênh rửa tiền xuyên biên giới:** Chuyển tiền từ các đường dây đánh bạc online qua Campuchia, Philippines.
+2. **Kênh rửa tiền xuyên biên giới:** Chuyển tiền từ các đường dây đánh bạc online ra nước ngoài.
 
 ```mermaid
 flowchart LR

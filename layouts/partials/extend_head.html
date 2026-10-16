@@ -237,4 +237,100 @@
     margin: 2px 4px 2px 0 !important;
     border-radius: 0 !important;
   }
+
+  /* ── Table of Contents (TOC) Toggle Styling ── */
+  .toc {
+    margin: 20px 0 28px;
+    border: 1px solid var(--border);
+    background: var(--entry);
+    border-radius: 12px;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+  }
+
+  .toc details {
+    width: 100%;
+  }
+
+  .toc summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--primary);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0;
+    user-select: none;
+  }
+
+  .toc summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .toc summary .details {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .toc .toc-toggle-indicator {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--theme);
+    color: var(--secondary);
+    transition: all 0.2s ease;
+  }
+
+  .toc details[open] .toc-toggle-indicator::after {
+    content: "Thu gọn ▲";
+  }
+
+  .toc details:not([open]) .toc-toggle-indicator::after {
+    content: "Mở rộng ▼";
+  }
+
+  .toc summary:hover .toc-toggle-indicator {
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+
+  .toc .inner {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--border);
+  }
+
+  .toc .inner ul {
+    list-style: none;
+    padding-left: 18px;
+    margin: 4px 0;
+  }
+
+  .toc .inner > ul {
+    padding-left: 0;
+  }
+
+  .toc .inner li {
+    margin: 6px 0;
+    line-height: 1.5;
+  }
+
+  .toc .inner a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.15s ease;
+  }
+
+  .toc .inner a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+  }
 </style>

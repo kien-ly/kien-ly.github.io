@@ -17,9 +17,9 @@ TocOpen: true
 
 | Đầu số / Nền tảng | Chức năng hỗ trợ | Chi phí |
 |---|---|---|
-| 📞 **Tổng đài 156** | Tiếp nhận phản ánh cuộc gọi rác, tin nhắn rác, cuộc gọi lừa đảo | Miễn phí |
-| 📞 **Tổng đài 111** | Tổng đài Quốc gia Bảo vệ Trẻ em (can thiệp xâm hại, bạo lực mạng, tống tiền nudes) | Miễn phí 24/7 |
-| 📞 **Tổng đài 113** | Cơ quan Công an tiếp nhận tố giác tội phạm an ninh trật tự | Miễn cước |
+| **Tổng đài 156** | Tiếp nhận phản ánh cuộc gọi rác, tin nhắn rác, cuộc gọi lừa đảo | Miễn phí |
+| **Tổng đài 111** | Tổng đài Quốc gia Bảo vệ Trẻ em (can thiệp xâm hại, bạo lực mạng, tống tiền nudes) | Miễn phí 24/7 |
+| **Tổng đài 113** | Cơ quan Công an tiếp nhận tố giác tội phạm an ninh trật tự | Miễn cước |
 
 ---
 

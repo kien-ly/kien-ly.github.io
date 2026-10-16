@@ -19,13 +19,13 @@ TocOpen: true
   - Toàn bộ danh bạ điện thoại (Contacts).
   - Album ảnh và video (Photos).
   - Vị trí GPS thời gian thực.
-- **Phương thức siết nợ dã man:**
+- **Phương thức siết nợ áp lực:**
   - Vay 2 triệu thực nhận 1.2 triệu (trừ phí dịch vụ), sau 7 ngày tiền lãi và phạt lên thành 5 triệu đồng (lãi suất tương đương 1.000% - 2.000%/năm).
-  - Khi nạn nhân không kịp trả, hệ thống bot tự động gửi tin nhắn, gọi điện hàng trăm cuộc mỗi ngày cho thầy cô, cha mẹ, bạn bè trong danh bạ. Chúng ghép ảnh chân dung nạn nhân vào ảnh cáo phó, ảnh đồi trụy để bôi nhọ trên mạng xã hội.
+  - Khi nạn nhân không kịp trả, hệ thống bot tự động gửi tin nhắn, gọi điện liên tục cho thầy cô, cha mẹ, bạn bè trong danh bạ. Chúng ghép ảnh chân dung nạn nhân vào các hình ảnh phản cảm để bôi nhọ trên mạng xã hội.
 
 ---
 
 ## 2. Bẫy Tiền ảo & Sàn quyền chọn nhị phân (BO)
 - Các hội nhóm Telegram "Đầu tư tài chính thế hệ mới", "Kéo vốn sinh lời 30%/tháng".
 - Các "chuyên gia" tự xưng liên tục đăng tải hình ảnh chụp cùng xế hộp, cọc tiền đô la, đi du lịch nghỉ dưỡng sang chảnh.
-- Thực chất đây là mô hình Ponzi: Tiền gửi vào sàn ảo hoàn toàn không được đầu tư mà nằm trong túi của chủ sàn. Đến khi gom đủ số tiền lớn, sàn sẽ đột ngột "bảo trì hệ thống" rồi biến mất vĩnh viễn.
+- Thực chất đây là mô hình Ponzi: Tiền gửi vào sàn ảo hoàn toàn không được đầu tư mà nằm trong túi của chủ sàn. Đến khi gom đủ số tiền lớn, sàn sẽ đột ngột "bảo trì hệ thống" rồi biến mất.

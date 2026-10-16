@@ -11,7 +11,7 @@ showToc: true
 > **Quy định làm bài:**
 > - Số lượng câu hỏi: **20 câu hỏi tình huống**.
 > - Điểm đạt yêu cầu: **Tối thiểu 16/20 câu đúng (80%)** để đủ điều kiện mở khóa Section tiếp theo.
-> - [**👉 Mở Ứng Dụng Làm Bài Test Tự Động Chấm Điểm & Lưu Tiến Độ Vào Trình Duyệt**](/anti-scam/)
+> - [**Mở Ứng Dụng Làm Bài Test Tự Động Chấm Điểm & Lưu Tiến Độ Vào Trình Duyệt**](/anti-scam/)
 
 ---
 
@@ -25,7 +25,7 @@ showToc: true
 - **D.** `iloveyou`
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: C**
 </details>
@@ -40,7 +40,7 @@ showToc: true
 - **D.** Không cần cài đặt gì
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -55,7 +55,7 @@ showToc: true
 - **D.** Mất danh bạ offline
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -70,7 +70,7 @@ showToc: true
 - **D.** Tắt màn hình đi ngủ
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -85,7 +85,7 @@ showToc: true
 - **D.** Đăng bài chửi bới lên Facebook cá nhân
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -100,7 +100,7 @@ showToc: true
 - **D.** Không cần thiết vì kẻ lừa đảo sẽ tự nhận tội
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -115,7 +115,7 @@ showToc: true
 - **D.** `911`
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -130,7 +130,7 @@ showToc: true
 - **D.** `115`
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -145,7 +145,7 @@ showToc: true
 - **D.** Tắt tính năng bảo mật 2 lớp
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -160,7 +160,7 @@ showToc: true
 - **D.** Gửi cho toàn bộ học sinh trong trường cùng vào xem
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -175,7 +175,7 @@ showToc: true
 - **D.** Tăng độ sáng màn hình
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -190,7 +190,7 @@ showToc: true
 - **D.** Nhân viên ngân hàng hỗ trợ ngoài giờ
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -205,7 +205,7 @@ showToc: true
 - **D.** Vì điện thoại sẽ bị hao pin gấp đôi
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -220,7 +220,7 @@ showToc: true
 - **D.** Xóa app ngân hàng
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -235,7 +235,7 @@ showToc: true
 - **D.** Giúp bạn rèn luyện tính độc lập
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -250,7 +250,7 @@ showToc: true
 - **D.** Trụ sở bưu điện
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -265,7 +265,7 @@ showToc: true
 - **D.** Đọc trộm tin nhắn của người dùng
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -280,7 +280,7 @@ showToc: true
 - **D.** Đăng bài châm chọc bạn trên confessions trường
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: C**
 </details>
@@ -295,7 +295,7 @@ showToc: true
 - **D.** Đổi vỏ ốp lưng điện thoại
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -310,7 +310,7 @@ showToc: true
 - **D.** Giấu kín mọi rắc rối xảy ra trên mạng với người lớn
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>

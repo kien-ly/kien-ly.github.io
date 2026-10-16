@@ -11,7 +11,7 @@ showToc: true
 > **Quy định làm bài:**
 > - Số lượng câu hỏi: **20 câu hỏi tình huống**.
 > - Điểm đạt yêu cầu: **Tối thiểu 16/20 câu đúng (80%)** để đủ điều kiện mở khóa Section tiếp theo.
-> - [**👉 Mở Ứng Dụng Làm Bài Test Tự Động Chấm Điểm & Lưu Tiến Độ Vào Trình Duyệt**](/anti-scam/)
+> - [**Mở Ứng Dụng Làm Bài Test Tự Động Chấm Điểm & Lưu Tiến Độ Vào Trình Duyệt**](/anti-scam/)
 
 ---
 
@@ -25,7 +25,7 @@ showToc: true
 - **D.** Các lỗ hổng phần cứng máy tính
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -40,7 +40,7 @@ showToc: true
 - **D.** Cần chuyển khoản ngay để tránh bị đuổi học
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -55,7 +55,7 @@ showToc: true
 - **D.** `kiemtrataikhoan-gov.top`
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -70,7 +70,7 @@ showToc: true
 - **D.** Tấn công từ chối dịch vụ (DDoS)
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -85,7 +85,7 @@ showToc: true
 - **D.** Thúc ép "bạn chỉ có 3 phút để chuyển tiền giữ chỗ"
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: C**
 </details>
@@ -100,7 +100,7 @@ showToc: true
 - **D.** Mã coupon giảm giá shopee
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -115,7 +115,7 @@ showToc: true
 - **D.** Giúp link hiển thị đẹp hơn trên Instagram
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -130,7 +130,7 @@ showToc: true
 - **D.** Cung cấp mã OTP ngân hàng để họ kiểm tra
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -145,7 +145,7 @@ showToc: true
 - **D.** Máy tính của bạn không thể bị nhiễm virus
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -160,7 +160,7 @@ showToc: true
 - **D.** Nhấp vào và tải file đính kèm về mở
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -175,7 +175,7 @@ showToc: true
 - **D.** Viết bằng tiếng Anh chuẩn Oxford
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -190,7 +190,7 @@ showToc: true
 - **D.** Thư tay qua bưu điện
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -205,7 +205,7 @@ showToc: true
 - **D.** Block luôn người bạn đó
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -220,7 +220,7 @@ showToc: true
 - **D.** Nhắc nhở đi ngủ sớm
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -235,7 +235,7 @@ showToc: true
 - **D.** Bật tính năng xác thực 2 yếu tố
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -250,7 +250,7 @@ showToc: true
 - **D.** `accounts.google.com`
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -265,7 +265,7 @@ showToc: true
 - **D.** Vì pháp luật không bảo vệ người dưới 18 tuổi
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -280,7 +280,7 @@ showToc: true
 - **D.** kiemtiendo.biz
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>
@@ -295,7 +295,7 @@ showToc: true
 - **D.** Phải rủ bạn bè nhận cùng
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: B**
 </details>
@@ -310,7 +310,7 @@ showToc: true
 - **D.** Chỉ tin vào những trang có nhiều người theo dõi
 
 <details>
-<summary><b>👉 Xem đáp án & Giải thích</b></summary>
+<summary><b>Xem đáp án & Giải thích</b></summary>
 
 > **Đáp án đúng: A**
 </details>

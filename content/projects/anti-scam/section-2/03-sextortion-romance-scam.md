@@ -15,7 +15,7 @@ TocOpen: true
 
 ## 1. Kịch bản Tống tiền Tình dục (Sextortion) diễn ra thế nào?
 
-1. **Giai đoạn tiếp cận:** Kẻ xấu dùng tài khoản ảo đăng ảnh hot boy/hot girl xinh đẹp, chủ động nhắn tin làm quen trên Instagram, Snapchat, Facebook, Tinder.
+1. **Giai đoạn tiếp cận:** Kẻ xấu dùng tài khoản ảo đăng ảnh đẹp, chủ động nhắn tin làm quen trên Instagram, Snapchat, Facebook, Tinder.
 2. **Giai đoạn tạo niềm tin lãng mạn:** Kẻ xấu nhắn tin trò chuyện ngọt ngào mỗi ngày, chia sẻ các câu chuyện bí mật để khơi gợi sự tin tưởng sâu sắc của bạn.
 3. **Giai đoạn dẫn dụ:** Kẻ xấu đề nghị gọi video call riêng tư hoặc gửi ảnh "khoe body", ảnh nhạy cảm của kẻ xấu trước (thực chất là video/ảnh ăn cắp trên mạng) rồi dụ bạn gửi lại ảnh khỏa thân (nudes) của bạn.
 4. **Giai đoạn tống tiền (Sextortion):** Ngay sau khi bạn gửi, kẻ xấu gửi lại ảnh chụp màn hình danh bạ bạn bè, tài khoản Facebook của cha mẹ, thầy cô của bạn và đe dọa: *"Chuyển 5 triệu ngay trong 30 phút, nếu không toàn bộ ảnh này sẽ được gửi cho trường học và bố mẹ bạn"*.
@@ -33,4 +33,4 @@ TocOpen: true
 - **4. Sử dụng công cụ Take It Down:**
   - Truy cập trang web chính thức của tổ chức bảo vệ trẻ em quốc tế: [takeitdown.ncmec.org](https://takeitdown.ncmec.org).
   - Nền tảng này tạo mã băm (hash) kỹ thuật số cho bức ảnh nhạy cảm và tự động ngăn chặn nó không bao giờ được tải lên Facebook, Instagram, TikTok...
-- **5. Lên tiếng tìm sự hỗ trợ:** Đừng giấu một mình trong tuyệt vọng. Gọi ngay Tổng đài Quốc gia Bảo vệ Trẻ em **111** để được tư vấn tâm lý và hỗ trợ pháp lý khẩn cấp.
+- **5. Lên tiếng tìm sự hỗ trợ:** Đừng giấu một mình trong lo lắng. Gọi ngay Tổng đài Quốc gia Bảo vệ Trẻ em **111** để được tư vấn tâm lý và hỗ trợ pháp lý kịp thời.
